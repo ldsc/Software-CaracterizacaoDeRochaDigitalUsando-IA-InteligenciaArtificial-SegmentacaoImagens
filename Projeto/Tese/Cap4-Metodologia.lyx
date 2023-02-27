@@ -1,0 +1,547 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Metodologia
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Metodologia
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Metodologia"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Metodologia} 
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo apresenta-se a metodologia científica a ser utilizada no
+ desenvolvimento deste trabalho.
+ Inclui-se informações sobre motivação, área da pesquisa, instrumentos (materiai
+s, equipamentos, softwares) utilizados, limitações do tema, pressupostos
+ e hipóteses simplificadoras.
+\end_layout
+
+\begin_layout Section
+Motivação Para o Tema
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Motivação Para o Tema
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Motivacao-Para-o-Tema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conforme mostrado nos trabalhos de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{andra2013digital,rubo2019digital}
+\end_layout
+
+\end_inset
+
+ a escolha de um algoritmo de segmentação, a escolha dos filtros e principalment
+e o 
+\emph on
+threshold
+\emph default
+ em imagens em escala de cinza são os pontos chaves para uma boa binarização
+ de uma imagem de amostra de rocha reservatório, tanto que uma combinação
+ infeliz desses parâmetros pode trazer ambiguidades para o processo de interpret
+ação.
+\end_layout
+
+\begin_layout Standard
+O trabalho de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{rego2010desenvolvimento}
+\end_layout
+
+\end_inset
+
+ mostrou que a utilização de redes neurais artificiais podem trazer bons
+ resultados para o processo de binarização de imagens, principalmente quando
+ comparado com métodos tradicionais.
+ Todavia, vale ressaltar que observou-se ainda uma dificuldade em processar
+ amostras nas quais eram encontradas grãos muito claros ou escuros.
+ Além disse 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{rego2010desenvolvimento}
+\end_layout
+
+\end_inset
+
+ utilizou redes neurais tradicionais 
+\emph on
+feedforward
+\emph default
+, algoritmo da retro-propagação, função de custo quadrático e função de
+ ativação
+\emph on
+ sigmoid.
+ 
+\emph default
+Com o avanço dos métodos de IA essas escolhas se tornaram obsoletas, e trabalhos
+ como os de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{sudakov2019driving, rubo2019digital, van2016machine, saporetti2018mac
+hine}
+\end_layout
+
+\end_inset
+
+ vem apresentando bons resultados sobre o processamento do que pode se chamar
+ de Rocha Digital utilizando, por exemplo, redes neurais convolucionais
+ combinadas com algoritmos de 
+\emph on
+machine learning 
+\emph default
+mais simples.
+\end_layout
+
+\begin_layout Standard
+Esses fatores colaboram, portanto, para a motivação desse trabalho, que
+ visa utilizar a experiencia obtida em trabalhos recentes para o avanço
+ do conhecimento da área da pesquisa em Inteligência Artificial aplicada
+ à engenharia de reservatórios de petróleo.
+\end_layout
+
+\begin_layout Standard
+Outra motivação é realizar uma análise do efeito da experiência de quem
+ faz o treinamento da rede.
+\end_layout
+
+\begin_layout Section
+Classificação da Pesquisa
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Classificação da Pesquisa
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Classificacao-da-Pesquisa"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Área de estudo:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Processamento digital de imagens de rocha reservatório utilizando inteligência
+ artificial.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Subordinação do tema a áreas do conhecimento científico:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ligado à engenharia de reservatório de petróleo, ao estudo e caracterização
+ do meio poroso, a determinação de propriedades petrofísicas utilizando
+ métodos da área de processamento e análise de imagens digitais e da área
+ de inteligência artificial.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Problema específico:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estudo do efeito do treinamento/conhecimento do usuário que faz o treinamento
+ da rede.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tipo de pesquisa:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A pesquisa em desenvolvimento apresenta caráter misto entre a modelagem
+ numérico-computacional e desenvolvimento experimental.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Hipóteses
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Hipóteses
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Hipoteses"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste trabalho serão admitidas as seguintes hipóteses simplificadoras:
+\end_layout
+
+\begin_layout Enumerate
+O arcabouço, matriz e cimento dos arenitos, e o aloquímico, a micrita e
+ o esparito dos carbonatos serão tratados como fase granular, e os minerais
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+verifique pois poros não são fase rochosa
+\end_layout
+
+\end_inset
+
+ como fase rochosa.
+ Dessa forma portanto, está desconsiderada a classificação dos minerais;
+\end_layout
+
+\begin_layout Enumerate
+Serão utilizados valores de porosidade efetiva, já que a resina preenche
+ apenas os poros interconectados as faces da amostra.
+\end_layout
+
+\begin_layout Enumerate
+São vários os fatores que podem afetar a qualidade da etapa de segmentação,
+ entre eles:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A qualidade das amostras (se foram corretamente coletadas, se são em quantidade
+ para termos uma boa estatística).
+\end_layout
+
+\begin_layout Enumerate
+A qualidade do processo de impregnação, polimento e preparação das lâminas.
+\end_layout
+
+\begin_layout Enumerate
+A qualidade das imagens obtidas (em 2D ou 3D).
+\end_layout
+
+\begin_layout Enumerate
+A qualidade do usuário que realiza a etapa de segmentação usando rochas
+ digitais.
+\end_layout
+
+\begin_layout Standard
+Considera aqui que as atividades (a), (b), (c) foram feitos corretamente
+ para as imagens utilizadas neste trabalho.
+ O fator (d) será considerado nos resultados.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Materiais
+\end_layout
+
+\begin_layout Standard
+As imagens serão providas pelo acervo digital do Prof.
+ DSc.
+ André Duarte Bueno e do banco de dados disponibilizado pelo CENPES-PETROBRÁS.
+\end_layout
+
+\begin_layout Section
+Etapas
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+sugiro deixar as etapas de acordo com o que de fato acabou sendo feito
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para a realização desse trabalho será feito inicialmente um estudo acerca
+ da geologia das rochas reservatórios e suas propriedades petrofísicas.
+\end_layout
+
+\begin_layout Standard
+Em seguida técnicas de processamento digital de imagens serão estudadas
+ para maior entendimento do problema e das soluções da bibliografia.
+ Ou seja, realização de uma revisão bibliográfica profunda sobre a área,
+ incluindo trabalhos específicos da área de engenharia de reservatório.
+\end_layout
+
+\begin_layout Standard
+Para dar suporte ao desenvolvimento de aplicações computacionais, será feito
+ um estudo da linguagem de programação C++ e de bibliotecas da área, incluindo
+ a biblioteca PyTorch (específica para IA) e da biblioteca Qt (para interface
+ gráfica).
+\end_layout
+
+\begin_layout Standard
+Em seguida serão desenvolvidos os modelos para serem aplicados nas amostras.
+ O trabalho será focado no desenvolvimento de uma ferramenta de anotação,
+ responsável por separar as fases sólidas e porosas, mas de forma rápida
+ e eficiente.
+ E posterior implementação de uma Rede Neural Artificial Profunda para a
+ binarização das imagens.
+\end_layout
+
+\begin_layout Standard
+Os códigos passarão então por alguns testes e, após aprovação, serão utilizados
+ para realizar as análises de diferentes amostras de imagens.
+\end_layout
+
+\begin_layout Standard
+O processamento das imagens é feito em etapas:
+\end_layout
+
+\begin_layout Itemize
+Carregar as imagens, marcar as regiões sólidas e porosas, salvar os dados
+ destas regiões como sendo as regiões de treinamento.
+\end_layout
+
+\begin_layout Itemize
+Carregar as regiões de treinamento, treinar a rede.
+\end_layout
+
+\begin_layout Itemize
+Obter resultados, aplicando a imagem a rede treinada.
+\end_layout
+
+\begin_layout Standard
+A aplicação das etapas acima descritas serão feitas de formas diferentes,
+ de forma a avaliar a interferência do usuário.
+\end_layout
+
+\begin_layout Itemize
+Na etapa de obtenção de resultados serão feitos alguns processamentos e
+ análises:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Análise dos Resultados Considerando Aplicação da Metodologia pelo Mesmo
+ Usuário Repetindo o Treinamento em Diferentes Dias
+\end_layout
+
+\begin_layout Itemize
+Análise dos Resultados Considerando Aplicação da Metodologia por Usuários
+ Distintos
+\end_layout
+
+\begin_layout Itemize
+Análise dos Resultados Considerando Aplicação da Metodologia por Usuários
+ Leigos x Treinados
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Análise
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Análise
+\end_layout
+
+\end_inset
+
+ Consolidada dos Resultado
+\end_layout
+
+\begin_layout Standard
+Os resultados obtidos serão comparados com o trabalho de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{rego2010desenvolvimento}
+\end_layout
+
+\end_inset
+
+ e outros da literatura.
+\end_layout
+
+\end_body
+\end_document

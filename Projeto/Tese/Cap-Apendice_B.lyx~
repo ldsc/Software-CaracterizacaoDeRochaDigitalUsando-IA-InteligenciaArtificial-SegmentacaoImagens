@@ -1,0 +1,1007 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\usepackage {listings}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+
+%\usepackage{natbib}
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+\end_preamble
+\options normaltoc, sumarioincompleto
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Manual do Usuário
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Apêndice 
+\backslash
+thechapter: Manual do Usuário}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+Este apêndice mostra os manuais de utilização dos softwares desenvolvidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Apêndice 
+\backslash
+thechapter: Manual do Usuário}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ferramenta de Anotação de Regiões de Interesse
+\end_layout
+
+\begin_layout Standard
+A Ferramenta de Anotação de Regiões de Interesse é um software desenvolvido
+ para auxiliar no processo de coleta de informação de cor dos pixeis de
+ uma imagem.
+ Nela o usuário é capaz de demarcar uma área dessa imagem e associá-la a
+ uma determinada 
+\emph on
+label.
+ 
+\emph default
+Os dados coletados podem então ser exportados e utilizado como conjuntos
+ de treino para alimentar algorítmos de aprendizagem de máquina supervisionados.
+\end_layout
+
+\begin_layout Subsection
+Divisões da Janela Principal
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:janela-principal-marcacao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra a janela principal da ferramenta com uma imagem já carregada na
+ Área de Trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/janela-principal-marcacao.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Janela principal da Ferramenta de Anotação de Regiões de Interesse
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:janela-principal-marcacao"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lista de Imagens: Guarda todas a imagens abertas na área de trabalho;
+\end_layout
+
+\begin_layout Enumerate
+Lista de Regiões: Mostra as regiões que estão atualmente sendo marcadas
+ na imagem;
+\end_layout
+
+\begin_layout Enumerate
+Sub-Janela de Imagem: Janela que é aberta na área de trabalho quando uma
+ imagem é carregada;
+\end_layout
+
+\begin_layout Enumerate
+Tabela de Dados: Tabela na qual os dados são exibidos como uma prévia antes
+ de serem exportados;
+\end_layout
+
+\begin_layout Enumerate
+Barra de Menus:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Arquivos: Ações relacionadas à abrir uma nova imagem, exportar para um arquivo,
+ limpar a tabela e fechar o programa;
+\end_layout
+
+\begin_layout Enumerate
+Imagem: Ações relacionadas criar ou remover uma nova região de interesse,
+ e ajustar o tamanho do pincel;
+\end_layout
+
+\begin_layout Enumerate
+Exibir: Mostra ou fechar a lista de imagens e a tabela de dados;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Barra de Ferramentas: Ações relacionadas a adicionar imagens, enviar ou
+ limpar dados da tabela, ampliar ou reduzir a imagem e fechar uma sub-janela.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:toolbar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ relaciona cada botão com a sua funcionalidade;
+\end_layout
+
+\begin_layout Enumerate
+Área de Trabalho: Região onde as Sub-janelas das imagens são mostradas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/toolbar.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Barra de Ferramentas
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:toolbar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Utilizando a Ferramenta para Coletar Dados
+\end_layout
+
+\begin_layout Enumerate
+Abra a imagem que se deseja marcar as regiões na Área de Trabalho clicando
+ no botão na Barra de Ferramentas ou com o comando 
+\emph on
+Ctrl+
+\begin_inset Quotes erd
+\end_inset
+
+o
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+no teclado:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step1-use.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Abrindo uma imagem
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Uma imagem pode ser deletada pressionando o botão de 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+delete
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ sobre a mesma na lista de imagens.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em seguida, adicione uma camada e associe uma 
+\emph on
+label 
+\emph default
+a ela:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step2.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Adicionando uma 
+\emph on
+label
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Uma região pode ser deletada pressionando o botão de 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+delete
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ sobre a mesma na lista de regiões.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Utilize o mouse, com o botão esquerdo pressionada pra iniciar a marcação:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step3.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Marcando regiões
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se for necessário ampliar ou diminuir a imagem, utilize os botões na Barra
+ de Ferramentas ou os atalhos 
+\emph on
+Ctrl+
+\begin_inset Quotes erd
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+e 
+\emph on
+Ctrl+
+\begin_inset Quotes erd
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+no teclado, respectivamente:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step4.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Aplicando 
+\emph on
+zoom
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Se for necessário aumentar ou diminuir a espessura do pincel, utilize os
+ botões no menu Imagem ou os atalhos 
+\emph on
+Ctrl+
+\begin_inset Quotes erd
+\end_inset
+
+[
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+e 
+\emph on
+Ctrl+
+\begin_inset Quotes erd
+\end_inset
+
+]
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+no teclado, respectivamente:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step5.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modificando tamanho do pincel
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Envie os dados pra da Tabela de Dados pra uma pré-visualização:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step6.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Enviando dados para tabela
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-6"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se necessário, limpe os dados da tabela com o botão na Barra de Ferramentas
+ ou com o atalho 
+\emph on
+Ctrl+
+\begin_inset Quotes erd
+\end_inset
+
+l
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ no teclado:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step7.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Limpando tabela
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Repita os passos 2, 3 e 4 para adicionar quantas novas regiões forem necessárias
+, e por fim, se não houver mais regiões exporte os dados para um arquivo
+ de texto utilizando o botão em 
+\begin_inset Quotes eld
+\end_inset
+
+Arquivo
+\begin_inset Quotes erd
+\end_inset
+
+ -> 
+\begin_inset Quotes eld
+\end_inset
+
+Salvar Dados da Tabela
+\begin_inset Quotes erd
+\end_inset
+
+, ou o comando 
+\emph on
+Ctrl+
+\begin_inset Quotes erd
+\end_inset
+
+s
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+no teclado:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/step8.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exportando dados
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usage-8"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Interface de Linha de Comando para Treinamento e Aplicação de Modelos de
+ IA
+\end_layout
+
+\begin_layout Standard
+A interface de linha de comando, ou apenas 
+\emph on
+CLI 
+\emph default
+foi desenvolvida em python para poder realizar os procedimentos de treinamento
+ e aplicação dos modelos de redes neurais.
+ Este programa possui os seguintes comandos:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+-t ou –train
+\emph default
+: Recebe como argumento o caminho conjunto de dados de treino e realiza
+ o treinamento da rede neural.
+ Sua saída é um arquivo no formato 
+\emph on
+pickle
+\emph default
+ que representa o modelo treinado.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+-i ou –image
+\emph default
+: Indica o caminho da imagem à ser segmentada.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+-m ou –model
+\emph default
+: Indica o caminho do modelo treinado.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+-o ou –output
+\emph default
+: Indica o diretório em que a imagem segmentada será salva.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+-e ou –epochs
+\emph default
+: Indica o número de épocas a serem executadas durante o treinamento.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+-s ou –save
+\emph default
+: Indica se o resultado da binarização será salvo ou não.
+\end_layout
+
+\begin_layout Standard
+Para executar o treinamento de um novo modelo o seguinte comando é executado
+ no terminal:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={rockimageui.h}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python rock-nn/main.py -t <caminho-para-dataset> -e <numero-de-epocas>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para que o modelo treinado seja aplicado em uma imagem, executa-se o seguinte
+ comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={rockimageui.h}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python rock-nn/main.py --save -i <caminho-para-imagem> -m <caminho-para-modelo>
+ -o <diretorio-de-saida>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

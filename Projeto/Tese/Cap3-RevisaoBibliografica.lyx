@@ -1,0 +1,1910 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\usepackage{xcolor}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%Adicionado et all em italico
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0, abnt-etal-text=it]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+%\usepackage[abnt-etal-text=emph,......]{abntcite} ou \usepackage[abnt-etal-text=it,......]{abntcite} 
+
+
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+
+% Define um novo comando, chamado lst
+% observe que lst chama o comando  lstinputlisting.
+\newcommand{\lst}[2]{%
+    \noindent\rule[-1ex]{\textwidth}{0.3mm}\vspace{-1ex}
+    \lstinputlisting[caption={#2},label={#1},stringspaces=false,frame={tb},lineskip=-1pt,extendedchars=true,%
+    basicstyle=\footnotesize\tt,labelstep=1,labelstyle=\tiny,indent=2em,language=Java,breaklines]{#1}
+    \vspace{1ex}%
+}
+% \listfiles
+% \usepackage[]{hyperref}
+% \usepackage{mathptmx}  % instead of package times
+%\ usepackage[scaled=0.9]{helvet} % or [scaled=0.92], if you like
+%% Pacote de citações para formato abnt
+%% \usepackage[num]{abntcite}
+%% \usepackage[alf]{abntcite}
+%% FIM  Lyx-Document Settings
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement ph
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Revisão Bibliográfica} 
+\backslash
+rhead{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Revisão Bibliográfica
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Revisão Bibliográfica
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Revisão-Bibliográfica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo é apresentada uma revisão bibliográfica dos trabalhos, técnicos
+ e científicos, relacionados ao desenvolvimento de métodos de inteligência
+ artificial associados à segmentação de imagens de rochas reservatórios.
+\end_layout
+
+\begin_layout Section
+Segmentação de Imagens de Amostras de Rochas
+\end_layout
+
+\begin_layout Standard
+No trabalho de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{lin2018new}
+\end_layout
+
+\end_inset
+
+ é proposta uma nova metodologia para segmentação de imagens de rochas baseadas
+ na porosidade, calculada como limitador para obter o melhor valor de limiar.
+ Dessa forma é levado em consideração características petrofísicas das amostras,
+ o que ajuda na obtenção de resultados mais próximos da realidade quando
+ se trata de segmentação.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+se tiver alguma imagem mostrando o resultado obtido pode incluir, sempre
+ citando o trabalho original
+\end_layout
+
+\end_inset
+
+O resultado obtido por essa metodologia é comparado com o cálculo convencional
+ de porosidade nas Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagem-ct-lin"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagem-ct-lin-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagem-ct-lin-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/imagem-ct-lin.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem em escala de cinza de um arenito obtido por meio de tomografia computador
+izada 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagem-ct-lin"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lin2018new"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-antigo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem binarizada do arenito usando método da porosidade 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagem-ct-lin-1"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lin2018new"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-novo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem binarizada do arenito usando método baseado nas características petrofísi
+cas 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagem-ct-lin-2"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lin2018new"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{rubo2019digital}
+\end_layout
+
+\end_inset
+
+ foi possível a geração de modelos de classificação mineralógica dos grãos
+ presentes em amostras de rochas da secção do pré-sal, na bacia de Santos,
+ por meio da utilização de redes neurais artificiais e algoritmos de florestas
+ aleatórias
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+você precisa explicar este algoritmo de florestas no capítulo de revisão
+ conceitual
+\end_layout
+
+\end_inset
+
+.
+ Nesse trabalho também foram utilizados filtros convolucionais para extrair
+ mais informações sobre cada pixel que compõe a imagem analisada, entre
+ eles o filtro gaussiano, sobel, hessiano e diferença de gaussianas.
+ As redes neurais desenvolvidas utilizaram três camadas profundas com 45
+ neurônios cada, função logística como função de ativação e gradiente descendent
+e estocástico como algoritmo de aprendizagem.
+ Os modelos foram validados utilizando o teste de validação cruzada 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+n-fold
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O informação obtida na saída de cada modelo foi dividida em 7 classes: 
+\begin_inset Quotes eld
+\end_inset
+
+calcita
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+dolomita
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+quartzo
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+minerais opacos
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+argilas
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+outros
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+poro
+\begin_inset Quotes erd
+\end_inset
+
+, e a segmentação obtida pode ser observada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagem-seg-rubo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, onde (a) representa a imagem original e (b) é o resultado do processo
+ de segmentação.
+ Mesmo que o resultado obtido tenha apresentado uma alta acurácia, o fato
+ de ter utilizado imagens apenas de uma determinada região limita os resultados
+ à mesma.
+ Além disso os autores identificaram que os modelos criados confundiram
+ bolhas em regiões porosas como fase sólida e dolomita como outros minerais,
+ e tiveram dificuldade de classificar poros com presença de materiais argilosos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/rubo1.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem segmentada em diferentes classes 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagem-seg-rubo"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rubo2019digital"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inteligência Artificial Aplicada à Modelagem de Propriedades Petrofísicas
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{alqahtani2018deep}
+\end_layout
+
+\end_inset
+
+ propõe uma abordagem baseada em redes neurais convolucionais para prever,
+ de forma rápida, propriedades relacionadas aos meios porosos a partir de
+ um 
+\emph on
+dataset
+\emph default
+ composto por 7860 imagens 2D em escala de cinza formadas por regiões de
+ interesse de 128 x 128 pixeis de microtomografias.
+ Essas imagens representavam amostras de 3 tipos de arenitos diferentes:
+ 
+\emph on
+Bentheimer, Berea 
+\emph default
+e 
+\emph on
+Fine-Grain.
+\end_layout
+
+\begin_layout Standard
+As imagens foram submetidas à um processo de segmentação para diferenciar
+ a matriz dos poros por meio do método de 
+\emph on
+Otsu.
+
+\emph default
+ Em seguida, a rede de poros foi extraída utilizando-se o algoritmo de 
+\emph on
+watershead
+\emph default
+, descrito brevemente na Seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Segmentacao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Assim, foram extraídos os valores de porosidade, número de coordenação
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+O número de coordenação pode ser definido como a quantidade de gargantas
+ que chegam ou partem de um poro 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cunha2012caracterizaccao"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+mova para local onde cita o número de coordenação pela 1x
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ e tamanho médio de poro de cada uma das amostras.
+ O passo seguinte foi separar os conjuntos de treino (5680 imagens) e validação
+ (2180 imagens), que foram utilizados para alimentar a rede neural em 
+\emph on
+batches
+\emph default
+ de 256 imagens.
+ Para cada tipo de amostra foram realizadas 500 épocas.
+\end_layout
+
+\begin_layout Standard
+A rede neural aplicada utilizou como função de perda a função de 
+\emph on
+Huber
+\emph default
+, que é descrita na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{s}(a)=\begin{cases}
+0,5a^{2} & |a|\leq\delta\\
+\left(|a|-0,5\delta\right)\delta & |a|>\delta
+\end{cases},\label{eq:funcao-perda-huber}
+\end{equation}
+
+\end_inset
+
+onde a perda 
+\begin_inset Formula $L$
+\end_inset
+
+ de uma saída 
+\begin_inset Formula $a$
+\end_inset
+
+ é calculada de acordo como um parâmetro 
+\begin_inset Formula $\delta=0,5$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Como otimizador foi utilizado o modelo 
+\emph on
+Adam, 
+\emph default
+proposto por 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{kingma2014adam}
+\end_layout
+
+\end_inset
+
+.
+ Sua estrutura foi composta por 5 camadas convolucionais, que realizavam
+ a operação de convolução, ativação por 
+\emph on
+ReLU, 
+\emph default
+normalização e 
+\emph on
+max pooling
+\emph default
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+O procedimento de 
+\emph on
+max-pooling 
+\emph default
+em uma rede neural tem o objetivo de calcular o valor máximo para atributos
+ em uma imagem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murray2014generalized"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+; uma camada para as operações de 
+\emph on
+flattening 
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Operações de 
+\emph on
+flattening 
+\emph default
+tratam de realizar um achatamento de uma matriz ou tensor de n dimensões
+ transformando em um 
+\emph on
+array
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jin2014flattened"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\emph on
+, 
+\emph default
+ativação com 
+\emph on
+ReLU 
+\emph default
+e 
+\emph on
+dropout 
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+Dropout 
+\emph default
+é uma técnica que funciona 
+\begin_inset Quotes eld
+\end_inset
+
+desligando
+\begin_inset Quotes erd
+\end_inset
+
+, ou seja, zerando os valores de um determinado neurônio, aleatoriamente
+ na rede neural a fim de regularizar o aprendizado da mesma 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JMLR:v15:srivastava14a"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+; e uma última camada com a informação sobre a propriedade física.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:metodologia-cnn-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ilustra a metodologia utilizada pelos autores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/metodologia-cnn-alqahtani.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Framework 
+\emph default
+da metodologia utilizada para prever propriedades de meios porosos utilizando
+ redes neurais convolucionais 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:metodologia-cnn-1"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alqahtani2018deep"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como resultado, o modelo foi capaz de estimar os valores de porosidade,
+ número de coordenação e tamanho médio dos poros com um erro médio de 0.05,
+ 1.8 e 0.17 
+\begin_inset Formula $\mu m$
+\end_inset
+
+, respectivamente.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:resultados-alqahtani"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra uma relação entre os valores previstos e os valores reais para cada
+ uma das amostras de validação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/resultados-alqahtani.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correlação entre entre os valores previsos e reais de porosidade, número
+ de coordenação e tamanho médio de poro, para cada amostra 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:resultados-alqahtani"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alqahtani2018deep"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Já em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{hebert2020digital}
+\end_layout
+
+\end_inset
+
+ foi utilizada uma abordagem semelhante, envolvendo redes neurais convolucionais
+ e um 
+\emph on
+dataset 
+\emph default
+de treino composto por 15 mil amostras 2D de 4 tipos de rochas: carbonatos
+ provenientes das formações de 
+\emph on
+Estaillades
+\emph default
+ e 
+\emph on
+Savonnieres
+\emph default
+, e os arenitos 
+\emph on
+Berea
+\emph default
+ e 
+\emph on
+Fontainebleau
+\emph default
+.
+ As propriedades física de porosidade, permeabilidade e tortuosidade foram
+ extraídas por um usuário experiente por meio do 
+\emph on
+software Voxilon 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rodriguez2019non"
+literal "false"
+
+\end_inset
+
+
+\emph on
+.
+ 
+\emph default
+As propriedades permeabilidade e tortuosidade não foram aplicadas ao trabalho.
+\end_layout
+
+\begin_layout Standard
+Para o problema de classificação, 4 mil imagens foram utilizadas como insumo
+ para um modelo pré treinado do 
+\emph on
+Google
+\emph default
+ para a resolução de problemas de classificação e extração de atributos
+ chamado 
+\emph on
+Inception V3 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DBLP:journals/corr/SzegedyVISW15"
+literal "false"
+
+\end_inset
+
+,
+\emph default
+ cuja estrutura é mostrada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:inception-v3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para que esse modelo fosse utilizado, aplicou-se o conceito de transferência
+ de conhecimento, no qual as primeiras camadas da rede são mantidas intactas,
+ e somente a ultima camada é adaptada para o problema a ser analisado.
+ Dessa forma poupa-se bastante tempo, já que não foi necessário treinar
+ a rede várias vezes para reajustar os parâmetros de todas as camadas.
+ Nesse caso foi utilizado uma função de ativação 
+\emph on
+softmax
+\emph default
+.
+ Estimou-se então os valores de porosidade das imagens de entrada com resolução
+ de 299 x 299 pixeis.
+ Os testes foram feitos utilizando um conjunto de 1200 imagens, 300 para
+ cada classe, e foi obtido um resultado no qual o modelo se tornou capaz
+ de distinguir entre qualquer um dos tipos de rocha utilizada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/inception-v3.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquitetura da 
+\emph on
+Inception V3
+\emph default
+(
+\emph on
+Google Codelabs
+\emph default
+)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:inception-v3"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hebert2020digital"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para a estimativa da porosidade foram utilizadas 3500 blocos 3D de 100 x
+ 100 x 100 
+\emph on
+voxeis
+\emph default
+ para treinar uma rede convolucional baseado no trabalho de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{sudakov2019driving}
+\end_layout
+
+\end_inset
+
+.
+ A arquitetura do modelo 
+\emph on
+RegPhi
+\emph default
+ é mostrado na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:estrutura-cnn-hebert"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Os testes foram feitos em um conjunto com 1000 imagens 3D com as mesmas
+ dimensões dos dados de entrada.
+ Obteve-se um erro relativo médio em 18% e uma mediana abaixo de 15% na
+ previsão dos valores de porosidade.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquitetura da rede 
+\emph on
+RegPhi
+\emph default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:estrutura-cnn-hebert"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features tabularvalignment="middle" tabularwidth="15cm">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo de Camada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parâmetros
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Convolução 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="10cm" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+filters=32, kernel_size=(5, 5, 5), strides=(2,2,2), padding='valid', activation=
+'relu'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Convolução 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="15cm" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+filters=32, kernel_size=(5, 5, 5), strides=(2,2,2), padding='valid', activation=
+'relu'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Max Pooling
+\emph default
+ 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+pool_size=(2, 2, 2)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Convolução 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+filters=32, kernel_size=(3, 3, 3), padding='valid', activation='relu'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Convolução 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+filters=32, kernel_size=(3, 3, 3), padding='valid', activation='relu'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Max Pooling 
+\emph default
+3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+filters=32, kernel_size=(3, 3, 3), padding='valid', activation='relu'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Densa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+ units=128, activation='relu'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Densa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+units=64, activation='relu'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Flatten
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Densa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+units=1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os autores deste trabalho ainda utilizaram uma terceira metodologia para
+ estimar a porosidade a partir de um processo de segmentação automatizada
+ gerado por um 
+\emph on
+auto-encoder
+\emph default
+.
+ A ideia foi computar atributos de alto nível a partir de uma imagem 3D
+ que já contenha alguma informação acerca da porosidade e então decodificar
+ esses atributos em uma máscara de segmentação, onde cada valor representa
+ a probabilidade de um 
+\emph on
+voxel
+\emph default
+ ser um poro ou não.
+ A estrutura da rede montada é mostrada nas Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hebert-autoeconder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hebert-autoencoder-arch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A função de perda aplicada é uma junção da função 
+\emph on
+cross-entropy
+\emph default
+ do erro médio quadrático, entre o valor de porosidade previsto e o computado
+ no 
+\emph on
+bottleneck
+\emph default
+, e também entre o valor da probabilidade final e a computada no 
+\emph on
+bottleneck.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/hebert-autoencoder.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estrutura do 
+\emph on
+auto-encoder
+\emph default
+ utilizado para criar a máscara de segmentação 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hebert-autoeconder"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hebert2020digital"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/hebert-autoencoder-arch.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Detalhes da arquitetura de cada camada do 
+\emph on
+auto-encoder
+\emph default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hebert-autoencoder-arch"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hebert2020digital"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Crítica aos Trabalhos Existentes
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Critica-aos-Trabalhos-Existentes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Se tiver domínio suficiente critique os trabalho revisados e comente o que
+ pode ser melhorado nestas metodologias.
+\end_layout
+
+\begin_layout Plain Layout
+Por exemplo, qual delas você entendeu bem e tem condições de implementar
+ inovações para que o método fique ainda melhor?
+\end_layout
+
+\end_inset
+
+No trabalho de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{rubo2019digital}
+\end_layout
+
+\end_inset
+
+ poderia ser feita uma tentativa de treinar a base de dado utilizando outras
+ funções de ativação como ReLU e softmax, que já se mostraram bastante proeminen
+tes, conforme apresentado em trabalhos envolvendo redes convolucionais e
+ visão computacional.
+ A função escolhida (função logística ou 
+\emph on
+sigmoid
+\emph default
+) já se mostrou problemática no que se diz respeito à aplicação de sua derivada
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tan2019vanishing,hu2018overcoming,nielsen2015neural"
+literal "false"
+
+\end_inset
+
+.
+ Como se sabe, para se treinar uma rede neural os pesos e 
+\emph on
+biases
+\emph default
+ devem ser atualizados de forma a minimizar o valor retornado por uma função
+ de custo, e a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:novo-peso"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra que essa atualização ocorre de forma associada ao gradiente das
+ função de ativação.
+ No momento que esse gradiente se torna cada vez menor observa-se o fenômeno
+ do 
+\emph on
+vanishnig gradient
+\emph default
+, ou seja, os novos valores de peso se tornam tão pequenos que a rede neural
+ se torna cada vez mais difícil de se treinar.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sigmoid-derivada"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é mostrado um gráfico com a função 
+\emph on
+sigmoid 
+\begin_inset Formula $\sigma(x)$
+\end_inset
+
+ 
+\emph default
+e sua derivada.
+ Nela fica fácil entender porque essa função se torna um problema em algoritmos
+ de redes neurais que são treinados de forma dependente das funções de ativação.
+ Quanto mais 
+\begin_inset Formula $\sigma(x)$
+\end_inset
+
+ se aproxima de 1, menor se torna seu gradiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/sigmoid-derivada (1).png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função Sigmoid e sua Derivada
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sigmoid-derivada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Outros algoritmos de aprendizagem, além do gradiente descendente estocástico
+ (
+\emph on
+Stocastic Gradient Descendent
+\emph default
+), também poderiam ser aplicados para ajudar a contornar esse problema.
+ O trabalho de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{alqahtani2018deep}
+\end_layout
+
+\end_inset
+
+ se mostrou bem sucedido nesse aspecto, todavia, ainda foram observadas
+ dificuldades no que se diz respeito a anomalias provocadas por minerais
+ de brilho mais intenso, algo que poderia ser melhorado se fosse utilizado
+ um 
+\emph on
+dataset 
+\emph default
+com valores de intensidade mais bem distribuídos.
+\end_layout
+
+\begin_layout Standard
+Uma das grandes dificuldades práticas no trabalho 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{rego2010desenvolvimento}
+\end_layout
+
+\end_inset
+
+ foi a marcação dos píxeis que compunham as fases sólida e porosa, pois
+ cada píxel era anotado individualmente e então usado para alimentar um
+ software externo.
+ Isto se mostrou tedioso, mas, principalmente, sujeito a um baixo número
+ de amostras.
+ Seria muito mais prático se estivesse disponível uma ferramenta de marcação
+ que possibilita-se a coleta de informações de grupos de píxeis usando.
+\end_layout
+
+\begin_layout Standard
+Neste trabalho serão utilizadas outras funções que buscam evitar, ou pelo
+ menos mitigar, os problemas listados acima.
+ A ideia será buscar meios de se evitar que o problema do 
+\emph on
+vanishing gradient
+\emph default
+ possa afetar os resultados e principalmente o tempo de processamento.
+\end_layout
+
+\begin_layout Standard
+Também notou-se a falta de análises no que se refere a pessoa que faz o
+ treinamento da rede.
+ Neste trabalho faremos uma breve análise deste fator.
+\end_layout
+
+\end_body
+\end_document

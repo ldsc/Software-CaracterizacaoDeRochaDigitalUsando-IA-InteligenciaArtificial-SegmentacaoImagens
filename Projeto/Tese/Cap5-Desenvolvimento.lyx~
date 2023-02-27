@@ -1,0 +1,4897 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 1908091853 "andreduartebueno"
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Desenvolvimento
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Desenvolvimento
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Desenvolvimento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Desenvolvimento} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo será mostrado o caminho realizado para o desenvolvimento
+ da ferramenta de anotação de regiões
+\change_inserted 1908091853 1662035274
+(software desenvolvido)
+\change_unchanged
+, a coleta dos dados a partir das imagens obtidas em laboratório
+\change_inserted 1908091853 1662035409
+(uso do software para coleta de dados usados no treinamento da rede)
+\change_unchanged
+, e da aplicação CLI
+\change_inserted 1908091853 1662035285
+ desenvolvida e
+\change_unchanged
+ utilizada para o treinamento da rede neural e aplicação do modelo sobre
+ estas imagens.
+\end_layout
+
+\begin_layout Section
+
+\change_deleted 1908091853 1662037577
+Coleta de Resultados
+\change_inserted 1908091853 1662037577
+Fluxograma 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+O processo de coleta dos resultados seguiu o fluxograma mostrado na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:procedimento-de-coleta-resultados"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_inserted 1908091853 1662035431
+, sendo aplicado
+\change_unchanged
+ para cada uma das imagens.
+\change_inserted 1908091853 1662036788
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662037846
+na figura "Criar Layer para região de interesse"; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662037855
+corrigir "Salavr Arquivo"
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/processo2.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_deleted 1908091853 1662037562
+Procedimento
+\change_inserted 1908091853 1662037563
+Fluxograma
+\change_unchanged
+ de Coleta de Dados
+\change_inserted 1908091853 1662037060
+, Treinamento e Aplicação do Modelo
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662037067
+no fluxograma tem tudo
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ para Binarização de Rochas Digitais com Redes Neurais
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:procedimento-de-coleta-resultados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma imagem é inicialmente carregada na Ferramenta de Anotação de Regiões
+ de Interesse e para cada nova região
+\change_inserted 1908091853 1662037078
+ de interesse
+\change_unchanged
+ é criada uma camada
+\change_inserted 1908091853 1662037089
+(
+\emph on
+layer
+\emph default
+)
+\change_unchanged
+.
+ Nessas camadas são marcad
+\change_deleted 1908091853 1662037099
+a
+\change_inserted 1908091853 1662037099
+o
+\change_unchanged
+s os pontos que representam a região na qual serão coletadas as informações
+ dos canais de cores dos pixeis.
+ Assim
+\change_inserted 1908091853 1662037110
+ que
+\change_unchanged
+ se encerra 
+\change_inserted 1908091853 1662037115
+a 
+\change_unchanged
+coleta de uma determinada área é possível salvar momentaneamente esses dados
+ na Tabela que fica no lado direto da janela do 
+\emph on
+software
+\change_inserted 1908091853 1662037174
+ 
+\emph default
+(veremos detalhes do software de marcação de regiões na seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ferramenta-de-AnotaçãoDeRegioes"
+
+\end_inset
+
+)
+\change_unchanged
+.
+ São criadas quantas camadas forem necessárias e o procedimento é repetido.
+ 
+\change_inserted 1908091853 1662037283
+Isto permite, por exemplo, a classificação de diferentes minerais.
+ 
+\change_unchanged
+Para esse trabalho, como já foi explicado anteriormente, são adicionadas
+ apenas uma camada para representar a fase sólida e outra para representar
+ a fase porosa.
+\end_layout
+
+\begin_layout Standard
+Terminada a fase de coleta, os dados da Tabela são salvos e então utilizados
+ para alimentar o 
+\emph on
+script
+\emph default
+ de treinamento da rede neural.
+ O resultado desse treinamento é um arquivo no formato 
+\emph on
+.pt
+\emph default
+ que representa os parâmetros do modelo de inteligência artificial treinado.
+\end_layout
+
+\begin_layout Standard
+Esse arquivo é utilizado então no 
+\emph on
+script
+\emph default
+ que aplica a imagem à rede neural para ser binarizada.
+ O resultado desses processo é a imagem segmentada em fase solida e porosa,
+ e um arquivo de texto contendo a porosidade absoluta obtida e o tempo de
+ execução do modelo.
+\end_layout
+
+\begin_layout Standard
+A seguir são descritos em mais detalhes as funcionalidades e o processo
+ de desenvolvimento dos 
+\emph on
+softwares 
+\emph default
+criados ao longo do trabalho.
+ Para mais detalhes acerca do funcionamento das classes e dos procedimento
+ de como compilar executar esses programas, veja o Apêndice A - Manual do
+ Desenvolvedor.
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 1908091853 1662038210
+Software Desenvolvido - 
+\change_unchanged
+Ferramenta de Anotação de Regiões de Interesse
+\change_inserted 1908091853 1662037961
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038019
+Pense em trocar, em todo documento, o termo "ferramenta" por "software";
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038032
+Para quem lê o termo ferramenta não explicita corretamente o que é, 
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038037
+e nem fica claro que foi desenvolvimento seu.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Conforme descrito em parágrafos anteriores o objetivo desta seção é descrever
+ o processo para a criação da ferramenta
+\change_inserted 1908091853 1662038525
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038527
+do software
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ de anotação de regiões de interesse, as dependências necessárias para seu
+ desenvolvimento, a arquitetura de código escolhida, as classes que foram
+ criadas para as funcionalidades do programa, e, finalmente, descrever alguns
+ problemas enfrentados durante o processo de codificação e limitações.
+\end_layout
+
+\begin_layout Standard
+A ideia básica para o funcionamento do treinamento de uma rede neural é
+ o fato de que é necessário uma determinada quantidade de dados para que
+ a aprendizagem seja bem sucedida.
+ Esses dados podem ser obtidos das mais diferentes formas, seja por meio
+ de uma coleta manual, uma pesquisa em bancos de dados ou a partir de sistemas
+ automatizados de instrumentação, onde sensores são utilizados para obtenção
+ de valores de uma determinada grandeza em tempo real.
+\end_layout
+
+\begin_layout Standard
+No caso de imagens é muito comum se utilizar a informação dos canais de
+ cores, por exemplo RGB (
+\emph on
+Red, Green
+\emph default
+ e 
+\emph on
+Blue
+\emph default
+), como fonte de dados para o desenvolvimento de algoritmos de redes neurais.
+ Isso porque, como explicado em capítulos anteriores
+\change_inserted 1908091853 1662038582
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038588
+cite a seção
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, uma imagem pode ser tratada como uma função em um espaço bidimensional,
+ com coordenadas 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, na qual 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ é igual à uma informação de cor, ou, em alguns casos, profundidade.
+ Dependendo da quantidade de canais ou do formato da imagem, essas informações
+ podem variar em sua estrutura.
+\end_layout
+
+\begin_layout Standard
+Neste trabalho optou-se por utilizar um formato de cores em RGB, devido
+ a sua facilidade de implementação.
+ Seguindo essa linha, esses valores de cor são utilizados para alimentar
+ a camada de entrada de uma rede neural, sendo um neurônio para cada canal
+ de cor em um determinado pixel, conforme mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Representação-da-rede"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Os 
+\emph on
+Input_Type1, Input_Type2 e Input_Type3, 
+\emph default
+representam neste caso os canais de cores dos pixeis das imagens.
+ Todavia poderiam representar também qualquer tipo de entrada válida que
+ pudesse servir como material de aprendizagem da rede.
+ De forma semelhante
+\change_deleted 1908091853 1662038641
+s
+\change_unchanged
+ os neurônios da camada de saída 
+\emph on
+Output_Type1 
+\emph default
+e 
+\emph on
+Output_Type2
+\emph default
+, representam respectivamente os minerais de interesse do estudo.
+ Aqui estes seriam poros e matriz sólida, mas dependendo o objetivo final
+ essas saídas poderiam representar outros elementos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/rede-neural-rep.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representação da rede neural construída 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Representação-da-rede"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como o escopo deste trabalho se concentra em apenas binarizar as imagens,
+ a saída da rede neural contém apenas dois neurônios, classificando em 2
+ categorias, poro ou matriz sólida.
+ Contudo, como é a informação de cor que está sendo usada para alimentar
+ a inteligência artificial durante a aprendizagem, a classificação de cada
+ pixel em outras categorias, como diversos minerais ou tipos de fluido,
+ é claramente possível mudando apenas a quantidade de neurônios de saída.
+ Outra possibilidade seria considerar a identificação de cada mineral separadame
+nte, neste caso, um mineral seria classificado como saída tipo 1(
+\change_deleted 1908091853 1662038708
+sólido
+\change_inserted 1908091853 1662038711
+o mineral de interesse
+\change_unchanged
+) e os demais como saída tipo 2(
+\change_deleted 1908091853 1662038717
+poro
+\change_inserted 1908091853 1662038718
+todo o resto
+\change_unchanged
+).
+\end_layout
+
+\begin_layout Standard
+A forma mais simples de se obter essas informações de cada pixel na imagem
+ seria coletando, de alguma forma, na própria imagem.
+ Um 
+\emph on
+script
+\emph default
+ escrito em alguma linguagem interpretada, como no caso do 
+\emph on
+python
+\emph default
+, é de grande ajuda no que diz respeito em obter essa informação.
+ Contudo, o processo de treinamento de uma rede neural direta implica em
+ comparar o resultado obtido na saída com o valor que aquele ponto no plano
+ deveria representar no mundo real, no caso, sua 
+\emph on
+label
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Dessa forma, a coleta dos dados deve ser realizada por algum profissional
+ que seja capaz de distinguir poros de sólidos em uma amostra de rocha digital.
+ De forma que um simples 
+\emph on
+script
+\emph default
+ não seria tão útil, já que nessa abordagem o trabalho deveria ser realizado
+ de forma manual.
+\end_layout
+
+\begin_layout Standard
+Com esse problema em mente, uma ferramenta que seja capaz de exibir uma
+ imagem para o usuário, e permita que as regiões de interesse sejam associadas
+ a 
+\emph on
+labels
+\emph default
+ criadas pelo profissional que estaria utilizando realizando o estudo sobre
+ a amostra, seria de grande utilidade para a obtenção de material para alimentar
+ o algoritmos de IA.
+\end_layout
+
+\begin_layout Standard
+A imagem a ser estudada seria carregada em uma camada de base e a medida
+ que novas labels fossem adicionadas, novas camadas iriam se sobrepondo
+ a camada de base.
+ O usuário poderia, então, com alguma ferramenta virtual de anotação, como
+ uma 
+\begin_inset Quotes eld
+\end_inset
+
+caneta
+\begin_inset Quotes erd
+\end_inset
+
+, marcar as regiões de interesse em cada camada.
+ Os valores de RGB de cada 
+\emph on
+pixel 
+\emph default
+incluso nessas regiões marcadas podem ser então exportados para um arquivo
+ de texto e utilizado como 
+\emph on
+dataset
+\emph default
+ em 
+\emph on
+script
+\emph default
+ de treinamento de redes neurais.
+ Essa ideia se mostrou bem simples de ser implementada, além de possuir
+ um potencial de coletada de dados para segmentação de imagens de qualquer
+ natureza.
+\end_layout
+
+\begin_layout Standard
+A intenção original do desenvolvimento do projeto seria criar uma aplicação
+ 
+\emph on
+web,
+\emph default
+ uma vez que essa não estaria limitada ao escopo local de utilização da
+ ferramenta.
+ Ou seja, poderia ser acessada em qualquer lugar, a partir de qualquer dispositi
+vo.
+ Todavia, devido às restrições de tempo do projeto e de performance da linguagem
+ 
+\emph on
+javascript
+\emph default
+ optou-se pela construção de uma aplicação 
+\emph on
+desktop
+\emph default
+ que rodasse na máquina do próprio usuário.
+
+\change_inserted 1908091853 1662038942
+ A disponibilização da ferramenta no github contorna o problema de acesso
+ a mesma.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Como a ferramenta necessita de alguma interação com interfaces gráficas
+ optou-se pela utilização da biblioteca 
+\change_inserted 1908091853 1662039050
+
+\emph on
+multiplataforma 
+\change_unchanged
+QT
+\emph default
+(
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.qt.io/"
+literal "false"
+
+\end_inset
+
+).
+ Esta possui uma larga utilização, na industria, nas aplicações científicas
+ e no desenvolvimento de projetos pessoais ou de pequeno porte, como é o
+ caso do 
+\emph on
+software 
+\emph default
+construído nesse trabalho.
+\end_layout
+
+\begin_layout Standard
+Além disso, a biblioteca QT tem sido constantemente atualizada, é multiplataform
+a, e existe uma comunidade extensa e presente em fóruns, além de uma documentaçã
+o altamente descritiva, o que torna o processo de desenvolvimento mais rápido
+ e prático.
+ Outro ponto positivo em relação à escolha do 
+\emph on
+QT
+\emph default
+ como biblioteca para a 
+\emph on
+GUIs 
+\emph default
+é a quantidade de classes, 
+\emph on
+widgets
+\emph default
+, contêineres e outras estruturas 
+\emph on
+ready-to-go
+\emph default
+ que podem ser utilizadas no código.
+ Junto do 
+\emph on
+QT 
+\emph default
+é instalado também 
+\change_deleted 1908091853 1662039000
+a ferramenta
+\change_inserted 1908091853 1662039004
+o ambiente de desenvolvimento
+\change_unchanged
+ 
+\emph on
+QT Designer
+\emph default
+, que permite arrastar e posicionar componentes como: janelas, botões e
+ menus, o que torna o processo de criação do software ainda mais fácil,
+ já que o código que representa a 
+\emph on
+GUI 
+\emph default
+é gerado automaticamente para C++.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:qt-designer"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra uma janela sendo desenvolvida no 
+\emph on
+QT Desginer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/qt-desginer.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interface gráfica do 
+\emph on
+QT Designer
+\emph default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:qt-designer"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em contrapartida, é necessário que o 
+\emph on
+QT 
+\emph default
+esteja instalado no dispositivo do usuário final para que o programa seja
+ utilizado ou que seja gerada uma versão sem uso das bibliotecas dinâmicas
+ (*.
+\emph on
+dll
+\emph default
+ no 
+\emph on
+Windows
+\emph default
+ ou *.
+\emph on
+so
+\emph default
+ no GNU/Linux) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gccLinkOptions"
+literal "false"
+
+\end_inset
+
+
+\change_inserted 1908091853 1662039133
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662039541
+uma ferramenta web também requer que bibliotecas estejam instaladas, além
+ de linguagens; lembre que a biblioteca QT é usada numa centena de softwares
+ de engenharia, na maioria dos casos já estará instalada nos sistemas; no
+ caso do linux é padrão a instalação de C++/Python/Java/Javascript e boa
+ parte de suas bibliotecas; enfim, tome cuidado com esta coisa de contrapartida.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+é possível gerar um executável que incorpora, dentro de sí, as bibliotecas;
+ sem necessidade de estarem instaladas.
+\end_layout
+
+\begin_layout Plain Layout
+veja
+\end_layout
+
+\begin_layout Plain Layout
+https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html
+\end_layout
+
+\begin_layout Plain Layout
+ex:
+\end_layout
+
+\begin_layout Plain Layout
+-static
+\end_layout
+
+\begin_layout Plain Layout
+On systems that support dynamic linking, this overrides -pie and prevents
+ linking with the shared libraries.
+ On other systems, this option has no effect.
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+-static-libstdc++
+\end_layout
+
+\begin_layout Plain Layout
+When the g++ program is used to link a C++ program, it normally automatically
+ links against libstdc++.
+ If libstdc++ is available as a shared library, and the -static option is
+ not used, then this links against the shared version of libstdc++.
+ That is normally fine.
+ However, it is sometimes useful to freeze the version of libstdc++ used
+ by the program without going all the way to a fully static link.
+ The -static-libstdc++ option directs the g++ driver to link libstdc++ staticall
+y, without necessarily linking other libraries statically.
+\end_layout
+
+\end_inset
+
+.
+ Mesmo que o processo de instalação seja documentado no site da própria
+ equipe de desenvolvimento do 
+\emph on
+QT
+\emph default
+, ainda assim isso pode ser algum empecilho para algumas pessoas utilizarem
+ o 
+\emph on
+software
+\emph default
+.
+ Outro ponto negativo à ser levado em consideração é a limitação do 
+\emph on
+QT 
+\emph default
+na estilização dos componentes.
+ Mesmo que versões mas novas do projeto permitam a utilização de arquivos
+ em estilo em cascata semelhantes ao 
+\emph on
+CSS 
+\emph default
+(denominado de 
+\emph on
+qss
+\emph default
+) ainda assim não entrega tanta liberdade de customização como seria possível
+ em uma aplicação 
+\emph on
+web.
+ 
+\change_deleted 1908091853 1662039621
+
+\emph default
+As classes que descrevem o funcionamento da janela principal da aplicação
+ são mostrados nas Listagens 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.ui"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Contudo, para os propósitos desse trabalho, os componentes fornecidos por
+ padrão são o suficiente para a construção de uma interface que atenda aos
+ propósitos de marcação de regiões de interesse.
+\end_layout
+
+\begin_layout Standard
+Por fim, a fim de facilitar o processo de 
+\emph on
+build 
+\emph default
+(construção do binário executável da ferramenta a partir do código fonte),
+ o montador 
+\emph on
+CMake
+\emph default
+ (
+\begin_inset CommandInset href
+LatexCommand href
+target "https://cmake.org/"
+literal "false"
+
+\end_inset
+
+) auxilia a organizar as dependências do projeto, tanto internas quanto
+ externas.
+ A ideia básica é criar um 
+\emph on
+Makefile
+\emph default
+ que possa executar a compilação de todos os arquivos.
+ Para isso foi construído um arquivo 
+\emph on
+CMakeLists.txt, 
+\emph default
+como mostrado na Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: cmake-lists-txt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que lista as ações a serem realizadas para a criação do 
+\emph on
+Makefile
+\emph default
+.
+\change_inserted 1908091853 1662039652
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1662039713
+As classes que descrevem o funcionamento da janela principal da aplicação
+ são mostrados nas Listagens 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.ui"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, apresentadas no Apêndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Manual-do-Desenvolvedor"
+
+\end_inset
+
+.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsection
+Funcionalidades
+\change_inserted 1908091853 1662035253
+ do software desenvolvido
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir as principais funcionalidades do software de anotação
+\change_inserted 1908091853 1662039806
+ de regiões
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Visualização de Imagens
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662039881
+Uso: 
+\change_unchanged
+A aplicação permite que 
+\change_deleted 1908091853 1662039827
+uma
+\change_unchanged
+ imagens no formato 
+\emph on
+JPG
+\emph default
+, 
+\emph on
+PNG
+\emph default
+ e 
+\emph on
+BPM
+\emph default
+ sejam carregadas, cada uma em uma sub-janela diferente.
+ Cada uma dessas sub-janelas é um 
+\begin_inset Quotes eld
+\end_inset
+
+ambiente
+\begin_inset Quotes erd
+\end_inset
+
+ independente.
+ As camadas construídas sobre a imagem de base e os dados coletados pertencem
+ apenas àquela sub-janela.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662039887
+Codificação: 
+\change_unchanged
+A visualização de imagens é feita pelos códigos mostrados nas Listagens
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaysubwindow.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaysubwindow.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Criação de Camadas
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662039900
+Uso: 
+\change_unchanged
+Sobre cada uma das imagens é possível criar novas camadas
+\change_inserted 1908091853 1662040046
+(
+\emph on
+layers
+\emph default
+)
+\change_unchanged
+.
+ Cada camada tem um nome único e os valores de RGB coletados nela são associados
+ à esse nome, como é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sub-listas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ É justamente essa criação de camadas que possibilita a seleção de diferentes
+ minerais.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662039907
+Codificação: 
+\change_unchanged
+Os métodos para criação de camadas são mostrados nas Listagens 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/sub-janela-com-lista.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sub-janela ao lado da lista de imagens
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sub-listas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Tabela de Dados
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662040129
+Uso: 
+\change_unchanged
+Os dados coletados são guardados em uma Tabela conforme mostrado na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tabela-dados-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Essa Tabela pode ser limpa a qualquer momento ou ter seus dados exportados
+ para um arquivo de texto.
+ Também existe a possibilidade de exportá-los para um arquivo no formato
+ CSV, o que facilita caso o usuário tenha a necessidade de abrir os dados
+ em algum aplicativo de edição de planilhas, como o 
+\emph on
+Microsoft Excel
+\emph default
+ ou 
+\emph on
+Openoffice Calc
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662040140
+Codificação: 
+\change_unchanged
+A renderização da tabela de dados é feita pelos códigos da Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: pixeldatatable.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: pixeldatatable.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/tabela-dados1.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela com dados coletados pelo usuário
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tabela-dados-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Sistema de Anotação
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662040131
+Uso: 
+\change_unchanged
+Cada camada, quando criada, é associada a uma cor, conforme mostrado na
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:poros-marcados"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Essa cor representa a cor da caneta que irá fazer a anotação das regiões
+ nas imagens
+\change_deleted 1908091853 1662040194
+,
+\change_inserted 1908091853 1662040194
+.
+
+\change_unchanged
+ 
+\change_deleted 1908091853 1662040195
+e
+\change_inserted 1908091853 1662040196
+Esta cor
+\change_unchanged
+ pode ser alterada.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted 1908091853 1662040142
+Codificação: 
+\change_unchanged
+O sistema de anotações é feito no código listado em 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/poros-marcados.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Anotação aplicada à região dos poros
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:poros-marcados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 1908091853 1662038129
+Aplicação do Software Desenvolvido - 
+\change_unchanged
+Coleta dos Dados
+\end_layout
+
+\begin_layout Standard
+As imagens utilizadas para a coleta dos dados foram classificadas em 5 categoria
+s diferentes, conforme mostra a Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Categorias-das-imagens"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, junto com os valores estimados de porosidade e permeabilidade em 
+\begin_inset Formula $mD$
+\end_inset
+
+.
+ Essas imagens representam amostras de rochas com diferentes valores de
+ porosidade e permeabilidade, o que implica em diferentes maneiras de se
+ realizar a coleta.
+ Todavia ações como evitar o contato com as bordas foram tomadas para se
+ obter a melhor qualidade dos dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Categorias das imagens
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Categorias-das-imagens"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Categoria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permeabilidade (
+\begin_inset Formula $mD$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Berea200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Berea500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P148_K2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P240_K104
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+104
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P262_K441
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+441
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para cada uma das imagens de cada uma das categorias foram obtidas uma determina
+da quantidade de pontos que são listadas nas Tabelas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Categorias-das-imagens-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Categorias-das-imagens-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Categorias-das-imagens-4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Categorias-das-imagens-5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Categorias-das-imagens-6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagens Berea200
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Categorias-das-imagens-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólidos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I22.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3059
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4516
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I212.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4582
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4556
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I26.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4059
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4121
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I216.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3695
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4300
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagens Berea500
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Categorias-das-imagens-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólidos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I310.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4367
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5604
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I311.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3138
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4710
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I312.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3848
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4199
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I318.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3242
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4323
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I320.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3693
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4611
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I31.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4457
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I32.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4488
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5269
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagens P148_K2
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Categorias-das-imagens-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1210
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2382
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i02.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1918
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2745
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i03.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1733
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2557
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i04.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1342
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2113
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i05.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1541
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2279
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i06.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1377
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1765
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i07.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1386
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2544
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i08.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1484
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1629
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i09.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1646
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2137
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i10.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1179
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2052
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagens P240_K104
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Categorias-das-imagens-5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1906
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2257
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i02.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1707
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2162
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26513251i03.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2651
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2898
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i04.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2220
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3189
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i05.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2033
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2168
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i06.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2516
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2517
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i07.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2691
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2311
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i08.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2294
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2275
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i09.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2673
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3429
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i10.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2112
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2426
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagens P262_K441
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Categorias-das-imagens-6"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i1.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3022
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3948
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i2.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5921
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6761
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i3.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3024
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4209
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i4.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1900
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2963
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i5.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3112
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4529
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i6.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2154
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3869
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i7.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1253
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4356
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i8.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3181
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5068
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i9.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2178
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4468
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i10.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3668
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5946
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nas Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemplo-berea200"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemplo-berea500"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemplo-p148"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemplo-p240"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemplo-p262"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é possível observar um exemplo de coleta de dados utilizando a ferramenta
+ descrita acima para cada tipo de imagem.
+ Durante a coleta também procurou-se manter a mesma quantidade de pontos
+ para as regiões de sólidos e poros.
+ Isso para que fosse possível evitar que durante o treinamento a rede neural
+ tivesse seus parâmetros enviesados.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-i26.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com Berea200
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-berea200"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-berea500.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com Berea500
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-berea500"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p140.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com P148_K2
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-p148"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p240.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com P240_K104
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-p240"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p262.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com P262_K441
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-p262"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os dados depois de coletados foram exportados para um arquivo de texto no
+ formato ASCII com extensão 
+\emph on
+.dat
+\emph default
+.
+ Cada linha de cada um dos arquivos possui 4 colunas, representando os valores
+ de Vermelho, Verde, Azul e a 
+\emph on
+label 
+\emph default
+que representa a região onde a imagem foi coletada, conforme mostrado na
+ Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: resultado-coleta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Esse formato foi escolhido devido sua flexibilidade para se trabalhar junto
+ com 
+\emph on
+scripts 
+\emph default
+python.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: resultado-coleta"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={Resultado da Coleta}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+7	87	96	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+0	4	1	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+4	81	103	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+1	67	102	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+2	60	78	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+4	81	109	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+1	64	86	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+8	81	119	Poro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Além da coleta de dados de todas a amostras descritas acima, também foi
+ solicitados à outros quatro voluntários com diferentes níveis de conhecimento
+ e experiência em engenharia e geologia do petróleo.
+ Cada um deles realizou a coleta nas mesmas amostras, conforme é listado
+ na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:images-voluntários-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Os voluntários 1 e 2 são graduados em engenharia de petróleo e atuam na
+ área.
+ O voluntário 3 é atualmente doutorando em engenharia de reservatórios e
+ exploração.
+ Por fim, o voluntário 4 é estudante de engenharia de reservatórios e atualmente
+ é estagiário na área.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+vamos tentar um voluntário geólogo com experiência
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagens dos Voluntários
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:images-voluntários-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="6">
+<features tabularvalignment="middle" tabularwidth="100text%">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagens
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Voluntário 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Voluntário 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Voluntário 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Voluntário 4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I212.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3147
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3259
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3895
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2087
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I212.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3997
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4097
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4894
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3065
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I310.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4976
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4203
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3690
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3079
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I310.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5589
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4874
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4789
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4679
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1397
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2047
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1209
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1093
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2588
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2998
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3089
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2803
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1855
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1745
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1905
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1045
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2578
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2334
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2678
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2189
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i1.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3753
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3995
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4201
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2038
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i1.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sólidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4939
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3967
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4891
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3793
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Treinamento e Aplicação das Redes Neurais
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1662038243
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038275
+note que nas seções 5.2 você fala do software em C++/Qt e na seção 5.3 usa
+ o software
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038290
+acho que na seção 5.4 deveria falar do software em Python/Pythorck
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038319
+e na seção 5.5 falar da sua aplicação.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662038335
+Quando falar dos softwares fazer a ligação com os respectivos apêndices.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+Para o treinamento e aplicação das redes neurais optou-se por criar uma
+ aplicação de linha de comando ou 
+\emph on
+CLI 
+\emph default
+em python, utilizando as bibliotecas de inteligência artificial 
+\emph on
+PyTorch 
+\emph default
+e 
+\emph on
+NumPy
+\emph default
+, e a biblioteca 
+\emph on
+pillow
+\emph default
+ para manipulação de imagens.
+ 
+\end_layout
+
+\begin_layout Standard
+A escolha do 
+\emph on
+PyTorch 
+\emph default
+foi baseada na ideia de que esta além do 
+\emph on
+front-end
+\emph default
+ em python, ela também possui um 
+\emph on
+front-end
+\emph default
+ em 
+\emph on
+C++
+\emph default
+, o que poderia facilitar em portar futuramente o código de uma linguagem
+ para outra.
+ Além disso, a construção de modelos de redes neurais se demostrou bem intuitivo
+ utilizando esta biblioteca.
+\end_layout
+
+\begin_layout Subsection
+Descrição do Modelo
+\end_layout
+
+\begin_layout Standard
+Na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Camadas-da-rede"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ está descrito o modelo de rede neural utilizado para treinamento e binarização
+ das imagens.
+ Todas as camadas internas dessa rede utilizaram 
+\emph on
+ReLU 
+\emph default
+como função de ativação.
+ Para saída da rede neural foi utilizada uma função chamada de 
+\emph on
+log_softmax
+\emph default
+, que, de acordo com a documentação da biblioteca, é recomentada para algoritmos
+ classificadores 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "de2015exploration"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Camadas da rede neural representada pelo modelo
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Camadas-da-rede"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Número da Camada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Número de Neurônios
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Função de Ativação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 (
+\emph on
+output
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+log_softmax
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aplicação dos Modelos
+\end_layout
+
+\begin_layout Standard
+Para aplicar o modelo foi desenvolvida uma função chamada 
+\emph on
+apply_model, 
+\emph default
+que é mostrada na Listagem 
+\emph on
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: tester.py"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\emph default
+ semelhante à utilizada no treinamento, que recebe o caminho para o arquivo
+ que guarda o modelo em 
+\emph on
+pickle
+\emph default
+, o caminho para a imagem que será binarizada, o caminho para a imagem binarizad
+a de saída e um 
+\emph on
+flag
+\emph default
+ para indicar se o resultado da imagem binarizada deverá ser salvo ou não.
+\end_layout
+
+\begin_layout Standard
+Assim que a função é iniciada cria-se uma instancia de 
+\emph on
+RockNetModel, 
+\emph default
+descrita na Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockmodel.py"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\emph on
+ 
+\emph default
+e o modelo salvo é carregado dentro dela por meio da função 
+\emph on
+local_state_dict 
+\emph default
+e colocado em modo de
+\emph on
+ 
+\emph default
+estimativa com o método 
+\emph on
+eval
+\emph default
+.
+ Por fim, a função 
+\emph on
+apply_binarizarion, 
+\emph default
+que pertence ao módulo da Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: image.py"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\emph on
+ 
+\emph default
+é executada, retornando o resultado da binarização e a duração do processo.
+ Calcula-se então a porosidade da imagem amostra que é salvo em um arquivo
+ de texto junto com o tempo de execução.
+ Por sim, se for o caso, a imagem resultante é salva.
+\end_layout
+
+\end_body
+\end_document

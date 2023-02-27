@@ -1,0 +1,815 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+\end_preamble
+\options normaltoc, sumarioincompleto
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 1908091853 "andreduartebueno"
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introdução
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Introdução
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+rhead{}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente trabalho desenvolve-se um estudo acerca da aplicação de algoritmos
+ de inteligência artificial no processamento de imagens de rochas reservatório.
+ Mais especificamente, ele é focado no processo de binarização das mesmas,
+ de forma a facilitar a caracterização de propriedades petrofísicas
+\change_inserted 1908091853 1661893612
+, além de verificar os efeitos da aplicação da metodologia com difetentes
+ tipos de usuários
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Standard
+Será apresentado nesse capítulo o escopo do problema abordado, uma pequena
+ introdução sobre o tema, os objetivos do trabalho e a organização deste
+ documento.
+\end_layout
+
+\begin_layout Section
+Escopo do Problema
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Escopo do Problema
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+É cada vez mais comum a aplicação de algoritmos de inteligência artificial
+ nas mais diferentes áreas tecnológica
+\change_inserted 1908091853 1661893626
+s
+\change_unchanged
+, principalmente na engenharia.
+ O uso de algoritmos inteligentes torna factível a execução, em um curto
+ espaço de tempo, de tarefas complexas de classificação e predição, considerando
+ um treinamento prévio realizado por humanos.
+ Métodos dessa natureza já haviam sido previstos há décadas, mas somente
+ com o aumento exponencial da capacidade de processamento dos computadores
+ e a diminuição de seu custo isso tem se tornado possível.
+\change_inserted 1908091853 1661893676
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661893708
+acho que vale citar que na última década houve um crescimento muito grande
+ das técnicas de IA [com referencias]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+O uso dessas metodologias se torna muito pertinente na geologia, na petrofísica,
+ e em especial na engenharia de reservatórios, uma vez que a capacidade
+ de prever e delimitar a capacidade produtiva do reservatório é essencial
+ no âmbito econômico.
+ Ter conhecimento das propriedades físicas das rochas, como porosidade
+\change_inserted 1908091853 1661893771
+,
+\change_deleted 1908091853 1661893770
+ e
+\change_unchanged
+ permeabilidade
+\change_inserted 1908091853 1661893800
+, fatores de forma, e tortuosidade
+\change_unchanged
+, ajudam nesse processo, já que são parâmetros essenciais na simulação e
+ predição da capacidade produtiva dos reservatórios, além de trazer informações
+ importantes acerca das heterogeneidades que formam tais estruturas.
+ Métodos como análise petrofísica de testemunhos são extremamente úteis
+ nesses aspecto
+\change_inserted 1908091853 1661893818
+s
+\change_unchanged
+, muitas vezes demandam um custo muito alto para serem realizadas devido
+ aos equipamentos utilizados no processo, como porosímetro e permeâmetro,
+ mas principalmente devido o custo para obter 
+\change_deleted 1908091853 1661893844
+as 
+\change_unchanged
+amostras
+\change_inserted 1908091853 1661893848
+ cilíndricas
+\change_unchanged
+.
+ Além disso alguns desses ensaios são destrutivos, logo, o objeto de estudo
+ é perdido depois que o 
+\change_deleted 1908091853 1661893868
+estudo
+\change_inserted 1908091853 1661893868
+ensaio
+\change_unchanged
+ é concluído.
+
+\change_inserted 1908091853 1661893884
+ Como exemplo a porosimetria a mercúrio.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Os recentes avanços no campo da tecnologia de imageamento torna emergente
+ a análise de rochas por meio de imagens digitais.
+ Microtomógrafos e nanotomógrafos permitem uma análise não destrutiva dos
+ testemunhos e ajudam a construir um entendimento mais completo acerca dos
+ processos físicos em meios porosos.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Conhecimentos-de-Base"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ilustra de forma simples o procedimento utilizado na análise de imagens
+ de rochas bidimensionais.
+ Equipamentos como o acelerador de partículas Sírius (
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.lnls.cnpem.br/sirius/"
+literal "false"
+
+\end_inset
+
+) permitem obter muitas imagens com ótima resolução num curto espaço de
+ tempo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/0-sequencia-processos-conhecimentos-base.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conhecimentos de Base para Análise de Imagens de Rochas Reservatório 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Conhecimentos-de-Base"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rego2010desenvolvimento,adb-analise-imagem"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O processo se inicia com a aquisição da amostra, seja um testemunho ou uma
+ amostra de calha, que logo em seguida é limpa, polida e passa por um processo
+ de impregnação.
+ As imagens das rochas nesse caso são produzidas em um microscópio óptico
+ ou eletrônico a partir das lâminas obtidas após o polimento.
+ A partir desse ponto todo o procedimento passa a ser realizado no computador,
+ onde as imagens passam por 
+\change_deleted 1908091853 1661894564
+uma
+\change_unchanged
+ etapa
+\change_inserted 1908091853 1661894566
+s
+\change_unchanged
+ 
+\change_deleted 1908091853 1661894567
+crítica
+\change_unchanged
+ de processamento.
+ Primeiramente, no pré-processamento, alguns problemas podem ser corrigidos
+ por meio de filtros.
+ Todavia alguns métodos de pré-processamento podem acabar afetando, em alguns
+ casos, o resultado para propriedades físicas que são dependente da geometria
+ porosa 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{leu2014fast}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Logo depois, na segmentação, o objetivo é, na maioria dos casos
+\change_inserted 1908091853 1661894617
+ aplicados a engenharia de reservatórios
+\change_unchanged
+, separar a fase porosa da fase granular.
+ Em muitos casos são utilizadas técnicas que limitam o nível de cinza em
+ uma imagem controlando o 
+\emph on
+thresholding
+\change_inserted 1908091853 1661894631
+
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661894658
+já foi definido o que é? se não precisa definir aqui; pode colocar nota
+ de rodapé
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ Contudo em estruturas com geometrias mais complexas esses métodos em geral
+ não trazem bons resultados 
+\change_deleted 1908091853 1661894673
+sozinhos
+\change_unchanged
+ e acabam dependendo de etapas adicionais 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{iassonov2009segmentation}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+São vários os fatores que podem afetar a qualidade 
+\change_inserted 1908091853 1661894769
+dos parâmetros a serem medidos
+\change_deleted 1908091853 1661894778
+da etapa de segmentação
+\change_unchanged
+, entre eles:
+\end_layout
+
+\begin_layout Enumerate
+A qualidade das amostras (se foram corretamente coletadas, se são em quantidade
+ para termos uma boa estatística).
+\end_layout
+
+\begin_layout Enumerate
+A qualidade do processo de impregnação, polimento e preparação das lâminas.
+\end_layout
+
+\begin_layout Enumerate
+A qualidade das imagens obtidas (em 2D ou 3D).
+\end_layout
+
+\begin_layout Enumerate
+A qualidade do usuário que realiza a etapa de segmentação usando rochas
+ digitais.
+\end_layout
+
+\begin_layout Standard
+O procedimento de caracterização corresponde à obtenção de informações sobre
+ as propriedades da rochas por meio da aplicação de função de autocorrelação,
+ medição do tamanho dos poros e a distribuição dos mesmos.
+\end_layout
+
+\begin_layout Standard
+São nessas três últimas etapas que a aplicação de inteligência artificial
+ pode ser extremamente proveitosa.
+ Com o uso de redes neurais, por exemplo, é possível treinar um algorítmo
+ capaz de reconhecer padrões nas imagens de rochas e assim facilitar o processo
+ de binarização 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{rego2010desenvolvimento}
+\end_layout
+
+\end_inset
+
+ ou realizar uma quantificação entre a permeabilidade e caminhos ótimos
+ entre os poros 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{van2016machine}
+\end_layout
+
+\end_inset
+
+.
+ Florestas Aleatórias, um modelo de aprendizagem de máquina baseado em árvores
+ de decisão, permitem obter classificações mineralógicas dos grãos presentes
+ nas lâminas petrográficas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{rubo2019digital}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Redes neurais convolucionais vem sendo utilizadas nos últimos anos para
+ a análise de uma extensa gama de problemas envolvendo reconhecimento facial,
+ classificação de imagens, detecção de borda e segmentação semântica 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{simonyan2014very, taigman2014deepface, goodfellow2016deep, lin2016efficient
+}
+\end_layout
+
+\end_inset
+
+.
+ No campo da pesquisa da engenharia de reservatórios, as redes convolucionais
+ tem sido utilizadas para estimar propriedades como porosidade, tamanho
+ médio de grão e número de coordenação a partir não apenas de imagens 2D
+ de lâminas finas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{alqahtani2018deep}
+\end_layout
+
+\end_inset
+
+, mas também com imagens 3D provenientes de microtomógrafos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{sudakov2019driving}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver e aplicar um modelo de rede neural capaz de segmentar uma amostra
+ de rocha digital e estudar o efeito do treinamento/conhecimento do usuário
+ na obtenção de resultados.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estudar diferentes métodos de aprendizagem de maquina e aprendizagem profundas
+ aplicadas à análise de imagens.
+\end_layout
+
+\begin_layout Itemize
+Comparar resultados obtidos com aqueles já apresentados na literatura.
+\end_layout
+
+\begin_layout Itemize
+Desenvolvimento de uma aplicação em C++ e QT para anotação de regiões de
+ interesse em imagens de rocha digital.
+\end_layout
+
+\begin_layout Itemize
+Desenvolvimento de scripts em Python para a realização do treinamento das
+ redes neurais e aplicação do modelo gerado nas imagens de rocha reservatório.
+\end_layout
+
+\begin_layout Itemize
+Utilização da biblioteca 
+\emph on
+PyTorch
+\emph default
+ para a criação dos modelos de inteligência artificial.
+\end_layout
+
+\begin_layout Itemize
+Uso do softwares desenvolvido por diferentes grupos de usuários para verificar
+ a diferença nos resultados em função do treinamento prévio do usuário.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Organização do Documento
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Organização do Documento
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Organizacao-do-Documento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta seção a organização do documento.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 2, 
+\begin_inset Quotes eld
+\end_inset
+
+Revisão dos Conceitos e Modelos a Serem Utilizados
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se um conjunto de conceitos e modelos desenvolvidos por outros
+ autores mas que estão diretamente relacionados a este trabalho e que serão
+ amplamente utilizados.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 3, 
+\begin_inset Quotes eld
+\end_inset
+
+Revisão Bibliográfica
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se uma revisão bibliográfica detalhada dos trabalhos, técnicos
+ e científicos relacionados ao desenvolvimento de métodos de inteligência
+ artificial relacionados à segmentação de imagens de rochas reservatórios.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 4, 
+\begin_inset Quotes eld
+\end_inset
+
+Metodologia
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se a metodologia científica a ser utilizada no desenvolvimento
+ deste trabalho.
+ Inclui-se informações sobre motivação, área da pesquisa, instrumentos (materiai
+s, equipamentos, softwares) utilizados, limitações do tema, pressupostos
+ e hipóteses simplificadoras.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 5, 
+\begin_inset Quotes eld
+\end_inset
+
+Desenvolvimento
+\begin_inset Quotes erd
+\end_inset
+
+, é mostrado o caminho realizado para o desenvolvimento da ferramenta de
+ anotação de regiões, a coleta dos dados a partir das imagens obtidas em
+ laboratório, e dos os 
+\emph on
+scripts
+\emph default
+ para o treinamento da rede neural e aplicação do modelo sobre estas imagens.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 6, 
+\begin_inset Quotes eld
+\end_inset
+
+Resultados
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se os resultados obtidos a partir da aplicação dos modelos de
+ inteligência artificial sobre a imagens de rocha reservatório.
+ Além de tabelas com os resultados obtidos por diferentes usuários e grupos
+ de usuários.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 7, 
+\begin_inset Quotes eld
+\end_inset
+
+Conclusões
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se as conclusões e sugestões para trabalhos futuros.
+\end_layout
+
+\begin_layout Standard
+No Apêndice A, 
+\begin_inset Quotes eld
+\end_inset
+
+Manual do Desenvolvedor
+\begin_inset Quotes erd
+\end_inset
+
+, são apresentados os códigos-fonte desenvolvidos para o projeto.
+\end_layout
+
+\begin_layout Standard
+No Apêndice B, 
+\begin_inset Quotes eld
+\end_inset
+
+Manual do Usuário
+\begin_inset Quotes erd
+\end_inset
+
+, são mostrados os manuais de utilização dos programas desenvolvidos.
+\end_layout
+
+\end_body
+\end_document

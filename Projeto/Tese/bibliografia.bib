@@ -1,0 +1,1038 @@
+%--------------------------------------------------------------------
+% NAME: andre.bib (18/02/2002)
+%
+% O que � um arquivo BiBTeX?
+% � um arquivo em modo texto (tipo ASCII), que inclui refer�ncias completas para os
+% trabalhos (artigos/relat�rios/teses/etc) a serem citados em sua monografia/disserta��o/tese.
+%
+% Porque usar?
+% A vantagem de usar uma base de dados com as referencias bibliogr�ficas
+% (como este arquivo), � que seu editor cient�fico (ex: o LyX) 
+% poder� gerar as cita��es nos mais variados formatos acad�micos.
+%
+% Como fa�o para usar?
+% No caso do LyX(2.0.2), voc� insere a base bibliogr�fica usando:
+% Lyx->Inserir->Listas e Indices->Bibliografia BiBTeX
+%
+% INSTRU��ES:
+% 0- Use o find (crtl-s ##)  para localizar as diferentes se��es desta base de dados
+%    para pr�ximo �tem basta digitar ctrl-s novamente (no emacs!).
+% 1-Use o emacs ou um editor simples para editar este arquivo
+%   Pode acentuar normalmente, usando ��,,; 
+
+% 2-Use o emacs (menu BIBTEX) para verificar a consistencia das entradas
+% Se tiver alguma inconsist�ncia o emacs deve informar.
+
+% 3-Use o programa bibtool para gerar sa�da formatada.
+% ex: bibtool bibliografia
+
+% 4-Use as entradas normalmente no Lyx ou em outro editor tex.
+
+% 5-Se estiver no GNU/Linux, verifique se o arquivo .bib esta no formato do Unix. 
+% Use o programa dos2unix para converter arquivos do dos/windows para o GNU/Linux.
+% Use o programa unix2dos para converter arquivos do GNU/Linux para dos/windows.
+
+%   Para eliminar caracteris iso, e deixar somente ASCII, use o bibtool.
+%     bibtool -r iso2tex -i iso.bib -o ascii.bib
+
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+% Para facilitar a localizacao das chaves, defina um padrao, como exemplo:
+% adb    - artigos pessoais
+% imgan  - artigos de an�lise de imagem
+% pm     - artigos sobre meios porosos
+% rec    - artigos reconstru��o
+% perc   - artigos percola��o 
+% perm   - artigos permeabilidade
+% me     - artigos multi-escala
+% prob   - artigos probabilidade, processos estoc�sticos
+% microt - artigos micro tomografia
+% numan  - artigos sobre m�todos num�ricos 
+% math   - artigos matem�ticos
+% sl     - software livre
+% prog   - artigos/manuais programa��o
+% hst    - artigos histerese
+% prog-cpp
+% prog-HOWTO
+% prog-linux
+% prog-uml
+% prog-paralela
+% prog-xml
+% prog-interface
+%--------------------------------------------------------------------
+
+% Exemplos:
+%  author =       "W. W. Howells",
+%  author =       "G. B. Johnson and W. W. Howells and A. N. Other",
+%  author =       "Firstname Jones and Firstname Norman and Firstname Hazel and Firstname Robinson",
+%  author =       "sobrenome, nome",
+% Para preservar, isto e, manter um nome use {Nome}
+
+% Defini��o de strings
+@string{LMPT   = {Laboratorio de Meios Porosos e Propriedades Termofisicas}}
+@String{UFSC   = {Universidade Federal de Santa Catarina}}
+@String{LENEP  = {Laboratorio de Engenharia e Exploracao de Petroleo}}
+@String{UENF   = {Universidade Estadual do Norte Fluminense}}
+
+%--------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------
+% ## MESTRADO,  DOUTORADO, CONCURSOS  Andre
+%--------------------------------------------------------------------
+@PhdThesis{adb-tese,
+  author = 	 {Andre Duarte Bueno},
+  title = 	 {Estudo Geometrico das Representaoees Tridimensionais da Estrutura Porosa e Grafo de 
+                  Conexao Serial Para a Determinacao da Permeabilidade Intrinseca de Rochas-Reservatorio de Petroleo},
+  school = 	 {UFSC},
+  year = 	 {2001},
+  month = 	 {8},
+  key = 	 {rec-adb-tese}
+}
+
+% incluir memorial UENF
+% incluir projeto UENF
+
+@mastersthesis{adb-mestrado,
+  author	= {Andre Duarte Bueno},
+  title		= {Transferencia de Calor e Umidade em Telhas:
+		  Simulacao e Analise Experimental},
+  school	= {Programa de Pos-Graduacao em Engenharia Civil da Universidade Federal de Santa Catarina},
+  year		= {1994},
+  type		= {Tese de Mestrado},
+  address	= {Florianopolis},
+  month		= {agosto},
+  note		= {Nota},
+  key		= {Transferencia de Calor, Telhas, tiles, meios porosos, transport in porous media}
+}
+
+
+% Monografia concurso
+@TechReport{adb-monografia-ufsc,
+  author = 	 {Andre Duarte Bueno},
+  title = 	 {Metodo de Reconstrucao da Gaussiana Truncada 2: Analise das Representacoes Obtidas e Resultados},
+  institution =  {UFSC},
+  year = 	 {2001},
+  key = 	 {rec-adb-monografia-ufsc}
+}
+
+%--------------------------------------------------------------------
+% ## Artigos em revistas Andre
+%--------------------------------------------------------------------
+@article{adb-thirdmasonry,
+  author	= {Andre Duarte Bueno and Paulo Cesar Philippi and Roberto Lamberts},
+  title		= {Influence of Water Vapour Sorption on the Thermal
+		  Behavior of Mortar Samples},
+  journal	= {Proceedings of the Third Internacional Masonry Conference},
+  year		= {1994},
+  Address	= {London},
+  pages		= {2-54},
+ month		= {March}
+}
+
+%--------------------------------------------------------------------
+% ## Artigos em congressos 
+%--------------------------------------------------------------------
+@inproceedings{adb-zonaconforto,
+  author	= {Andre Duarte Bueno and Roberto Lamberts},
+  title		= {Proposta de Zona de Conforto na Carta Psicometrica},
+  publisher	= {Anais do I Encontro Nacional de Normalizacao  Ligada ao Uso Racional de Energia e ao Conforto Ambiental em Edificacoes},
+  address	= {Florianopolis},
+  year		= {1991}
+}
+
+%--------------------------------------------------------------------
+% ## Manuais 
+%--------------------------------------------------------------------
+@manual{adb-prog-apostilaprogramacao-v03,
+  author	= {Andre Duarte Bueno},
+  title		= {Apostila de Programacao Orientada a Objeto},
+  organization	= {UFSC-EMC-Laboratorio de Meios Porosos e Propriedades Termofisicas},
+  address	= {Florianopolis},
+  year		= {1997}
+}
+
+%--------------------------------------------------------------------
+% ## N�o publicado 
+%--------------------------------------------------------------------
+@unpublished{adb-prog-simulacaotelha,
+  author	= {Andre Duarte Bueno and Paulo Cesar Philippi},
+  title		= {Simulacoes da Transferencia de Calor e Umidade, em Telhas Expostas ao Meio Ambiente},
+  year		= {1996},
+  key		= {Heat and Mass Transfer in Tiles, porous media, mass  transfer},
+  note          = {Incompleto}
+}
+
+%--------------------------------------------------------------------
+% ## Relat�rio Andre
+%--------------------------------------------------------------------
+
+@techreport{adb-rel2003,
+  author	= {Fernando S. Moraes and Andre Duarte Bueno},
+  title		= {Relatorio Individual do Projeto: Inferencia Sismica Elastica Aplicada a Problemas de Caracterizacao de Reservatorios},
+  institution	= {Laboratorio De Engenharia e Exploracao de Petroleo- LENEP},
+  year		= {2003},
+  type		= {Relatorio},
+  number	= {1}
+}
+
+%--------------------------------------------------------------------
+% Livros
+%--------------------------------------------------------------------
+
+%-Programação--------------------------------------------------------
+
+@Book{adb-prog-livroCpp,
+  author = 	 {Andre Duarte Bueno},
+  title = 	 {Programacao Orientada a Objeto com C++ - Aprenda a Programar em Ambiente Multiplataforma com Software Livre},
+  publisher = 	 {Novatec},
+  year = 	 {2003},
+  address = 	 {Sao Paulo}
+}
+
+@Book{adb-analise-imagem,
+  author = 	 {Andre Duarte Bueno},
+  title = 	 {Apostila da Disciplina: LEP01506 Análise de Imagens Aplicada},
+}
+
+%-Engenharia de Reservatórios----------------------------------------
+
+@book{rosa2006engenharia,
+  title={Engenharia de reservat{\'o}rios de petr{\'o}leo},
+  author={Rosa, Adalberto Jos{\'e} and de Souza Carvalho, Renato and Xavier, Jos{\'e} Augusto Daniel},
+  year={2006},
+  publisher={Interci{\^e}ncia}
+}
+
+@book{terry2015applied,
+  title={Applied petroleum reservoir engineering},
+  author={Terry, Ronald E and Rogers, J Brandon and Craft, Benjamin Cole},
+  year={2015},
+  publisher={Pearson Education}
+}
+
+@book{peaceman2000fundamentals,
+  title={Fundamentals of numerical reservoir simulation},
+  author={Peaceman, Donald W},
+  year={2000},
+  publisher={Elsevier}
+}
+
+@book{dake1983fundamentals,
+  title={Fundamentals of reservoir engineering},
+  author={Dake, Laurence Patrick},
+  year={1983},
+  publisher={Elsevier}
+}
+
+@misc{cosse1993basics,
+  title={Basics of Reservoir Engineering (Institut Francais Du Petrole Publications)},
+  author={Cosse, Rene},
+  year={1993},
+  publisher={Technip}
+}
+
+@article{lake1989enhanced,
+  title={Enhanced oil recovery},
+  author={Lake, Larry W},
+  year={1989},
+  publisher={Old Tappan, NJ; Prentice Hall Inc.}
+}
+
+@book{lake2006petroleum,
+  title={Petroleum engineering handbook},
+  author={Lake, Larry W and others},
+  year={2006},
+  publisher={Soxciety of Petroleum Enginners}
+}
+
+@book{archer2012petroleum,
+  title={Petroleum engineering: principles and practice},
+  author={Archer, John S and Wall, Colin G},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{amyx1960petroleum,
+  title={Petroleum reservoir engineering physical properties},
+  author={Amyx, James and Bass, Dantel and Whiting, Robert L and others},
+  year={1960}
+}
+
+@book{ezekwe2010petroleum,
+  title={Petroleum reservoir engineering practice},
+  author={Ezekwe, Nnaemeka},
+  year={2010},
+  publisher={Pearson Education}
+}
+
+@misc{jamal2006petroleum,
+  title={Petroleum reservoir simulation: a Basic Approach},
+  author={Jamal, H and SM, Farouq Ali and M Rafiq, Islam and others},
+  year={2006},
+  publisher={Gulf Publishing Company}
+}
+
+@book{ahmed2018reservoir,
+  title={Reservoir engineering handbook},
+  author={Ahmed, Tarek},
+  year={2018},
+  publisher={Gulf professional publishing}
+}
+
+@book{mccain2017properties,
+  title={Properties of petroleum fluids},
+  author={{McCain Jr.}, William D},
+  year={2017},
+  publisher={PennWell Corporation}
+}
+
+@article{cunha2012caracterizaccao,
+  title={Caracteriza{\c{c}}{\~a}o de sistemas porosos de rochas reservat{\'o}rio de petr{\'o}leo a partir da extra{\c{c}}{\~a}o de redes poro-liga{\c{c}}{\~o}es},
+  author={Cunha, Andre Rafael and others},
+  year={2012},
+  publisher={Florian{\'o}polis}
+}
+
+@article{castelo2013estimativa,
+  title={Estimativa de porosidade em l{\^a}minas petrogr{\'a}ficas atrav{\'e}s da morfologia matem{\'a}tica bin{\'a}ria},
+  author={CASTELO, Fernando Walleson Louzada and others},
+  year={2013},
+  publisher={Universidade Federal do Par{\'a}}
+}
+
+@article{riccomini2012pre,
+  title={Pr{\'e}-sal: geologia e explora{\c{c}}{\~a}o},
+  author={Riccomini, Claudio and Sant, Lucy Gomes and Tassinari, Colombo Celso Gaeta and others},
+  journal={Revista Usp},
+  number={95},
+  pages={33--42},
+  year={2012}
+}
+
+
+
+%-Processmento Digital de Imagens------------------------------------
+
+@book{paris2009bilateral,
+  title={Bilateral filtering: Theory and applications},
+  author={Paris, Sylvain and Kornprobst, Pierre and Tumblin, Jack and Durand, Fr{\'e}do},
+  year={2009},
+  publisher={Now Publishers Inc}
+}
+
+@book{szeliski2010computer,
+  title={Computer vision: algorithms and applications},
+  author={Szeliski, Richard},
+  year={2010},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{bhuyan2019computer,
+  title={Computer vision and image processing: Fundamentals and applications},
+  author={Bhuyan, Manas Kamal},
+  year={2019},
+  publisher={CRC Press}
+}
+
+@book{nixon2019feature,
+  title={Feature extraction and image processing for computer vision},
+  author={Nixon, Mark and Aguado, Alberto},
+  year={2019},
+  publisher={Academic press}
+}
+
+@book{distante2020handbook,
+  title={Handbook of Image Processing and Computer Vision},
+  author={Distante, Arcangelo and Distante, Cosimo and Distante and Wheeler},
+  year={2020},
+  publisher={Springer}
+}
+
+@book{velho2009image,
+  title={Image processing for computer graphics and vision},
+  author={Velho, Luiz and Frery, Alejandro C and Gomes, Jonas},
+  year={2009},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{phillips1994image,
+  title={Image processing in C},
+  author={Phillips, Dwayne},
+  volume={724},
+  year={1994},
+  publisher={R \& D Publications Lawrence}
+}
+
+@misc{gonzalez2010processamento,
+  title={Processamento Digital de Imagens. Book},
+  author={Gonzalez, RC and Woods, RE},
+  year={2010},
+  publisher={São Paulo: Pearson Pretience Hall}
+}
+
+@book{gomes2015fourier,
+  title={From Fourier analysis to wavelets},
+  author={Gomes, Jonas},
+  year={2015},
+  publisher={Springer}
+}
+
+%-Machine Learning e Inteligência Artificial-------------------------
+
+@book{goodfellow2016deep,
+  title={Deep learning},
+  author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron and Bengio, Yoshua},
+  volume={1},
+  number={2},
+  year={2016},
+  publisher={MIT press Cambridge}
+}
+
+@inproceedings{murray2014generalized,
+  title={Generalized max pooling},
+  author={Murray, Naila and Perronnin, Florent},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={2473--2480},
+  year={2014}
+}
+
+@article{jin2014flattened,
+  title={Flattened convolutional neural networks for feedforward acceleration},
+  author={Jin, Jonghoon and Dundar, Aysegul and Culurciello, Eugenio},
+  journal={arXiv preprint arXiv:1412.5474},
+  year={2014}
+}
+
+@article{srivastava2014dropout,
+  title={Dropout: a simple way to prevent neural networks from overfitting},
+  author={Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+  journal={The journal of machine learning research},
+  volume={15},
+  number={1},
+  pages={1929--1958},
+  year={2014},
+  publisher={JMLR. org}
+}
+
+
+@article{DBLP:journals/corr/SzegedyVISW15,
+  author    = {Christian Szegedy and
+               Vincent Vanhoucke and
+               Sergey Ioffe and
+               Jonathon Shlens and
+               Zbigniew Wojna},
+  title     = {Rethinking the Inception Architecture for Computer Vision},
+  journal   = {CoRR},
+  volume    = {abs/1512.00567},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.00567},
+  eprinttype = {arXiv},
+  eprint    = {1512.00567},
+  timestamp = {Mon, 13 Aug 2018 16:49:07 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/SzegedyVISW15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@book{nielsen2015neural,
+  title={Neural networks and deep learning},
+  author={Nielsen, Michael A},
+  volume={25},
+  year={2015},
+  publisher={Determination press San Francisco, CA}
+}
+
+@book{chollet2018deep,
+  title={Deep learning with Python},
+  author={Chollet, Francois and others},
+  volume={361},
+  year={2018},
+  publisher={Manning New York}
+}
+
+@book{james2013introduction,
+  title={An introduction to statistical learning},
+  author={James, Gareth and Witten, Daniela and Hastie, Trevor and Tibshirani, Robert},
+  volume={112},
+  year={2013},
+  publisher={Springer}
+}
+
+@article{ehlers2003introduccao,
+  title={Introdu{\c{c}}{\~a}o {\`a} Infer{\^e}ncia bayesiana},
+  author={Ehlers, Ricardo Sandes},
+  journal={URL: http://www. leg. ufpr. br/\% 7Epaulojus/CE227/ce227. pdf},
+  year={2003}
+}
+
+@book{shukla2018machine,
+  title={Machine learning with TensorFlow},
+  author={Shukla, Nishant and Fricklas, Kenneth},
+  year={2018},
+  publisher={Manning Greenwich}
+}
+
+@book{haykin2007redes,
+  title={Redes neurais: princ{\'\i}pios e pr{\'a}tica},
+  author={Haykin, Simon},
+  year={2007},
+  publisher={Bookman Editora}
+}
+
+@book{murphy2012machine,
+  title={Machine learning: a probabilistic perspective},
+  author={Murphy, Kevin P},
+  year={2012},
+  publisher={MIT press}
+}
+
+@book{bishop2006pattern,
+  title={Pattern recognition and machine learning},
+  author={Bishop, Christopher M},
+  year={2006},
+  publisher={springer}
+}
+
+@misc{gccLinkOptions,
+  title = {{GCC, the GNU Compiler Collection} Options for Linking},
+  howpublished = {\url{https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html}},
+  note = {Accessed: 2022-05-30}
+}
+
+@article{de2015exploration,
+  title={An exploration of softmax alternatives belonging to the spherical loss family},
+  author={De Brebisson, Alexandre and Vincent, Pascal},
+  journal={arXiv preprint arXiv:1511.05042},
+  year={2015}
+}
+
+@incollection{singer2022command,
+  title={The Command Line Interface},
+  author={Singer, Adam B},
+  booktitle={Practical C++ Design},
+  pages={129--154},
+  year={2022},
+  publisher={Springer}
+}
+
+@article{gaspari2006caracterizaccao,
+  title={Caracteriza{\c{c}}{\~a}o de microestruturas porosas a partir da an{\'a}lise de imagens digitais: permeabilidade intr{\'\i}nseca e fator de forma{\c{c}}{\~a}o},
+  author={Gaspari, Henrique Cesar de and others},
+  year={2006},
+  publisher={Florian{\'o}polis, SC}
+}
+
+
+@article{ryan1997intrusion,
+  title={Intrusion detection with neural networks},
+  author={Ryan, Jake and Lin, Meng-Jang and Miikkulainen, Risto},
+  journal={Advances in neural information processing systems},
+  volume={10},
+  year={1997}
+}
+
+@article{baker2008optimisation,
+  title={Optimisation of pedotransfer functions using an artificial neural network ensemble method},
+  author={Baker, L and Ellison, D},
+  journal={Geoderma},
+  volume={144},
+  number={1-2},
+  pages={212--224},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{jaech2016domain,
+  title={Domain adaptation of recurrent neural networks for natural language understanding},
+  author={Jaech, Aaron and Heck, Larry and Ostendorf, Mari},
+  journal={arXiv preprint arXiv:1604.00117},
+  year={2016} 
+}
+
+@book{suguio2003geologia,
+  title={Geologia sedimentar},
+  author={Suguio, Kenitiro},
+  year={2003},
+  publisher={Editora Blucher}
+}
+
+@book{scholle2003color,
+  title={A color guide to the petrography of carbonate rocks: grains, textures, porosity, diagenesis, AAPG Memoir 77},
+  author={Scholle, Peter A and Ulmer-Scholle, Dana S},
+  volume={77},
+  year={2003},
+  publisher={AAPG}
+}
+
+
+%--------------------------------------------------------------------
+% ## Teses
+%--------------------------------------------------------------------
+
+@PhDThesis{tese-nathan,
+  author	= {Nathan  Mendes},
+  title		= {Modelos Para Previsao da Transferencia de Calor e de Umidade em Elementos Porosos de Edificacoes},
+  school	= {Universidade Federal de Santa Catarina, Programa de Pos-Graduacao em Engenharia Mecanica},
+  year		= {1997},
+  type		= {Tese de Doutoramento},
+  address	= {Florianopolis},
+  month		= {8}
+}
+
+@phdthesis{rego2010desenvolvimento,
+  title={Desenvolvimento de Metodo de Binarizacao para Analise de Rochas Reservatorio Tipicas da Bacia de Campos},
+  author={Rego, Eneida Arendt and Bueno, Orientador Andre Duarte},
+  year={2010},
+  school={Dissertacao (Msc Dissertation)—UENF/LENEP}
+}
+
+@article{bellini2019caracterizaccao,
+  title={Caracteriza{\c{c}}{\~a}o tridimensional do sistema poroso e categoriza{\c{c}}{\~a}o de rochas carbon{\'a}ticas com aprendizado de m{\'a}quina},
+  author={Bellini, Odair Jos{\'e} and others},
+  year={2019}
+}
+
+@article{bomfim2020ferramenta,
+  title={Ferramenta para caracteriza{\c{c}}{\~a}o de poros e fraturas em imagens microtomogr{\'a}ficas de amostras de reservat{\'o}rios de petr{\'o}leo},
+  author={Bomfim, Let{\'\i}cia da Silva and others},
+  year={2020},
+  publisher={[sn]}
+}
+
+@article{kuroda2016tecnicas,
+  title={T{\'e}cnicas de aprendizagem de m{\'a}quina bio-inspiradas aplicadas ao estudo de rochas reservat{\'o}rio},
+  author={Kuroda, Michelle Chaves and others},
+  year={2016},
+  publisher={[sn]}
+}
+
+@article{plucenio2016caracterizaccao,
+  title={Caracteriza{\c{c}}{\~a}o de rochas reservat{\'o}rio de petr{\'o}leo a partir da modelagem do sistema poroso em rede de poros},
+  author={Plucenio, Daniel Martins and others},
+  year={2016}
+}
+
+@article{puerari2010determinaccao,
+  title={DETERMINA{\c{C}}{\~A}O DA PERMEABILIDADE RELATIVA DE ROCHAS RESERVAT{\'O}RIO COM USO DE M{\'E}TODOS DA AN{\'A}LISE DE IMAGENS},
+  author={PUERARI, LEANDRO},
+  year={2010}
+}
+
+@article{silva2005aplicaccao,
+  title={Uma aplica{\c{c}}{\~a}o de {\'A}rvores de Decis{\~a}o, Redes Neurais e KNN para a Identifica{\c{c}}{\~a}o de Modelos ARMA n{\~a}o Sazonais e Sazonais},
+  author={Silva, LM},
+  journal={Rio de Janeiro. 145p. Tese de Doutorado-Departamento de Engenharia El{\'e}trica, Pontif{\'\i}cia Universidade Cat{\'o}lica do Rio de Janeiro},
+  year={2005}
+}
+
+%--------------------------------------------------------------------
+% Anais de Congressos
+%--------------------------------------------------------------------
+
+@inproceedings{rodriguez2019non,
+  title={Non destructive testing of CMC engine internal parts from X-ray tomographic images},
+  author={Rodriguez, Olivier and Porcher, Thierry and Planes, Valentin and Mecuson, Gautier and Bouvier, Remi},
+  booktitle={9th Int. Conf. Industrial Computed Tomography, Padova, Italy},
+  year={2019}
+}
+
+@InProceedings{pm-brakel-mercurypor,
+  author = 	 {V. J. Brakel and S Modry and M Svata},
+  title = 	 {Mercury Porosimetry: State of the Art},
+  pages = 	 {p.1},
+  year = 	 {1981},
+  publisher = 	 {Powder Technology},
+  volume = 	 {v.29},
+}
+
+@inproceedings{taigman2014deepface,
+  title={Deepface: Closing the gap to human-level performance in face verification},
+  author={Taigman, Yaniv and Yang, Ming and Ranzato, Marc'Aurelio and Wolf, Lior},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1701--1708},
+  year={2014}
+}
+
+@inproceedings{alqahtani2018deep,
+  title={Deep learning convolutional neural networks to predict porous media properties},
+  author={Alqahtani, Naif and Armstrong, Ryan T and Mostaghimi, Peyman and others},
+  booktitle={SPE Asia Pacific oil and gas conference and exhibition},
+  year={2018},
+  organization={Society of Petroleum Engineers}
+}
+
+@inproceedings{lin2016efficient,
+  title={Efficient piecewise training of deep structured models for semantic segmentation},
+  author={Lin, Guosheng and Shen, Chunhua and Van Den Hengel, Anton and Reid, Ian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3194--3203},
+  year={2016}
+}
+
+@inproceedings{hebert2020digital,
+  title={Digital core repository coupled with machine learning as a tool to classify and assess petrophysical rock properties},
+  author={H{\'e}bert, Vanessa and Porcher, Thierry and Planes, Valentin and L{\'e}ger, Marie and Alperovich, Anna and Goldluecke, Bastian and Rodriguez, Olivier and Youssef, Souhail},
+  booktitle={E3S Web of Conferences},
+  volume={146},
+  pages={01003},
+  year={2020},
+  organization={EDP Sciences}
+}
+
+@article{fasnacht2018mmappickle,
+  title={mmappickle: Python 3 module to store memory-mapped numpy array in pickle format},
+  author={Fasnacht, Laurent},
+  journal={Journal of Open Source Software},
+  volume={3},
+  number={26},
+  pages={651},
+  year={2018}
+}
+
+@article{mardia1988spatial,
+  title={A spatial thresholding method for image segmentation},
+  author={Mardia, Kanti V. and Hainsworth, TJ},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={10},
+  number={6},
+  pages={919--927},
+  year={1988},
+  publisher={IEEE}
+}
+
+
+@inproceedings{ma2017image,
+  title={Image analysis of rock thin section based on machine learning},
+  author={Ma, Zheng and Gao, Shichen},
+  booktitle={International Geophysical Conference, Qingdao, China, 17-20 April 2017},
+  pages={844--847},
+  year={2017},
+  organization={Society of Exploration Geophysicists and Chinese Petroleum Society}
+}
+
+@inproceedings{tan2019vanishing,
+  title={Vanishing gradient mitigation with deep learning neural network optimization},
+  author={Tan, Hong Hui and Lim, King Hann},
+  booktitle={2019 7th international conference on smart computing \& communications (ICSCC)},
+  pages={1--4},
+  year={2019},
+  organization={IEEE}
+}
+
+@article{neumannavaliaccao,
+  title={Avalia{\c{c}}{\~a}o em escala de poro de rochas digitais usando plataformas computacionais e experimentais},
+  author={Neumann, Rodrigo and Giro, Ronaldo and Engel, Michael and Steiner, Mathias}
+}
+
+@phdthesis{jones2022effect,
+  title={The effect of heterogeneity in sedimentary properties on fluid flow behaviour at the pore-scale},
+  author={Jones, FE},
+  year={2022},
+  school={University of Nottingham}
+}
+
+
+
+%--------------------------------------------------------------------
+% Artigos
+%--------------------------------------------------------------------
+
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@article{najman1994watershed,
+  title={Watershed of a continuous function},
+  author={Najman, Laurent and Schmitt, Michel},
+  journal={Signal Processing},
+  volume={38},
+  number={1},
+  pages={99--112},
+  year={1994},
+  publisher={Elsevier}
+}
+
+@article{adeleye2022quantitative,
+  title={A quantitative analysis of flow properties and heterogeneity in shale rocks using computed tomography imaging and finite-element based simulation},
+  author={Adeleye, James O and Akanji, Lateef T},
+  journal={Journal of Natural Gas Science and Engineering},
+  pages={104742},
+  year={2022},
+  publisher={Elsevier}
+}
+
+
+@article{jamalian2022toward,
+  title={Toward the standardization of heterogeneity evaluation in carbonate reservoirs: a case study of the central Persian Gulf},
+  author={Jamalian, Adeleh and Tavakoli, Vahid},
+  journal={Arabian Journal of Geosciences},
+  volume={15},
+  number={6},
+  pages={1--22},
+  year={2022},
+  publisher={Springer}
+}
+
+
+@article{lin2018new,
+  title={A new improved threshold segmentation method for scanning images of reservoir rocks considering pore fractal characteristics},
+  author={Lin, Wei and Li, Xizhe and Yang, Zhengming and Lin, Lijun and Xiong, Shengchun and Wang, Zhiyuan and Wang, Xiangyang and Xiao, Qianhua},
+  journal={Fractals},
+  volume={26},
+  number={02},
+  pages={1840003},
+  year={2018},
+  publisher={World Scientific}
+}
+
+@article{krizhevsky2012imagenet,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  journal={Advances in neural information processing systems},
+  volume={25},
+  pages={1097--1105},
+  year={2012}
+}
+
+@Article{perc-ioannidis-chatzis,
+  author	= {M. Ioannidis and I. Chatzis},
+  title		= {Network Modeling of Pore Structure and Transport Properties of Porous Media},
+  journal	= {Chem. Eng. Sci},
+  volume	= {48},
+  pages		= {.951-972},
+  year		= {1993}
+}
+
+@article{mitchell1997does,
+  title={Does machine learning really work?},
+  author={Mitchell, Tom M},
+  journal={AI magazine},
+  volume={18},
+  number={3},
+  pages={11--11},
+  year={1997}
+}
+
+@article{mnih2013playing,
+  title={Playing atari with deep reinforcement learning},
+  author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Graves, Alex and Antonoglou, Ioannis and Wierstra, Daan and Riedmiller, Martin},
+  journal={arXiv preprint arXiv:1312.5602},
+  year={2013}
+}
+
+@article{de2006introduccao,
+  title={Introdu{\c{c}}{\~a}o ao processamento digital de imagens.},
+  author={de Queiroz, Jos{\'e} Eust{\'a}quio Rangel and Gomes, Herman Martins},
+  journal={Rita},
+  volume={13},
+  number={2},
+  pages={11--42},
+  year={2006}
+}
+
+@article{van2016machine,
+  title={Machine learning framework for analysis of transport through complex networks in porous, granular media: a focus on permeability},
+  author={van der Linden, Joost H and Narsilio, Guillermo A and Tordesillas, Antoinette},
+  journal={Physical Review E},
+  volume={94},
+  number={2},
+  pages={022904},
+  year={2016},
+  publisher={APS}
+}
+
+@article{simonyan2014very,
+  title={Very deep convolutional networks for large-scale image recognition},
+  author={Simonyan, Karen and Zisserman, Andrew},
+  journal={arXiv preprint arXiv:1409.1556},
+  year={2014}
+}
+
+
+@article{rubo2019digital,
+author = {Andrello Rubo, Rafael and Carneiro, Cleyton and Michelon, Mateus and Gioria, Rafael},
+year = {2019},
+month = {08},
+pages = {106382},
+title = {Digital petrography: Mineralogy and porosity identification using machine learning algorithms in petrographic thin section images},
+volume = {183},
+journal = {Journal of Petroleum Science and Engineering},
+doi = {10.1016/j.petrol.2019.106382}
+}
+
+@article{leu2014fast,
+  title={Fast X-ray micro-tomography of multiphase flow in berea sandstone: A sensitivity study on image processing},
+  author={Leu, Leon and Berg, Steffen and Enzmann, Frieder and Armstrong, Ryan T and Kersten, Michael},
+  journal={Transport in Porous Media},
+  volume={105},
+  number={2},
+  pages={451--469},
+  year={2014},
+  publisher={Springer}
+}
+
+@article{sudakov2019driving,
+  title={Driving digital rock towards machine learning: Predicting permeability with gradient boosting and deep neural networks},
+  author={Sudakov, Oleg and Burnaev, Evgeny and Koroteev, Dmitry},
+  journal={Computers \& geosciences},
+  volume={127},
+  pages={91--98},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{iassonov2009segmentation,
+author = {Iassonov, Pavel and Gebrenegus, Thomas and Tuller, Markus},
+title = {Segmentation of X-ray computed tomography images of porous materials: A crucial step for characterization and quantitative analysis of pore structures},
+journal = {Water Resources Research},
+volume = {45},
+number = {9},
+pages = {},
+keywords = {X-ray computed tomography, image segmentation, global methods, locally adaptive methods},
+doi = {https://doi.org/10.1029/2009WR008087},
+url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2009WR008087},
+eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2009WR008087},
+abstract = {Nondestructive imaging methods such as X-ray computed tomography (CT) yield high-resolution, three-dimensional representations of pore space and fluid distribution within porous materials. Steadily increasing computational capabilities and easier access to X-ray CT facilities have contributed to a recent surge in microporous media research with objectives ranging from theoretical aspects of fluid and interfacial dynamics at the pore scale to practical applications such as dense nonaqueous phase liquid transport and dissolution. In recent years, significant efforts and resources have been devoted to improve CT technology, microscale analysis, and fluid dynamics simulations. However, the development of adequate image segmentation methods for conversion of gray scale CT volumes into a discrete form that permits quantitative characterization of pore space features and subsequent modeling of liquid distribution and flow processes seems to lag. In this paper we investigated the applicability of various thresholding and locally adaptive segmentation techniques for industrial and synchrotron X-ray CT images of natural and artificial porous media. A comparison between directly measured and image-derived porosities clearly demonstrates that the application of different segmentation methods as well as associated operator biases yield vastly differing results. This illustrates the importance of the segmentation step for quantitative pore space analysis and fluid dynamics modeling. Only a few of the tested methods showed promise for both industrial and synchrotron tomography. Utilization of local image information such as spatial correlation as well as the application of locally adaptive techniques yielded significantly better results.},
+year = {2009}
+}
+
+@article{andra2013digital,
+  title={Digital rock physics benchmarks—Part I: Imaging and segmentation},
+  author={Andr{\"a}, Heiko and Combaret, Nicolas and Dvorkin, Jack and Glatt, Erik and Han, Junehee and Kabel, Matthias and Keehm, Youngseuk and Krzikalla, Fabian and Lee, Minhui and Madonna, Claudio and others},
+  journal={Computers \& Geosciences},
+  volume={50},
+  pages={25--32},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@article{saporetti2018machine,
+  title={Machine learning approaches for petrographic classification of carbonate-siliciclastic rocks using well logs and textural information},
+  author={Saporetti, Camila Martins and da Fonseca, Leonardo Goliatt and Pereira, Egberto and de Oliveira, Leonardo Costa},
+  journal={Journal of Applied Geophysics},
+  volume={155},
+  pages={217--225},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{hu2018overcoming,
+  title={Overcoming the vanishing gradient problem in plain recurrent networks},
+  author={Hu, Yuhuang and Huber, Adrian and Anumula, Jithendar and Liu, Shih-Chii},
+  journal={arXiv preprint arXiv:1801.06105},
+  year={2018}
+}
+
+@article{archie1952classification,
+  title={Classification of carbonate reservoir rocks and petrophysical considerations},
+  author={Archie, Gustave Erdman},
+  journal={Aapg Bulletin},
+  volume={36},
+  number={2},
+  pages={278--298},
+  year={1952},
+  publisher={American Association of Petroleum Geologists (AAPG)}
+}
+
+
+
+%--------------------------------------------------------------------
+% ## Assunto dos artigos abaixo...
+%--------------------------------------------------------------------
+@Article{Pavel-hysteresys,
+  author = 	 {B.Plohr and D. Marchesin and Pavel Bedrikovetsky and P. Krause},
+  title = 	 {Modeling hysteresys in porous media flow via relaxation},
+  journal = 	 {Computacional Geosciences},
+  year = 	 {2001},
+  volume = 	 {5},
+  pages = 	 {225-256}
+}
+
+
+%--------------------------------------------------------------------
+% ## tex/latex
+%--------------------------------------------------------------------
+
+@Book{SL-latex-lyxtut,
+  author = 	 {Amir Karger},
+  title = 	 {O Tutorial de Lyx},
+  year = 	 {2004},
+  address = 	 {},
+  publisher = 	 {LyX Team - http://www.lyx.org}
+}
+
+@Book{SL-latex-lyxUG,
+  editor = 	 {LyX-Team},
+  title = 	 {The LyX User's Guide},
+  year = 	 {2004},
+  address = 	 {},
+  publisher = 	 {LyX Team - http://www.lyx.org}
+}
+
+@Book{SL-latex-lyxEF,
+  editor = 	 {LyX-Team},
+  title = 	 {Extended LyX Features},
+  year = 	 {2004},
+  address = 	 {},
+  publisher = 	 {LyX Team - http://www.lyx.org}
+}
+
+@Book{SL-latex-demo,
+  author = 	 {Klauss Steding-Jessen},
+  title = 	 {Latex demo: Exemplo com Latex 2e},
+  year = 	 {2000},
+  address = 	 {},
+  publisher = 	 {}
+}
+
+@Book{SL-latex-companion,
+  author = 	 {Michel Grossens and Frank Mittelbach and Alexander Samarin},
+  title = 	 {Latex Companion},
+  year = 	 {1993},
+  address = 	 {New York},
+  publisher = 	 {Addison-Wesley}
+}
+
+@Book{SL-latex-Guide2e,
+  author = 	 {Helmut Kopla e Patrick W. Daly},
+  title = 	 {A Guide to Latex 2e},
+  year = 	 {1995},
+  address = 	 {New York},
+  publisher = 	 {Addison-Wesley},
+  edition = 	 {2}
+}
+
+@Book{SL-latex-donald,
+  author = 	 {Donald E. Knuth},
+  title = 	 {The Texbook},
+  year = 	 {1986},
+  address = 	 {},
+  publisher = 	 {Addison-Wesley}
+}
+
+
+@Book{SL-latex-lamport,
+  author = 	 {Leslie Lamport},
+  title = 	 {Latex - A Document Preparation System},
+  year = 	 {1985},
+  address = 	 {},
+  publisher = 	 {Addison-Wesley}
+}
+
+
+
+
+%--------------------------------------------------------------------
+% ## Referencia online
+%--------------------------------------------------------------------
+@ONLINE{RefOnline,
+author = {Doe, Ringo},
+title = {This is a test entry of type {@ONLINE}},
+month = jun,
+year = {2009},
+url = {http://www.test.org/doe/}
+}

@@ -1,0 +1,6647 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master ../../../../../../../Dropbox/05-Gestao/Modelos/1-ModelosDiretorios/ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto-GIT/04-Projeto-Defesa-Poster/01-Projeto/Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 1908091853 "andreduartebueno"
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Revisão de Conceitos 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Revisão de Conceitos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Revisao-de-Conceitos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Revisão dos Modelos a Serem Utilizados} 
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este capítulo apresenta um conjunto de conceitos e modelos desenvolvidos
+ por outros autores e que estão diretamente relacionados a este trabalho,
+ estes conceitos serão utilizados neste trabalho.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+você precisa copiar todos os termos aqui definidos para a nomenclatura
+\change_inserted 1908091853 1661895279
+; e apagar o que não foi utilizado na nomenclatura antiga
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Propriedades das Rochas Reservatórios
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Propriedades-Rochas-Reservatorios"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta seção trata de definir alguns conceitos relacionados às propriedades
+ físicas das rochas reservatório, dentre elas porosidade, permeabilidade,
+ capilaridade.
+\end_layout
+
+\begin_layout Subsection
+Petrofísica
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Petrofísica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por definição, petrofísica é o estudo das propriedades físicas e químicas
+ das rochas detentoras e geradoras de hidrocarbonetos, dos selos, de aquíferos,
+ e os fluidos as percolam, principalmente no que se diz respeito à sistemas
+ porosos, a distribuição de fluidos e as características do escoamento sob
+ essas condições 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ahmed2018reservoir"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Rochas Reservatórios
+\end_layout
+
+\end_inset
+
+Rochas Reservatórios
+\end_layout
+
+\begin_layout Standard
+Em um sistema petrolífero, uma rocha reservatório é, de forma geral, uma
+ estrutura geológica que se torna capaz de armazenar o óleo ou gás que foi
+ gerado ou migrado para a mesma.
+ Para isso ela deve possuir algum tipo de porosidade, de forma que seja
+ possível um fluido poder se acumular ali 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cosse1993basics"
+literal "false"
+
+\end_inset
+
+.
+ Os reservatórios comerciais, em sua grande maioria, são formados por rochas
+ sedimentares clásticas e não clásticas, especialmente arenitos e calcarenitos.
+ No âmbito nacional têm-se como exemplo o pré-sal.
+ Seus reservatórios podem ser considerados principalmente de três tipos:
+ rochas calcárias com coquínas, fraturas em rochas vulcânicas e calcários
+ microbialíticos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "riccomini2012pre"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Os reservatórios de arenitos são, na maioria dos casos, de grande espessura
+ e continuidade lateral, sendo o tipo de rocha-reservatório mais comum.
+ Considerando sua porosidade intergranular, ou seja, aquela formada a partir
+ da porosidade inicial e reduzida após processos de cimentação, observa-se
+ uma porosidade de aproximadamente 10 a 20 %, que pode ser muito maior se
+ for considerada a porosidade gerada por fraturas.
+\end_layout
+
+\begin_layout Standard
+No caso de rochas carbonatadas, ou seja, calcários e dolomitas, a porosidade
+ pode pode ser muitas vezes maior que no caso dos arenitos, dando ao reservatóri
+o uma grande permeabilidade 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rosa2006engenharia"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Porosidade
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Porosidade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A porosidade, do ponto de vista da engenharia de reservatórios, é a medida
+ de espaço disponível para que o petróleo possa ser armazenado 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "archer2012petroleum"
+literal "false"
+
+\end_inset
+
+.
+ É definida, portanto, como a razão entre o volume de espaço vazio e o volume
+ total da rocha e é representado pela variável 
+\begin_inset Formula $\phi[\frac{m³}{m³}]$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Toda vez que incluir um termo coloque o termo, suas unidades SI, e uma descrição.
+ Faça isso quando o termo aparece pela primeira vez.
+ Para sua dissertação estas definições irão para a nomenclatura.
+\end_layout
+
+\end_inset
+
+ na Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:porosidade_absoluta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=\frac{V_{vazios}}{V_{total}}\label{eq:porosidade_absoluta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A porosidade pode ser classificada de acordo com a maneira na qual foi originada.
+ A porosidade primária se desenvolve no momento da deposição sedimentar
+ e é observada nos arenitos como intergranular e nos calcários como intercristal
+ina ou oolítica.
+ Já a porosidade secundária se desenvolve a partir de processos geológicos
+ subsequentes, como a formação fraturas ou pela dissolução da rocha, o que
+ é mais observado em calcários 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lake2006petroleum"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+No estudo da porosidade é comum definir dois conceitos relacionados à forma
+ com a qual os poros se conectam, a porosidade total e efetiva.
+ Na porosidade total
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Porosidade Total
+\end_layout
+
+\end_inset
+
+, considera-se todo o volume de vazios presente em uma rocha, independente
+ se estão isolados ou não.
+ A porosidade efetiva
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Porosidade Efetiva
+\end_layout
+
+\end_inset
+
+ trata da razão entre o volume de poros que estão devidamente interconectados
+\change_inserted 1908091853 1661895652
+ as paredes externas
+\change_unchanged
+ e o volume total.
+ É uma medida que, do ponto de vista da engenharia, é de suma importância,
+ já que está relacionada com o percentual de fluido que possui alguma mobilidade
+ dentro do sistema rochoso 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "terry2015applied"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Em areias muito limpas se, livres de grãos argilosos, a porosidade total
+ chega bem próximo de se igualar à porosidade efetiva.
+ A relação entre a porosidade total e efetiva por meio do modelo representado
+ na Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:porosidade total e efetiva"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cosse1993basics"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi_{total}=\phi_{efetiva}+V_{argilas}\times\phi_{argilas}\label{eq:porosidade total e efetiva}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Saturação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Saturação
+\end_layout
+
+\end_inset
+
+
+\change_inserted 1908091853 1661895351
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661896566
+como não usa saturação/capilaridade/permeabilidade poderia pensar em retirar
+ ou colocar estes itens num apêndice "Propriedades de Rochas Reservatório";
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661895450
+pense em falar mais de porosidade a partir de imagens e quais fatores afetam
+ a qualidade desta medida quando obtida a partir de imagens...
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+A saturação é definida como a fração de volume poroso ocupado por um fluido
+ em particular.
+ No caso de reservatórios, normalmente se observa água, gás ou óleo.
+ Expressando de forma matemática o que se tem é:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{fluido}=\frac{V_{fluido}}{V_{poroso}}.\label{eq: saturação}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De acordo com 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{dake1983fundamentals}
+\end_layout
+
+\end_inset
+
+, acredita-se que os fluidos dentro de um reservatório tenham a muito alcançado
+ um estado de equilíbrio, e portanto estão separados de acordo com sua densidade.
+ Em um escoamento, existe um ponto de saturação do óleo no qual ele permanece
+ parado chamado de saturação crítica do óleo 
+\begin_inset Formula $S_{oc}$
+\end_inset
+
+.
+ A medida que os poros são preenchidos com algum outro fluido, como em um
+ processo de injeção de água ou gás, a saturação chega ao um ponto que se
+ torna maior que a saturação crítica do óleo.
+ Esse ponto é chamado de saturação de óleo residual 
+\begin_inset Formula $S_{or}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Define-se como a saturação de água existente no reservatório, no momento
+ de sua descoberta, como a saturação de água inicial, inata ou conata 
+\begin_inset Formula $S_{wi}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "archer2012petroleum"
+literal "false"
+
+\end_inset
+
+.
+ Durante a produção de óleo, a pressão do reservatório começa a cair, o
+ que dependendo das condições inicias, permite o aumento da saturação de
+ gás no mesmo.
+ Por meio do balanço de materiais dentro da formação é possível inferir
+ uma saturação média do óleo durante a produção.
+ Considerando um reservatório, inicialmente em uma condição subsaturada,
+ com uma pressão maior do que a pressão de bolha do óleo, a saturação do
+ óleo 
+\begin_inset Formula $S_{o}$
+\end_inset
+
+ pode ser calculada aplicando a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Saturação Média do Óleo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{o}=\left(1-\frac{N_{p}}{N}\right)\frac{B_{o}}{B_{oi}}(1-S_{wi}),\label{eq:Saturação Média do Óleo}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $N_{p}[m³]$
+\end_inset
+
+ é o volume de óleo produzido, 
+\begin_inset Formula $N[m³]$
+\end_inset
+
+ é o volume de óleo original, 
+\begin_inset Formula $B_{o}$
+\end_inset
+
+ é o fator volume-formação de óleo, e 
+\begin_inset Formula $B_{oi}$
+\end_inset
+
+ é o fator volume-formação de óleo à pressão inicial.
+\end_layout
+
+\begin_layout Subsection
+Capilaridade
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Capilaridade
+\end_layout
+
+\end_inset
+
+
+\change_inserted 1908091853 1661896303
+, Molhabilidade e Tensão Superficial
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+A capilaridade é um fenômeno observado no interior de meios porosos em decorrênc
+ia da presença de 2 ou mais fluidos, imiscíveis, ocupando o mesmo espaço
+ vazio.
+ Devido à essas condições, a separação desses fluidos não ocorre da forma
+ que se espera, ou seja por meio de diferença de densidades 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rosa2006engenharia"
+literal "false"
+
+\end_inset
+
+.
+ A presença de capilares de diferentes tamanhos torna menos brusca a superfície
+ de separação entre eles, o que provoca a formação de uma zona de transição.
+\end_layout
+
+\begin_layout Standard
+A capilaridade é resultado das interações entre as moléculas dos fluidos,
+ que tendem a ser atraídas em todas às direções pelas moléculas que às cercam,
+ exceto se estiverem na superfície.
+ Nessa região formam uma espécie de membrana elástica que prove resistência
+ a separação.
+\end_layout
+
+\begin_layout Standard
+Em um reservatório o estado de equilíbrio é governado por mecanismos de
+ capilaridade, entre eles a molhabilidade, a tensão interfacial entre fluidos
+ e a pressão capilar nos poros.
+\end_layout
+
+\begin_layout Standard
+A molhabilidade
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Molhabilidade
+\end_layout
+
+\end_inset
+
+ pode ser observada ao se imaginar uma superfície sólida com a presença
+ de dois fluidos imiscíveis sobre ela.
+ Observa-se que no caso desses fluidos serem água e ar, a água tende a se
+ espalhar ao longo da superfície, e o ângulo 
+\begin_inset Formula $\theta$
+\end_inset
+
+ formado entre a conexão entre ela e o sólido é menor que 
+\begin_inset Formula $\nicefrac{\pi}{2}$
+\end_inset
+
+.
+ Então pode se dizer que a água molha mais a superfície sólida que o ar.
+ Agora se o fluido no lugar da água for, por exemplo, mercúrio, o ângulo
+ formado será menor que 
+\begin_inset Formula $\nicefrac{\pi}{2}$
+\end_inset
+
+, e portanto nesse caso, o ar se torna o fluido molhante.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:angulo-de-contato"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ilustra esse fenômeno para o caso da mistura de água e óleo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/angulo-de-contato-oleo-agua.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ângulo de contado formado pela água em relação a uma superfície sólida
+\change_deleted 1908091853 1661948078
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:angulo-de-contato"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rosa2006engenharia"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Tensão Superficial
+\end_layout
+
+\end_inset
+
+tensão superficial 
+\begin_inset Formula $\sigma[dina/cm]$
+\end_inset
+
+ entre a interface de dois fluidos imiscíveis pode ser definida como a força
+ por unidade de comprimento necessária para manter o contato entre ambas
+ às superfícies 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "amyx1960petroleum"
+literal "false"
+
+\end_inset
+
+.
+ Pode-se dizer que é a força que impede o rompimento das membranas formadas
+ por cada um dos fluidos.
+\end_layout
+
+\begin_layout Standard
+Considerando um cilindro de raio 
+\begin_inset Formula $r[m]$
+\end_inset
+
+, imerso em um recipiente contendo um fluido, por exemplo, água, percebe-se
+ que esta tende à ascender até uma determinada altura 
+\begin_inset Formula $h[m]$
+\end_inset
+
+ no cilindro, conforme é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tubo-com-agua"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Também é possível verificar que se forma uma interface esférica entre a
+ água, que aqui é o fluido molhante.
+ A pressão capilar 
+\begin_inset Formula $P_{c}[Pa]$
+\end_inset
+
+ é a diferença de pressão entre os dois ponto 
+\begin_inset Formula $A$
+\end_inset
+
+ e 
+\begin_inset Formula $B$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{c}=P_{A}-P_{B}.\label{eq: pressao-capilar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em uma condição de equilíbrio, a resultante vertical da tensão superficial
+ é igualada à ação da pressão capilar na secção transversal do tubo.
+ A Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: pressao-capilar-funcao-tensao-superficial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+descreve então a pressão capilar para uma superfície cilíndrica em função
+ de seu raio 
+\begin_inset Formula $r$
+\end_inset
+
+ e da tensão superficial 
+\begin_inset Formula $\sigma$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{c}=\frac{2\sigma\cos(\theta)}{r}.\label{eq: pressao-capilar-funcao-tensao-superficial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/tubo-agua-oleo-rosa.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ângulo de contato formado pela água em relação a uma superfície sólida
+\change_deleted 1908091853 1661948082
+.
+
+\change_unchanged
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tubo-com-agua"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: Adaptado de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rosa2006engenharia"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir da formulação dos conceitos de capilaridade e saturação é possível
+ tirar algumas conclusões sobre o assunto.
+ Para uma amostra de rocha saturada com dois fluidos diferentes pode-se
+ observar que o fluido molhante é deslocado se o outro fluido com o qual
+ ele interage exercer sobre ele uma pressão que exceda a pressão capilar
+ dos poros.
+\end_layout
+
+\begin_layout Subsection
+Permeabilidade
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Permeabilidade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A permeabilidade é a propriedade que relaciona a capacidade que a diferença
+ de pressão dentro de uma determinada formação deixar transmitir um fluido.
+ É, em outras palavras, a condutividade de fluidos de um material, ou inverso
+ da resistência que o mesmo oferece à um escoamento 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ezekwe2010petroleum"
+literal "false"
+
+\end_inset
+
+.
+ É uma propriedade importante, uma vez que controla o movimento direcional
+ do fluido e sua vazão.
+\end_layout
+
+\begin_layout Standard
+A estimativa da permeabilidade em um sistema poroso pode ser feita inicialmente
+ por meio de uma simplificação da sua geometria, considerando uma sequência
+ de feixes de capilares.
+ A Equação de 
+\emph on
+Poiseuille
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Equação de 
+\emph on
+Poiseuille
+\end_layout
+
+\end_inset
+
+
+\emph default
+ dita o comportamento de um escoamento viscoso de superfícies cilíndricas
+ concêntricas, de viscosidade 
+\begin_inset Formula $\mu$
+\end_inset
+
+, que se movem em diferentes velocidades 
+\begin_inset Formula $v$
+\end_inset
+
+[m/s].
+ A força viscosa 
+\begin_inset Formula $F$
+\end_inset
+
+[N] que essas superfícies exercem umas sobre as outras em um cilindro de
+ comprimento 
+\begin_inset Formula $L$
+\end_inset
+
+[m] e raio 
+\begin_inset Formula $r$
+\end_inset
+
+[m] é igual à:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F=-\mu A\frac{d\nu}{dx}=-\mu(2\pi rL)\frac{d\nu}{dx}.\label{eq:forças viscosas}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerando que existe, além das forças viscosas, a ação do diferencial
+ de pressão 
+\begin_inset Formula $\Delta P=(p_{1}-p_{2})$
+\end_inset
+
+ sobre a área da secção do cilindro 
+\begin_inset Formula $\pi r^{2}$
+\end_inset
+
+igual a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F_{pressão}=\Delta P\pi r^{2},\label{eq: força diferencia de pressão}
+\end{equation}
+
+\end_inset
+
+sob uma aceleração constante, 
+\begin_inset Formula $F_{visc}=F_{pressão}$
+\end_inset
+
+e portanto,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+d\nu=-\frac{(p_{1}-p_{2})}{2\mu L}rdr.\label{eq: força viscosa igual força pressão}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Integrando a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: força viscosa igual força pressão"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ obtêm-se que,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v=-\frac{(p_{1}-p_{2})}{2\mu L}r^{2}+C_{1},\label{eq:viscosidade}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+é uma constante arbitrária, produto da integração.
+\end_layout
+
+\begin_layout Standard
+Considerando uma condição de não escorregamento na parte do cilindro, ou
+ seja, quando 
+\begin_inset Formula $r=r_{0}\Rightarrow v=0\mid r_{0}=0$
+\end_inset
+
+, a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:viscosidade"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se torna,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v=\frac{\left(r_{0}^{2}-r^{2}\right)\left(p_{1}-p_{2}\right)}{4\mu L}.\label{eq:viscosidade-nao-escorregamento}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se a vazão do fluido ao longo de um elemento com área é igual a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+dq=vdA,\label{eq:vazao elemento infinitesimal}
+\end{equation}
+
+\end_inset
+
+então a vazão como um todo será,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q=\frac{\pi r_{0}^{4}(p_{1}-p_{2})}{8\mu L}.\label{eq:vazao total}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todavia, a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:vazao total"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ tem sua aplicação dificultada devido a irregularidade e a não linearidade
+ dos poros ao longo de uma determinada formação.
+ Sendo assim, ela se torna inaplicável na maioria dos casos mais complexos.
+\end_layout
+
+\begin_layout Standard
+A formulação de 
+\emph on
+Darcy
+\emph default
+, descrita na Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: equação de darcy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para se obter a vazão 
+\begin_inset Formula $q[m^{2}/s]$
+\end_inset
+
+, é utilizada justamente para contornar esse problema, uma vez que parte
+ de uma constatação empírica do fenômeno do escoamento em meios porosos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q=KA\frac{\left(h_{1}-h_{2}\right)}{L},\label{eq: equação de darcy}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $A[m^{2}]$
+\end_inset
+
+ representa a área da secção transversal, 
+\begin_inset Formula $L[m]$
+\end_inset
+
+ o comprimento ou a altura do meio poroso, 
+\begin_inset Formula $h[m]$
+\end_inset
+
+ a altura de água medido pelo manômetro durante o experimento e 
+\begin_inset Formula $K[mD]$
+\end_inset
+
+ é uma constante de proporcionalidade característica do meio e do fluido.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:experiemnto de darcy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra como o experimento foi realizado para se chegar no seguinte resultado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/experimento_darcy.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimento realizado por Darcy para a formulação da Equação da vazão total
+ em um meio poroso
+\change_deleted 1908091853 1661896473
+.
+\change_inserted 1908091853 1661896475
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661896492
+lembre de tirar os pontos de todas as figuras e tabelas; títulos não levam
+ ponto
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:experiemnto de darcy"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rosa2006engenharia"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sob as condições de um fluxo horizontal, isotérmico, laminar e permanente
+ de um fluido de natureza incompressível, homogêneo e de viscosidade invariável
+ com o tempo, ao longo de um meio poroso homogêneo e não reativo, a 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Equação da 
+\emph on
+Darcy
+\end_layout
+
+\end_inset
+
+Equação da 
+\emph on
+Darcy
+\emph default
+ se torna:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q=\frac{kA\Delta P}{\mu L},\label{eq:equacao de darcy final}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $k[md]$
+\end_inset
+
+ é definida como a permeabilidade absoluta do meio poroso e é medida em
+ 
+\emph on
+milidarcy
+\emph default
+ (
+\begin_inset Formula $D$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Essa permeabilidade absoluta
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Permeabilidade Absoluta
+\end_layout
+
+\end_inset
+
+ é intrínseca ao meio poroso e independe do tipo de fluido ali presente.
+ Se dentro de um mesmo poro for observado mais de um fluido, passa-se a
+ medir a permeabilidade efetiva 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ de cada um desses fluidos.
+ Assim, a permeabilidade relativa 
+\begin_inset Formula $k_{r,i}$
+\end_inset
+
+ pode ser definida como a razão entre a permeabilidade efetiva e a permeabilidad
+e absoluta do meio poroso, ou seja,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k_{r,i}=\frac{k_{i}}{k}.\label{eq: permeabilidade-relativa}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+É conveniente associar a permeabilidade relativa com a saturação em um meio
+ poroso, uma vez que se observa que a permeabilidade efetiva de um determinado
+ fluido cai conforme a saturação do mesmo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ahmed2018reservoir"
+literal "false"
+
+\end_inset
+
+.
+ Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saturacao-x-permeabilidade-relativa-bifasico"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ essa relação é mostrada para um escoamento bifásico, no qual 
+\begin_inset Formula $w$
+\end_inset
+
+ representa a fase molhante e 
+\begin_inset Formula $nw$
+\end_inset
+
+ a fase não-molhante.
+ Nela é possível observar que a saturação do fluido molhante
+\begin_inset Formula $S_{w}$
+\end_inset
+
+ é máxima quando a fase não-molhante atinge sua saturação residual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/saturacao-permeabilidade-efetiva-fluxo-bifasico.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relação entre a saturação da fase molhante e sua permeabilidade efetiva
+ para um escoamento bifásico
+\change_deleted 1908091853 1661896507
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saturacao-x-permeabilidade-relativa-bifasico"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "archer2012petroleum"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{mccain2017properties}
+\end_layout
+
+\end_inset
+
+, se um meio poroso está inicialmente saturado com um fluido que molha,
+ e aos poucos se introduz uma segunda fase de um fluido que não molha, observa-s
+e um processo de drenagem.
+ Se a situação se inverte, ou seja, um meio saturado inicialmente com um
+ fluido não molhante é invadido por uma fase molhante, o que acontece é
+ um processo de embebição.
+ Nesse ultimo, o fluido molhante se aloja às paredes dos capilares de menor
+ diâmetro, forçando o fluido não-molhante para regiões com diâmetros maiores,
+ até que em um certo ponto, a saturação dessa fase atinge um ponto crítico
+ e a mesma deixa de escoar, como é possível ver na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:embebicao-oleo-gas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para o gás (não-molhante) e o óleo (molhante).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/embebicao-oleo-gas.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Processo de embebição de em um escoamento bifásico gás-óleo
+\change_deleted 1908091853 1661948102
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:embebicao-oleo-gas"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "archer2012petroleum"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na drenagem, o fluido não-molhante entre inicialmente no meio poroso e ocupa
+ as partes centrais dos poros de maior diâmetro até que seja atingido um
+ ponto crítico de saturação para que o seja formada uma fase contínua e
+ ele possa escoar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "archer2012petroleum"
+literal "false"
+
+\end_inset
+
+.
+ De forma semelhante, a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:drenagem-oleo-gas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ilustra esse processo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/drenagem-oleo-gas.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Processo de drenagem de em um escoamento bifásico gás-óleo
+\change_deleted 1908091853 1661948106
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:drenagem-oleo-gas"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "archer2012petroleum"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Processamento de Imagens Digitais
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Processamento-imagens-digitais"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nesta seção serão apresentados os principais conceitos envolvendo imagens
+ digitais e seu processamento, principalmente no que se diz respeito à aplicação
+ de filtros para segmentação e binarização.
+ Ao final encontra-se uma breve descrição sobre os procedimentos necessários
+ para a aquisição e tratamento de imagens de rochas reservatórios.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Imagens Digitais
+\end_layout
+
+\end_inset
+
+Imagens Digitais
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{velho2009image}
+\end_layout
+
+\end_inset
+
+ uma imagem definida por uma função bidimensional 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ é considerada digital quando suas coordenadas espaciais 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, e a sua intensidade, ou nível de cinza 
+\begin_inset Formula $f$
+\end_inset
+
+, representam quantidades discretas e finitas.
+ Essas quantidades formam a unidade mais básica de uma imagem digital, o
+ pixel.
+ É possível afirmar ainda que uma imagem é o resultado de um estimulo luminoso
+ em um sensor, seja este uma câmera fotográfica ou a retina humana.
+\end_layout
+
+\begin_layout Subsubsection
+Amostragem
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Amostragem
+\end_layout
+
+\end_inset
+
+ e Quantização
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Quantização
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O processamento digital de imagens é composto de um complexo conjunto de
+ tarefas interconectas que se inicia com a captura da imagem, que representa
+ a iluminação refletida na superfície dos objetos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "velho2009image"
+literal "false"
+
+\end_inset
+
+.
+ Uma imagem capturada pode ser contínua em relação aos valores de suas coordenad
+as espaciais 
+\begin_inset Formula $x,y$
+\end_inset
+
+ e aos valores de intensidade.
+ A amostragem é a digitalização dos valores espaciais e a quantização dos
+ valores de amplitude.
+ Com essa informação a imagem é discretizada em, por exemplo, uma matriz
+ 2-D 
+\begin_inset Formula $I_{MN}$
+\end_inset
+
+, na qual 
+\begin_inset Formula $M$
+\end_inset
+
+ representa o número de linhas
+\change_deleted 1908091853 1661948027
+,
+\change_unchanged
+ e 
+\begin_inset Formula $N$
+\end_inset
+
+ o número de colunas.
+\end_layout
+
+\begin_layout Standard
+A discretização
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Discretização
+\end_layout
+
+\end_inset
+
+ é a tarefa de converter um sinal de natureza contínuo (um sinal físico)
+ em um modelo discreto 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+.
+ Em oposição à ela existe a reconstrução
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Reconstrução
+\end_layout
+
+\end_inset
+
+, que trata de tornar contínuo um sinal inicialmente discreto.
+ Todavia, em geral, esse processo nunca retorna um reconstrução exata do
+ que era o sinal original, mas sim uma função aproximada.
+ A qualidade dessa aproximação varia de uma aplicação para a outra.
+\end_layout
+
+\begin_layout Standard
+O sinal discreto para ser trabalhado em computadores digitais ainda demanda
+ de uma etapa de codificação, no qual ele é reorganizado na forma de uma
+ estrutura de dados formado por um conjunto finito de símbolos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "phillips1994image"
+literal "false"
+
+\end_inset
+
+.
+ De forma análoga à discretização/reconstrução, o sinal codificado pode
+ ser decodificado em uma imagem discreta.
+ A escolha da estrutura de dados e do conjunto simbólico dita se esse novo
+ sinal apresentará perdas, a velocidade no qual ele é tratado e a quantidade
+ de espaço que poderá ocupar na memória de um sistema.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:niveis-abstracao-represetacao-sinal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ilustra as etapas de discretização, reconstrução codificação e decodificação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/niveis-abstracao-representacao-sinais.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relações entre os processos de discretização, reconstrução, codificação
+ e decodificação
+\change_deleted 1908091853 1661948061
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:niveis-abstracao-represetacao-sinal"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "velho2009image"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As vezes, durante o processo de aquisição de uma imagem pode acontecer da
+ taxa de amostragem
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taxa de Amostragem
+\end_layout
+
+\end_inset
+
+ não ser suficiente para capturar todas as nuances de uma cena, provocando
+ a formação de serrilhados 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bhuyan2019computer"
+literal "false"
+
+\end_inset
+
+.
+ Esse fenômeno é denominado de 
+\emph on
+aliased, 
+\emph default
+e
+\change_inserted 1908091853 1661948225
+,
+\change_unchanged
+ para entender melhor como ele funciona
+\change_inserted 1908091853 1661948244
+ apresentamos
+\change_unchanged
+ a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sinal-aliased"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_inserted 1908091853 1661948249
+, que
+\change_unchanged
+ mostra o resultado da amostragem unidimensional de dois sinais, com frequências
+ iguais a 
+\begin_inset Formula $f_{azul}=3/4$
+\end_inset
+
+ e 
+\begin_inset Formula $f_{vermelho}=5/4$
+\end_inset
+
+, e a taxa de amostragem 
+\begin_inset Formula $f_{amostragem}=2$
+\end_inset
+
+.
+ O que se observa é que ambos os sinais apresentam as mesmas amostras e
+ isso se torna um problema, já que se torna impossível agora reconstruir
+ o sinal original.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/sinal-aliased.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fenômeno 
+\emph on
+aliasing 
+\emph default
+em um sinal unidimensional
+\change_deleted 1908091853 1661948110
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sinal-aliased"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "szeliski2010computer"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A taxa mínima de amostragem
+\change_inserted 1908091853 1661948376
+ (
+\begin_inset Formula $f_{s}$
+\end_inset
+
+)
+\change_unchanged
+ para que um sinal possa ser reconstruído é descrito pelo teorema de 
+\emph on
+Shannon
+\emph default
+ como pelo menos o dobro da frequência máxima do sinal, ou frequência de
+ 
+\emph on
+Nyquist
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "szeliski2010computer"
+literal "false"
+
+\end_inset
+
+.
+ Dessa forma:
+\change_inserted 1908091853 1661948455
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661948476
+estes termos que você apresenta, fs, fmax, e outros, devem estar na nomenclatura
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661948492
+e sempre que um termo aparece pela primeira vez você tem de informar:
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661948493
+- o nome
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661948497
+- o símbolo
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661948501
+- as unidades em SI
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{s}\geq2f_{max}.\label{eq:teorema-shannon}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Etapas do Processamento
+\end_layout
+
+\begin_layout Standard
+No pré-processamento são aplicados filtros para a atenuação dos ruídos e
+ das distorções geométricas provocadas pelos sensores durante a etapa de
+ captura.
+\end_layout
+
+\begin_layout Standard
+A identificação dos elementos ou objetos que compõem uma imagem dependem
+ de um trabalho de extrair informações a respeito de bordas, texturas e
+ vizinhanças entre os pixeis.
+ Depois, por um processo de segmentação, o qual demanda de técnicas sofisticadas
+ de regularização e modelagem, esses objetos são separados do fundo da imagem.
+\end_layout
+
+\begin_layout Standard
+Como mostra 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{castelo2013estimativa}
+\end_layout
+
+\end_inset
+
+, a partir da forma geométrica dos objetos, obtida na segmentação, é possível
+ aplicar operadores morfológicos a fim de analisar, modificar e extrair
+ informações que podem ser úteis em modelos de classificação, ou seja, reconhece
+r, inferir e verificar a identidade dos objetos
+\change_inserted 1908091853 1661948612
+ (suas características)
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Sistemas de Cores
+\end_layout
+
+\end_inset
+
+Sistemas de Cores e Histogramas
+\end_layout
+
+\begin_layout Standard
+Cores são uma resposta subjetiva relacionada com os aspectos fisiológicos
+ e psicológicos do sistema visual humano quando estimulado por uma onda
+ eletromagnética dentro de uma pequena faixa do espectro de frequências
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+.
+ A cor
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Cor
+\end_layout
+
+\end_inset
+
+, não é, portanto uma característica da luz, mas uma sensação provocada
+ pelo complexo sistema sensorial eletroquímico do corpo humano baseada na
+\change_inserted 1908091853 1661948663
+s
+\change_unchanged
+ atividade
+\change_inserted 1908091853 1661948664
+s
+\change_unchanged
+ do
+\change_inserted 1908091853 1661948669
+s
+\change_unchanged
+ 
+\change_deleted 1908091853 1661948672
+cérebro, 
+\change_unchanged
+olhos
+\change_inserted 1908091853 1661948675
+,
+\change_deleted 1908091853 1661948676
+ e
+\change_unchanged
+ do nervo óptico
+\change_inserted 1908091853 1661948680
+ e do cérebro
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Standard
+A percepção de cor nos olhos, em qualquer ponto de uma determinada cena,
+ é dependente também da percepção de cores nos outros pontos ao seu redor
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "velho2009image"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1661948812
+Na prática as cores precisam ser modeladas tanto no que se refere a percepção
+ humana quando no que se refere a diferentes equipamentos, como câmeras
+ fotográficas, scanners, impressoras e outros sistemas.
+ Isto nos leva a necessidade de lidar com diferentes sistemas de cores.
+\end_layout
+
+\begin_layout Standard
+Um sistema de cores é um sólido de cor que possa ser definido em um sistema
+ de coordenadas.
+ Um vetor de cor 
+\begin_inset Formula $C$
+\end_inset
+
+ pode ser definido pela Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\sum_{i=1}^{n}c_{i}P_{i},\label{eq: vetor-de-cor}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ representam as coordenadas.
+\end_layout
+
+\begin_layout Standard
+De acordo com 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{velho2009image}
+\end_layout
+
+\end_inset
+
+ é possível definir quatro sistemas de cores que são mais importante no
+ campo da computação gráfica e no processamento de imagens:
+\end_layout
+
+\begin_layout Itemize
+Sistemas de Cor Padrão: permitem a especificação dos sistemas de cores independe
+nte de sua aplicação;
+\end_layout
+
+\begin_layout Itemize
+Sistemas de Cor de Dispositivos: relacionados a dispositivos de entrada,
+ processamento e saída de imagens;
+\end_layout
+
+\begin_layout Itemize
+Sistemas de Cor de Interface: usado para facilitar a especificação das informaçõ
+es de color por parte do usuário.
+\end_layout
+
+\begin_layout Itemize
+Sistemas de Cor Computacionais: utilizados para a realização de cálculos
+ em aplicações científicas.
+\end_layout
+
+\begin_layout Standard
+Dentre estes, os mais comuns são os sistemas cromáticos CIE-RGB, HSV e HSL.
+\end_layout
+
+\begin_layout Standard
+O sistema CIE-RGB define um espaço de cores tricromático baseados nas porções
+ superior (azul), média (verde) e inferior (vermelho) do espectro visual,
+ correspondendo aos valores de frequência definidos pela Comissão Internacional
+ de Iluminação 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "de2006introduccao"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{red}=700\,nm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{green}=546,1\,nm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{blue}=435,8\,nm.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Essas cores, combinadas duas a duas, em igual intensidade, produzem as suas
+ secundárias, ou seja, Ciano, Magenta e Amarelo.
+ A cor oposta a uma cor secundária é a cor primária que não entra na sua
+ combinação, ou seja, o oposto do magenta é verde, do ciano é o vermelho
+ e do amarelo é o azul.
+ A cor branca é gerada pela combinação das três primárias ou da cor secundária
+ com a sua oposta.
+\change_inserted 1908091853 1661948955
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661948958
+faltou a preta
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:modelo-rgb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ essas relações são mostradas de forma mais clara.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/modelo-rgb.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo cromático RGB
+\change_deleted 1908091853 1661948114
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:modelo-rgb"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "de2006introduccao"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sistemas de cores de interface são menos práticos em termos computacionais,
+ porém muito mais intuitivas quando se trata de usabilidade 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nixon2019feature"
+literal "false"
+
+\end_inset
+
+.
+ Características como luminância, saturação e tonalidade (
+\emph on
+hue
+\emph default
+) estão muito mais ligadas a forma que humanos percebem as cores.
+ Isso torna mais fácil, por exemplo, tornar uma cor mais 
+\begin_inset Quotes eld
+\end_inset
+
+clara
+\begin_inset Quotes erd
+\end_inset
+
+ ou mais 
+\begin_inset Quotes eld
+\end_inset
+
+escura
+\begin_inset Quotes erd
+\end_inset
+
+, o que em termos de RGB se apresenta uma tarefa mais complicada.
+\end_layout
+
+\begin_layout Standard
+A tonalidade
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Tonalidade
+\end_layout
+
+\end_inset
+
+ de uma cor representa o comprimento de onda da mesma, ou, em outras palavras,
+ seria a cor na sua forma pura.
+ A saturação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Saturação
+\end_layout
+
+\end_inset
+
+ é o quanto de branco se mistura com essa cor, ou seja, quanto menos branco,
+ menos saturada.
+ Por fim, a luminância
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Luminância
+\end_layout
+
+\end_inset
+
+ está ligada com a noção de intensidade.
+ Essas quantidade são muitas vezes representadas graficamente em coordenadas
+ cilíndricas conforme mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hsb-coordenadas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/hsb-coordenadas.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representação em coordenadas cilíndricas dos valores de tonalidade (
+\emph on
+hue
+\emph default
+), saturação (
+\emph on
+saturation
+\emph default
+) e brilho (
+\emph on
+brightness
+\emph default
+)
+\change_deleted 1908091853 1661948119
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hsb-coordenadas"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "velho2009image"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O modelo HSI
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+HSI
+\end_layout
+
+\end_inset
+
+ (
+\emph on
+hue, saturation, brightness
+\emph default
+) pode ser descrito na forma de coordenadas RGB usando uma série de transformaçõ
+es descritas nas Equações:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=tan\left[\frac{3(G-B)}{(R-G)+(R-B)}\right],\label{eq:hue-rgb}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S=1-\frac{min(R,G,B)}{I},\label{eq: saturacao-rgb}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I=\frac{R+G+B}{3},\label{eq:luminancia-rgb}
+\end{equation}
+
+\end_inset
+
+onde as variáveis 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ e 
+\series bold
+
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\series default
+representam a intensidade das cores primárias.
+ Na maioria das aplicações esses valores podem ser normalizados 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "szeliski2010computer"
+literal "false"
+
+\end_inset
+
+, como é mostrado na Equação:
+\change_inserted 1908091853 1661949211
+~
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r=\frac{R}{R+G+B},\,g=\frac{G}{R+G+B},\,b=\frac{B}{R+G+B}.\label{eq:cor-normalizada}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Histograma
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Histograma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A quantidade de pixeis que possuem uma determinada tonalidade em uma imagem
+ pode ser denominado como uma espécie de frequência desses tons, sejam eles
+ coloridos ou em escala de cinza.
+ O conjunto de todas essas frequências podem ser compiladas graficamente
+ em um histograma 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rego2010desenvolvimento"
+literal "false"
+
+\end_inset
+
+, conforme é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagem-histograma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Considerando que uma imagem digital tenha quantidades finitas de intensidade
+ de cor, então essas quantidades podem ser representadas na forma de uma
+ função discreta 
+\begin_inset Formula $h(i)=n_{i}$
+\end_inset
+
+, onde 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ é quantidade de pixeis que apresentam uma intensidade 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagem-histograma"
+
+\end_inset
+
+ uma imagem e seu histograma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_deleted 1908091853 1661949594
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/histograma.png
+	scale 90
+
+\end_inset
+
+
+\change_inserted 1908091853 1661949594
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1661949608
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/histograma.png
+	scale 90
+
+\end_inset
+
+TROQUEI POR UMA IMAGEM MAIS BONITA...KAKAKA
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/Molly-02-Nenem-Praia.jpg
+	lyxscale 25
+	width 50text%
+	height 50theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/Molly-02-Nenem-Praia-TonsDeCinza-Histograma.png
+	width 45text%
+	height 45theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem ao lado de seu histograma
+\change_inserted 1908091853 1661949894
+ (doguinha Molly)
+\change_deleted 1908091853 1661948124
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagem-histograma"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-analise-imagem"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O histograma pode ser considerando uma distribuição de probabilidades se
+ os valores de seu componente forem normalizados, de forma a se obter a
+ seguinte Equação:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p(i)=\text{\ensuremath{\frac{n_{i}}{NM}}},\label{eq:dist-probabilidade-intensidade}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $N$
+\end_inset
+
+ representa o número de linhas e 
+\begin_inset Formula $M$
+\end_inset
+
+ o número de colunas da imagem.
+ Dessa forma a soma de todos os seus elementos será igual a 1.
+\end_layout
+
+\begin_layout Standard
+Uma imagem binária tem apenas dois níveis de cinza em seu histograma.
+ Já uma imagem que representa um objeto escuro junto de um fundo luminoso
+ possui um histograma bimodal, que é bem característico pelos dois picos
+ que se formam no gráfico 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "distante2020handbook"
+literal "false"
+
+\end_inset
+
+.
+ Por fim uma imagem que concentra uma grande quantidade de informação luminosa
+ produz um histograma multimodal, no qual os níveis de cinza são distribuídos
+ em várias quantidade diferentes ao longo do gráfico.
+ Nele se destacam alguns picos que agregam a sua volta valores mais comportados
+ de tonalidade.
+ Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hist-bi-multi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é mostrada a diferença entre um histograma bimodal e outro multimodal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/histograma-bi-multi.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diferenças entre histograma bimodal (a) e multimodal (b)
+\change_deleted 1908091853 1661948131
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hist-bi-multi"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bhuyan2019computer"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De acordo com 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{rego2010desenvolvimento}
+\end_layout
+
+\end_inset
+
+ o contraste de uma imagem pode ser revelado por meio de seu histograma.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hist-contraste"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra as distribuições de intensidade 
+\begin_inset Formula $p(i)$
+\end_inset
+
+ para imagens com diferentes níveis de contraste.
+ Para uma imagem com níveis baixos de contraste os valores de intensidade
+ se concentram nas pontas do gráfico.
+ Esses valores podem ser equalizados tornando a distribuição mais homogênea
+ ao longo do histograma, de maneira que se busque deixá-los igualmente espaçados.
+ enquanto uma imagem com valores de contraste mais bem balanceados ten
+\change_deleted 1908091853 1661950021
+t
+\change_inserted 1908091853 1661950021
+d
+\change_unchanged
+e a ter uma resposta semelhante em seu histograma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/hist-contraste.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Histogramas e variações de contrastes
+\change_deleted 1908091853 1661948138
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hist-contraste"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bhuyan2019computer"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Filtros de Imagens
+\end_layout
+
+\end_inset
+
+Filtros de Imagens
+\end_layout
+
+\begin_layout Standard
+Se uma imagem é, para fins práticos, uma matriz bidimensional 
+\begin_inset Formula $M_{n,m}$
+\end_inset
+
+, então os filtros seriam operações unárias realizadas sobre essa matriz,
+ que nesse caso também pode ser tratada como um sinal 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Filtros podem ser classificados quanto a linearidade, o método computacional
+ utilizado (estatístico ou determinístico), ou quanto ao seu domínio de
+ ações (topológicos ou de amplitude) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "velho2009image"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Um filtro 
+\begin_inset Formula $L:S\rightarrow S$
+\end_inset
+
+ é considerado linear se as operações de adição entre vetores e multiplicação
+ por um escalar de um sinal forem forem respeitadas, ou seja, 
+\begin_inset Formula 
+\begin{equation}
+L(f+g)=L(f)+L(g),\label{eq:filtro-adicao}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L(\lambda f)=\lambda L(f),\label{eq:filtr-multiplicacao-escalar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+onde 
+\begin_inset Formula $f$
+\end_inset
+
+ e 
+\begin_inset Formula $g$
+\end_inset
+
+ representam dois sinais distintos, 
+\begin_inset Formula $L$
+\end_inset
+
+ um filtro aplicado sobre os sinais, e 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ um escalar qualquer.
+\end_layout
+
+\begin_layout Standard
+\noindent
+A Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:filtro-adicao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra que o resultado ao aplicar um filtro à duas imagens diferentes adicionad
+as é o mesmo que aplicar o filtro em cada uma das duas separadamente e em
+ seguida somar os resultados.
+ Já a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:filtr-multiplicacao-escalar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ trata de preservar a informação da imagem mesmo que esta sofra uma transformaçã
+o de escala, desde que essa transformação seja constante.
+
+\change_inserted 1908091853 1661950177
+ Na prática, o entendimento destes conceitos nos permite otimizar a aplicação
+ combinada destes filtros.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Filtros estatísticos, segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nixon2019feature"
+literal "false"
+
+\end_inset
+
+, utilizam de propriedades estatísticas da imagem para determinar o resultado
+ aplicado a cada pixel.
+ Um exemplo é o filtro de mediana de ordem 
+\begin_inset Formula $n$
+\end_inset
+
+ (
+\emph on
+Median Filter of Order n
+\emph default
+), no qual a resposta para cada um dos pixel é calculado conforme a mediana
+ dos 8 pixeis vizinhos ordenados de acordo com seus valores de intensidade.
+ Esse filtro ajuda na eliminação de valores de intensidade isolados em meio
+ a sua vizinhança, tornando o sinal mais uniforme e eliminando os ruídos,
+ como mostra a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:reducao-ruido-mediana"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Outro filtro estatístico é o filtro de moda de ordem n (
+\emph on
+Mode Filter of Order n
+\emph default
+).
+ Se define de forma semelhante ao anterior, mas dessa vez é o valor da moda
+ que é aplicado à resposta do pixel.
+ Tanto o filtro de moda quanto o de mediana são considerados filtros não
+ lineares e atuam de forma local nas imagens.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/reducao-ruido-filtro-mediana.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Redução de ru
+\change_deleted 1908091853 1661950360
+i
+\change_inserted 1908091853 1661950361
+í
+\change_unchanged
+do aplicando filtro de mediana
+\change_deleted 1908091853 1661948143
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:reducao-ruido-mediana"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+]
+\change_inserted 1908091853 1661950382
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661950415
+em (a) imagem original, em (c) resultado após aplicar filtro da mediana
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Além disso, um filtro pode ser considerado invariante no espaço, em outras
+ palavras, ele vai apresentar o mesmo comportamento em qualquer ponto do
+ domínio espacial do sinal:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(Fg)(x-x_{0},y-y_{0})=F(g(x-x_{0},y-y_{0})\label{eq:filtro-invariante-espaço}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+onde 
+\begin_inset Formula $g$
+\end_inset
+
+ representa a função de imagem, e as coordenadas 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ a posição de um determinado vetor no domínio de 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O filtro linear mais simples de ser implementado é o filtro retangular (
+\emph on
+box filter
+\emph default
+), o qual aplica sobre cada pixel o valor da média se seus vizinhos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+.
+ Podendo também ser chamado de filtro de passa-baixa, ele é considerado
+ um filtro de suavização, no qual o resultado é uma imagem com uma redução
+ na quantidade de mudanças abruptas de intensidade 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "paris2009bilateral"
+literal "false"
+
+\end_inset
+
+.
+ Como as bordas dos objetos são consideradas mudanças abruptas, então sua
+ aplicação provoca um resultado indesejável nessas regiões.
+ Além disso é possível trabalhar utilizando uma média aritmética ou ponderada,
+ como é mostrado nas imagens das máscaras da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mascaras-filtro-pb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/mascarasFiltroPB.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Duas máscaras 3x3 aplicadas em uma suavização
+\change_deleted 1908091853 1661948146
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mascaras-filtro-pb"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagm-suavizada"
+
+\end_inset
+
+ mostra a aplicação dos filtros apresentados na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mascaras-filtro-pb"
+
+\end_inset
+
+.
+ Na imagem da esquerda (a) é aplicada uma média aritmética.
+ Essa é uma aplicação mais eficiente em termos computacionais, e ao final
+ da filtragem toda a imagem seria normalizada por um valor de 
+\begin_inset Formula $1/mn$
+\end_inset
+
+.
+ Já na imagens da b e c observa-se que é aplicado um peso a cada um dos
+ pixeis que forma a máscara, indicando que alguns deles possuem mais importância
+ que outros.
+ O pixel do centro possui um maior peso, enquanto os que estão a sua volta
+ recebem valores de acordo com sua distância.
+ Dessa forma essa técnica ajuda a reduzir o borramento na imagem durante
+ o processo de suavização.
+\end_layout
+
+\begin_layout Standard
+Uma importante aplicação dos filtros de suavização reside em tornar mais
+ fácil a detecção de objetos maiores em uma imagem, como é mostrado na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagm-suavizada"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Com aplicação dos filtros os objetos menores da imagem se mesclam com o
+ fundo e os objetos maiores se tornam borrões, fazendo que sejam mais fácies
+ de serem identificados 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/images-suavizadas.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultado do processo de suavização em uma imagem produzida pelo telescópio
+ 
+\emph on
+Hubble
+\change_deleted 1908091853 1661948150
+
+\emph default
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagm-suavizada"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em contraste aos filtros de suavização, existem os filtros de aguçamento,
+ cujo objetivo consiste em salientar transições de intensidade para o aumento
+ da nitidez em uma imagem.
+ Um exemplo comum de filtro dessa natureza é o filtro laplaciano
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Filtro Laplaciano
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Considerando a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:laplaciano-discreto"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ um operador laplaciano pode ser expresso de maneira discreta da seguinte
+ forma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\nabla^{2}f=f(x+1,y)+f(x-1,y)+f(x,y+1)+f(x,y-1)-4f(x,y),\label{eq:laplaciano-discreto}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+o que pode ser aplicado em uma mascara como a que é mostrada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:laplaciano-discreto"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+A implementação é feita da mesma forma como visto nos filtros de suavização.
+ Devido a sua natureza diferencial, o laplaciano realça as descontinuidades
+ de intensidades na imagem e atenua as regiões com mudanças mais suaves,
+ resultando em uma imagem com as linhas de borda em tons de cinza sobrepostos
+ em um fundo escuro e uniforme 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "distante2020handbook"
+literal "false"
+
+\end_inset
+
+.
+ Se o resultado da filtragem for somado à imagem original o efeito de aguçamento
+ é preservado e é possível recuperar a informação perdida do fundo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/mascara-laplciano.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+M
+\change_deleted 1908091853 1661950621
+a
+\change_inserted 1908091853 1661950621
+á
+\change_unchanged
+scara de um filtro laplaciano 3x3
+\change_deleted 1908091853 1661948153
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mascara-laplaciano"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Segmentação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Segmentação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{nixon2019feature}
+\end_layout
+
+\end_inset
+
+ define a segmentação de imagens como uma técnica que consiste em dividir
+ uma imagem ou cena em regiões homogêneas que possam apresentar algum significad
+o.
+ A ideia de homogeneidade aqui pode ser definida em termos de valores de
+ escalas de cinza, cor, textura ou forma.
+ O objetivo final deste processo é atribuir uma 
+\begin_inset Quotes eld
+\end_inset
+
+classe
+\begin_inset Quotes erd
+\end_inset
+
+ para cada pixel, baseando-se em suas similaridades.
+ De acordo com 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{lin2016efficient}
+\end_layout
+
+\end_inset
+
+, a segmentação é um procedimento que tem um papel fundamental no estudo
+ de imagens digitais, todavia apresenta algumas dificuldades a serem considerada
+s antes de sua aplicação:
+\end_layout
+
+\begin_layout Itemize
+Encontrar as características discriminantes na imagem;
+\end_layout
+
+\begin_layout Itemize
+Pode acontecer do objeto a ser segmentado estar de alguma forma mesclado
+ com o fundo;
+\end_layout
+
+\begin_layout Itemize
+No caso de uma segmentação em tempo real existe uma dificuldade a mais provocada
+ por um fundo dinâmico;
+\end_layout
+
+\begin_layout Itemize
+Demanda de algum processamento antes de ser utilizada para obtenção de melhores
+ resultados.
+\end_layout
+
+\begin_layout Standard
+Para imagens monocromáticas existem duas categorias baseadas em valores
+ de intensidade em que se dividem os algoritmos de segmentação: descontinuidade
+ e similaridade 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "de2006introduccao"
+literal "false"
+
+\end_inset
+
+.
+ Na descontinuidade é aplicada a segmentação baseada em bordas, pois nessa
+ categoria supõe-se que as fronteiras das regiões são suficientemente diferentes
+ entre si e em relação ao fundo da imagem.
+ Para a segunda categoria, similaridade, utiliza-se a abordagem da segmentação
+ baseada em regiões, que consiste em trabalhar com a imagem dividindo-a
+ em espaços suficientemente semelhantes entre si.
+\end_layout
+
+\begin_layout Standard
+A segmentação baseada em bordas consiste na aplicação de técnicas e filtros
+ de detecção de bordas de modo a possibilitar uma análise das descontinuidades
+ nos níveis de cinza em uma imagem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+.
+ As bordas são regiões de interesse 
+\change_inserted 1908091853 1661950791
+que 
+\change_unchanged
+caracterizam os contornos dos objetos presentes
+\change_inserted 1908091853 1661950803
+ na imagem
+\change_unchanged
+.
+ A posição dos pixeis onde ocorrem variações abruptas nos valores de intensidade
+ são denominados de pontos de borda e caracterizam as transições entre diferente
+s regiões.
+ Nesse processo são aplicados operadores de gradiente, como laplaciano.
+\end_layout
+
+\begin_layout Standard
+A segmentação de imagens baseada em regiões se fundamenta, como descrito
+ anteriormente, na similaridade dos níveis de cinza da imagem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nixon2019feature"
+literal "false"
+
+\end_inset
+
+.
+ Por meio de um conjunto de pontos similares, denominado de semente, cada
+ pixel é agregado à uma região caracterizada por uma determinada propriedade.
+ Esse processo é chamado de agregação de pixeis.
+ Os problemas comuns observados nesse tipo de abordagem são a dificuldade
+ de se selecionar um conjunto que seja satisfatoriamente similar e que possibili
+te o crescimento de regiões, e a seleção da propriedade característica.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:aplicacao-segmentacao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é mostrado o resultado da aplicação de um processo de segmentação baseado
+ em bordas (imagens a, b, c) e em regiões (imagens d, e, f).
+ Na imagem (a)
+\emph on
+ 
+\emph default
+a intensidade dos pixeis é constante na região destacada e no fundo.
+ A imagem seguinte já mostra o resultado de um cálculo de fronteira aplicado
+ na região mais clara baseado na diferença de intensidades nas bordas.
+ Como não há nenhuma descontinuidade dentro e fora da região demarcada,
+ então são atribuídos aos pixeis o valor 0 (preto), enquanto que na borda
+ onde a variação é brusca, atribui-se o valor 1 (branco).
+ Para finalizar o procedimento de segmentação atribui-se ao conteúdo dentro
+ da borda demarcada também o valor 1, conforme é visto em (c)
+\emph on
+.
+\end_layout
+
+\begin_layout Standard
+Já na imagem (d) o que se observa não é uma região comportada como no caso
+ da (a), mas sim um padrão texturizado formado pelos diferentes valores
+ de intensidade atribuídos aos pixeis.
+ Isso dificulta a detecção da borda pois irão existir vários ponto diferentes
+ onde observa-se a mudança abrupta de intensidade, como observado em (e)
+\emph on
+.
+ 
+\emph default
+Para contornar esse problema, aproveita-se do comportamento constante do
+ fundo da imagem e utilizando-se do desvio padrão dos valores dos pixeis
+ é possível fazer a distinção entre a região texturizada e a região sólida.
+ A imagem é então dividida em sub-regiões e onde o desvio padrão apresentou
+ um resultado positivo, então foi atribuído o valor 1 (branco) como é mostrado
+ em (f).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/aplicacao-segmentacao.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Segmentação de uma imagem utilização a abordagem baseada em bordas (a, b,
+ c) e em regiões (d, e, f)
+\change_deleted 1908091853 1661948158
+.
+
+\change_unchanged
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:aplicacao-segmentacao"
+
+\end_inset
+
+
+\change_inserted 1908091853 1661954797
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661954833
+label com nome genérico; ideal colocar próprio título ou algo mais específico
+ - aplicacao-segmentacao-metodo-bordas
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algoritmos de segmentação baseados no crescimento de regiões tornam difícil
+ a obtenção de bons resultados pois concentra
+\change_inserted 1908091853 1661954933
+m
+\change_unchanged
+ a informação de forma local, mesclando regiões e provocando um processo
+ de segmentação.
+ Além disso é uma técnica cara em termos computacionais e demanda de um
+ consumo muito alto de memória 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "szeliski2010computer"
+literal "false"
+
+\end_inset
+
+.
+ Em resposta a esses problemas surge a segmentação por divisão e fusão,
+ o qual consiste em dividir uma imagem sucessivamente em sub-regiões até
+ que seja atingido um critério de parada (divisão) e, logo em seguida, agrupar
+ essas regiões de acordo com definições de homogeneidade.
+\end_layout
+
+\begin_layout Standard
+Outra abordagem que envolve a segmentação por regiões é o algorítmo de divisores
+ de água ou 
+\emph on
+watersheads
+\emph default
+, que se baseia nos conceitos de bacias hidrográficas e topografia
+\change_deleted 1908091853 1661954977
+,
+\change_inserted 1908091853 1661954977
+.
+
+\change_unchanged
+ 
+\change_deleted 1908091853 1661954980
+tanto que n
+\change_inserted 1908091853 1661954980
+N
+\change_unchanged
+essa técnica a imagem é modelada como uma superfície topográfica, como se
+ fosse
+\change_inserted 1908091853 1661954989
+,
+\change_unchanged
+ na verdade
+\change_inserted 1908091853 1661954991
+,
+\change_unchanged
+ composta por montanhas ou vales e a altitude dos pontos correspondessem
+ ao gradiente dos valores de intensidade dos pixeis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Inicialmente, simula-se uma inundação nos mínimos locais, o que provoca
+ a formação de poças e bacias.
+ Quando a água de duas bacias estão na iminência de se encontrarem forma-se
+ uma linha de contenção, gerando os contornos dos objetos da imagem.
+ O resultado então é a formação de uma espécie de uma bacia hidrográfica
+ que formam das regiões segmentadas.
+ Dessa forma, os pontos que compõem a imagem podem ser divididos em três
+ categorias:
+\end_layout
+
+\begin_layout Itemize
+pontos que pertencem
+\change_deleted 1908091853 1661955024
+ 
+\change_inserted 1908091853 1661955024
+a
+\change_unchanged
+à um mínimo local;
+\end_layout
+
+\begin_layout Itemize
+pontos que pertencem 
+\change_deleted 1908091853 1661955027
+à
+\change_inserted 1908091853 1661955027
+a
+\change_unchanged
+ um mínimo de 
+\emph on
+watershead
+\emph default
+, no qual uma gota cai em direção à um mínimo local;
+\end_layout
+
+\begin_layout Itemize
+pontos que pertencem 
+\change_deleted 1908091853 1661955031
+à
+\change_inserted 1908091853 1661955031
+a
+\change_unchanged
+ linhas de 
+\emph on
+watershead
+\emph default
+, no qual uma gota pode cair em direção a qualquer lado.
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:watershead"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra um processo de inundação de uma imagem.
+ Em (a)
+\emph on
+ 
+\emph default
+é mostrada a imagem original e em (b)
+\emph on
+ 
+\emph default
+a sua forma topográfica.
+ Em (c, d, e)
+\emph on
+ 
+\emph default
+a imagem passa por uma série de inundações, até que em (f, g) são formadas
+ as barragens e consequentemente os contornos.
+ Por fim em (h) a imagem é mostrada com as linhas de segmentação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/watershead.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Processo de aplicação da segmentação por 
+\emph on
+watersheads
+\change_deleted 1908091853 1661948162
+
+\emph default
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:watershead"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gonzalez2010processamento"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Além das técnicas de segmentação por bordas e regiões ainda existem outras
+ abordagens que valem a pena serem exploradas.
+ A segmentação por limiarização 
+\emph on
+(thresholding)
+\emph default
+ é um dos modelos mais simples.
+ De forma geral, ela resulta sempre em uma imagem binária, ou seja, se uma
+ imagem de entrada 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ for aplicada a um limiar 
+\begin_inset Formula $T$
+\end_inset
+
+, então imagem de saída 
+\begin_inset Formula $g(x,y)$
+\end_inset
+
+ é expressa na Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:limiar-T"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+g(x,y)=\begin{cases}
+1, & f(x,y)\geq T\\
+0, & f(x,y)<T
+\end{cases}.\label{eq:limiar-T}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A limiarização global, como mostra 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{bhuyan2019computer}
+\end_layout
+
+\end_inset
+
+, considera um limiar único para toda a imagem e é aplicado quando a variação
+ de intensidade entre o fundo e o objeto é grande.
+ Esse limiar global pode ser calculado de diversas formas:
+\end_layout
+
+\begin_layout Itemize
+A abordagem baseada em histogramas define o limiar no vale formado no histograma
+ de uma imagem, ou seja, só é aplicado quando a imagem possui regiões homogêneas
+ bem definidas;
+\end_layout
+
+\begin_layout Itemize
+O método de 
+\emph on
+Otsu
+\change_inserted 1908091853 1661955132
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661955134
+
+\emph on
+referenciar
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ 
+\emph default
+tenta buscar ao longo de um conjunto de valores de pixeis um limiar ótimo
+ que minimiza as variâncias intraclasses de uma imagem segmentada;
+\end_layout
+
+\begin_layout Itemize
+A limiarização iterativa aplica um processo de divisão da imagem em 
+\emph on
+clusteres.
+\end_layout
+
+\begin_layout Standard
+Na limiarização local o valor do limiar depende da vizinhança dos pixeis
+ em termos de coordenadas espaciais.
+ A imagem é primeiramente particionada e então o limiar é determinado localmente
+ utilizando relações espaciais e características como a média e a variância
+ dos pixeis de uma da região.
+ Dessa forma, múltiplos valores de limiar são definidos para a imagem e
+ a segmentação procede de forma mais efetiva.
+ Quanto menor forem as sub-regiões, maiores as chances de serem mais uniformes,
+ todavia, essa técnica demanda de um grande consumo computacional.
+\end_layout
+
+\begin_layout Subsection
+Processamento Digital
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Processamento Digital
+\end_layout
+
+\end_inset
+
+ de Imagens de Rochas Reservatórios
+\end_layout
+
+\begin_layout Standard
+A principais etapas para a realização do processamento de imagens de amostras
+ de meios porosos provenientes de rochas reservatórios são mostradas na
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Conhecimentos-de-Base"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ O uso desse método permite a analise de propriedades físicas das rochas
+ em um grande número de amostras com um baixo custo, além de possibilitar
+ também a utilização de amostras de calha ou de testemunhos danificados.
+\end_layout
+
+\begin_layout Subsubsection
+Etapa 1 - Obtenção e Preparação das Amostras
+\end_layout
+
+\begin_layout Standard
+Essas primeira etapa envolve os processo de preparação das amostras para
+ que estas estejam apropriadas para a aquisição das imagens.
+ As amostras são obtidas por meio de critérios estatísticos, como o da represent
+atividade.
+\end_layout
+
+\begin_layout Standard
+Essas amostras são então submetidas à um processo de limpeza para a remoção
+ de hidrocarbonetos residuais.
+ Em seguida são impregnadas em uma resina especial, de cor azul, que irá
+ preencher os poros e fraturas, tornando-os mais visíveis quando observadas
+ no microscópio.
+\end_layout
+
+\begin_layout Standard
+Corta-se uma fatia de rocha de aproximadamente 0,5 cm de espessura chamada
+ de esquírola.
+ Essa esquírola tem um de seus lados polido e colado em uma lamina de vidro.
+ Em uma politriz o conjunto esquírola e vidro são submetidas a um processo
+ abrasivo, de modo a se obter uma aparência semelhante ao que se vê na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preparacao-lamina"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(e).
+ Após esse processo, a lamina final deve ter uma espessura de aproximadamente
+ 0,03 mm.
+ Ela ainda pode ser sujeita a um ultimo tratamento de polimento, como mostrado
+ na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preparacao-lamina"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(g) ou simplesmente colada à uma segunda lamina de vidro ( Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preparacao-lamina"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(f)).
+ Dessa forma a amostra já está pronto para terem suas imagens obtidas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/preparacao-lamina.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preparação de uma lamina de uma amostra de um meio poroso
+\change_deleted 1908091853 1661948165
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preparacao-lamina"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rego2010desenvolvimento"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Etapa 2 - Aquisição de Imagens
+\end_layout
+
+\begin_layout Standard
+A aquisição de imagens pode ser feita por meio de câmeras, 
+\emph on
+scanners
+\emph default
+ ou sensores dedicados à esse propósito.
+ Na maioria dos casos opta-se pela utilização de uma câmera de vídeo acoplada
+ a um microscópio como sensor de aquisição.
+ Um conversor ADC
+\change_inserted 1908091853 1661955488
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661955502
+o que é ADC? colocar aqui e na lista de siglas
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ transforma o sinal analógico 
+\change_deleted 1908091853 1661955517
+e
+\change_unchanged
+ em discreto e transmite essa informação para um computador ou armazena
+ em algum dispositivo de memória.
+\end_layout
+
+\begin_layout Subsubsection
+Etapa 3 - Pré-Processamento
+\end_layout
+
+\begin_layout Standard
+Como definido anteriormente, o pré-processamento envole
+\change_deleted 1908091853 1661955549
+m
+\change_unchanged
+ um série de procedimentos para a eliminação de irregularidades das imagens,
+ tornando-as mais apropriadas para determinadas aplicações.
+ Nesse etapa são aplicados filtros espaciais ou frequenciais, organização
+ dos dados, conversão de formatos e eliminação de bordas.
+\end_layout
+
+\begin_layout Subsubsection
+Etapa 4 - Segmentação e Binarização
+\end_layout
+
+\begin_layout Standard
+Como também foi mostrado em seções anteriores, a segmentação de imagens
+ trata-se em dividir regiões ou objetos de interesse.
+ É um processo crítico quando se trabalha com imagens, ainda mais quando
+ estas não são triviais.
+\end_layout
+
+\begin_layout Standard
+Já a binarização é caracterizada pela separação de um ou mais objetos do
+ fundo por meio da conversão de uma imagem colorida ou em escala de cinza
+ em uma imagem binária, com pixeis assumindo apenas os valores de 0 ou 1,
+ por exemplo.
+\end_layout
+
+\begin_layout Subsubsection
+Etapa 5 - Caracterização
+\end_layout
+
+\begin_layout Standard
+É nessa etapa que são extraídas informações de interesse, descrevesse e
+ classifica-se os objetos e regiões segmentados nas etapas anteriores, e
+ obtêm-se informações quantitativas sobre as propriedades físicas da rocha,
+ como porosidade, 
+\change_deleted 1908091853 1661955623
+permeabilidade,
+\change_unchanged
+ distribuição de tamanho dos poros
+\change_inserted 1908091853 1661955631
+(e/ou sólidos)
+\change_unchanged
+ e curvas de auto-correlação e conectividade.
+\change_inserted 1908091853 1661955638
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661955647
+para obter a permeabilidade temos de gerar a imagem 3D
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsubsection
+Etapa 6 - Reconhecimento e Interpretação
+\end_layout
+
+\begin_layout Standard
+Trata-se de atribuir significado aos objetos encontrados nas imagens.
+ Envolve o reconhecimento de padrões, nesse caso de rochas reservatórios,
+ a reconstrução 3D e a simulação de processos
+\change_inserted 1908091853 1661955671
+, o que inclui a determinação da permeabilidade
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Inteligência Artificial
+\end_layout
+
+\end_inset
+
+Inteligência Artificial
+\change_inserted 1908091853 1661955815
+ - IA
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+A pesquisa em inteligência artificial envolve a construção de algoritmos
+ que sejam capazes de simular o processo cognitivo humano para a resolução
+ de problemas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "goodfellow2016deep"
+literal "false"
+
+\end_inset
+
+.
+ É uma área demasiada extensa e envolve uma série de 
+\change_deleted 1908091853 1661955781
+técnicas
+\change_inserted 1908091853 1661955789
+modelos
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661955799
+abaixo você tem seções que falam de modelos
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, e dentre elas destacam-se as Redes Neurais Artificiais, os Algoritmos
+ Genéticos e a Lógica 
+\emph on
+Fuzzy
+\emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Fuzzy
+\end_layout
+
+\end_inset
+
+.
+ Nos últimos anos as IAs tem se tornado muito popular devido a disponibilidades
+ de unidades de processamento gráfico (GPUs) com melhor desempenho e mais
+ acessíveis, e a grande quantidade de dados como imagens, textos, mapas,
+ vídeos que vêm sendo acumulados na internet.
+\end_layout
+
+\begin_layout Subsection
+Modelos de Aprendizagem de Máquina (
+\emph on
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Machine Learning
+\end_layout
+
+\end_inset
+
+Machine Learning
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+Um algorítmo de 
+\emph on
+Machine Learning 
+\emph default
+é um algorítmo capaz de aprender a partir dos dados e poder realizar previsões
+ acercas de coisas do mundo real.
+ Por aprendizagem aqui, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{mitchell1997does}
+\end_layout
+
+\end_inset
+
+ define que o processo no qual um computador aprende a partir de uma experiência
+ 
+\emph on
+E 
+\emph default
+acerca de uma classe de tarefas 
+\emph on
+T
+\emph default
+ com uma medida de desempenho 
+\emph on
+P
+\emph default
+, de modo que o resultado seja realizar as tarefas em 
+\emph on
+T 
+\emph default
+de modo que a experiência em 
+\emph on
+E 
+\emph default
+seja melhorada.
+\end_layout
+
+\begin_layout Standard
+Dentre as principais tarefas 
+\emph on
+T
+\emph default
+ que podem ser atribuídas à algoritmos de aprendizagem de máquina, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{goodfellow2016deep}
+\end_layout
+
+\end_inset
+
+ lista:
+\end_layout
+
+\begin_layout Itemize
+Classificação: Nesse tipo de tarefa o computador deve atribuir para as informaçõ
+es de entrada uma determinada classe 
+\begin_inset Formula $k$
+\end_inset
+
+ de acordo com suas características e atributos.
+ Essas classes podem ser atribuídas de forma determinística ou podem ser
+ representadas na forma de distribuições de probabilidades.
+ O exemplo mais comum da aplicação dessa tarefa é a visão computacional
+ para o reconhecimento de objetos.
+\end_layout
+
+\begin_layout Itemize
+Classificação com Entradas Faltantes: Nesse caso, o algorítmo de classificação
+ passa a ser treinado em um conjunto de funções para atribuir a classe a
+ uma entrada, e não apenas uma função, como no caso mais simples.
+ Essa tarefa muitas vezes é implementada fazendo o algorítmo aprender o
+ conjunto de funções por meio de distribuição probabilística sobre as variáveis
+ mais importantes e resolvendo a classificação marginalizando as variáveis
+ faltantes.
+\end_layout
+
+\begin_layout Itemize
+Regressão: O resultado que se busca em um tarefa de regressão é realização
+ de uma previsão numérica sobre um determinado conjunto de dados.
+ É semelhante à classificação, porém apresenta a saída em um formato diferente.
+ A regressão é largamente aplicada em sistemas para previsão do comportamento
+ em mercados financeiros.
+\end_layout
+
+\begin_layout Itemize
+Transcrição: Por meio da observação de algum tipo de dado não estruturado,
+ o computador tem a tarefa de transcrever a informação na forma textual
+ discreta.
+ É muito utilizada no desenvolvimento de sistemas de escrita e reconhecimento
+ de voz.
+\end_layout
+
+\begin_layout Itemize
+Detecção de Anomalias: Aqui é atribuído ao computador a tarefa de analisar
+ uma série de informações e apontar qualquer comportamento não usual ou
+ atípico.
+ Um exemplo de aplicação desse tipo de tarefa é a detecção de fraudes em
+ cartões de crédito por meio da análise do padrão de compra de um cliente.
+\end_layout
+
+\begin_layout Standard
+A medida de desempenho 
+\emph on
+P 
+\emph default
+deve ser uma forma quantitativa se o algorítmo de fato está aprendendo,
+ ou seja, o quão bem ele está realizando a tarefa a qual lhe foi atribuída
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murphy2012machine"
+literal "false"
+
+\end_inset
+
+.
+ Tarefas como a classificação e transcrição normalmente utilizam uma métrica
+ de acurácia, que nada mais é que a fração de entradas para as quais o algorítmo
+ produz uma saída correta.
+ Também é comum analisar essas tarefas por meio da taxa de erro, que representa
+ as entradas para as quais a saída é incorreta.
+\end_layout
+
+\begin_layout Standard
+Sistemas de aprendizagem que produzem saídas contínuas costumam medir a
+ qualidade utilizando o erro médio quadrático 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "james2013introduction"
+literal "false"
+
+\end_inset
+
+, cuja formula é definida em: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+MSE=\frac{1}{n}\sum_{i=1}^{n}\left(y_{i}-\hat{f}(x_{i})\right)^{2},\label{eq:erro-mse}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $\hat{f}(x_{i})$
+\end_inset
+
+ é a previsão feita pelo algorítmo a partir de uma observação do i-ésimo
+ elemento de um conjunto de dados.
+\end_layout
+
+\begin_layout Standard
+Para a realização dessa medida deve ser utilizado um conjunto de teste que
+ corresponde a dados do mundo real que não foram utilizadas no processo
+ de aprendizagem do modelo.
+ Isso evita que o sistema fique de certa forma viciado com o aquilo que
+ foi utilizado no conjunto de treino
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Um conjunto de treino pode ser qualquer coleção de dados que possuam valores
+ esperados (
+\emph on
+label
+\emph default
+) relacionados à eles.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shukla2018machine"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Os modelos de 
+\emph on
+machine learning
+\emph default
+ podem ser classificados de acordo com a experiência que lhe são permitidas
+ durante o treinamento em supervisionados e não-supervisionados.
+\end_layout
+
+\begin_layout Standard
+Algoritmos de aprendizagem supervisionada são submetidos a um conjunto de
+ dados, ou 
+\emph on
+dataset,
+\emph default
+ no qual a cada componente é atribuído um valor alvo ou uma 
+\emph on
+label
+\emph default
+.
+ Por meio da observação de exemplos ao longo de um vetor aleatório 
+\begin_inset Formula $x$
+\end_inset
+
+ e de seu valor correspondente em 
+\begin_inset Formula $y$
+\end_inset
+
+, o algorítmo realiza um previsão de 
+\begin_inset Formula $y$
+\end_inset
+
+ dado 
+\begin_inset Formula $x$
+\end_inset
+
+ estimando 
+\begin_inset Formula $p(y|x)$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bishop2006pattern"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Algoritmos de aprendizagem não supervisionados experienciam um 
+\emph on
+dataset
+\emph default
+ que contém um série de atributos e então aprende utilizando propriedades
+ acerca da estrutura desse conjunto.
+ Ele tenta aprender a distribuição de probabilidade 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ observando de maneira implícita o conteúdo de um vetor aleatório 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "james2013introduction"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Além disso existe uma categoria de algoritmos de aprendizagem de máquina
+ que não utilizam apenas um 
+\emph on
+dataset
+\emph default
+ fixo, mas sim se adaptam de acordo com o ambiente.
+ Esse é o caso dos algoritmos de aprendizagem reforçada, os quais utilizam
+ de um sistema de realimentação entre suas saídas e entradas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mnih2013playing"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Algorítmos de 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Árvores de Decisão
+\end_layout
+
+\end_inset
+
+Árvores de Decisão e 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Florestas Aleatórias
+\end_layout
+
+\end_inset
+
+Florestas Aleatórias
+\end_layout
+
+\begin_layout Standard
+Árvores de decisão são algoritmos que podem ser aplicados tanto em problemas
+ de regressão quanto em problemas de classificação.
+ Conforme é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:arvore-decisao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, cada nó da árvore é associado com uma informação de entrada, cada uma
+ dessas regiões são quebradas em sub-regiões e se associam com outros nós.
+ Em outras palavras, uma árvore de decisão divide um problema complexo em
+ subproblemas cada vez mais simples.
+ No caso de problemas de classificação, cada 
+\begin_inset Quotes eld
+\end_inset
+
+folha
+\begin_inset Quotes erd
+\end_inset
+
+ da árvore estaria associada à uma classe, cada nó representa uma decisão
+ para um determinado atributo e cada ramo um possível valor para estes atributos.
+ O percurso tomado por cada atributo desde sua raiz até a uma determinada
+ folha é chamado de regra de classificação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/arvore-desisao.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representação de uma árvore de decisão
+\change_deleted 1908091853 1661948171
+.
+\change_unchanged
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:arvore-decisao"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "silva2005aplicaccao"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A taxa de erro de classificação 
+\begin_inset Formula $E$
+\end_inset
+
+ em árvores de decisão são simplesmente a fração de resultados de treino
+ que não pertencem a classe mais comum, como é mostrado na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=1-\max_{k}\left(\hat{p}_{mk}\right),\label{eq:erro-arvore-decisao}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $\hat{p}_{mk}$
+\end_inset
+
+ representa a quantidade de observações na m-ésina região para a k-ésima
+ classe.
+\end_layout
+
+\begin_layout Standard
+Contudo é preferível utilizar o índice 
+\emph on
+Gili
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Índice 
+\emph on
+Gili
+\end_layout
+
+\end_inset
+
+,
+\emph default
+ da Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indice-gili"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, para a medição da impureza em cada nó.
+ Quando esse índice é igual a 0, diz que o nó é considerado puro, se for
+ diferente disso, é portanto impuro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+G=\sum_{k=1}^{K}\hat{p}_{mk}\left(1-\hat{p}_{mk}\right)\label{eq:indice-gili}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A principal vantagem desse método é a sua facilidade de compreensão e interpreta
+ção, já que ele pode ser relacionado com forma na qual as pessoas tomam
+ suas decisões.
+ Todavia, esses algoritmos não produzem a mesma acurácia em predições como
+ outros métodos mais comum de regressão.
+ Contudo essa diferença pode ser minimizada aplicando outros métodos como
+ florestas aleatórias.
+\end_layout
+
+\begin_layout Standard
+Florestas aleatórias são formadas por combinações de árvores de decisão
+ de forma randômica, de forma a se buscar a melhor característica de cada
+ sub conjunto, gerando grande diversidade para o modelo.
+\end_layout
+
+\begin_layout Standard
+Contudo sua maior limitação acaba sendo sua performance quando se trata
+ de um modelo com uma grande quantidade de árvores.
+ Florestas aleatórias são bem rápidas de treinar mas podem ser tornar muito
+ lentas e ineficientes na hora de se fazer predições.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Redes Neurais Artificias
+\end_layout
+
+\end_inset
+
+Redes Neurais Artificias
+\end_layout
+
+\begin_layout Standard
+A redes neurais artificiais são definidas como modelos não-lineares com
+ capacidade de imitar o comportamento do cérebro humano e sua estrutura
+ de neurônios 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haykin2007redes"
+literal "false"
+
+\end_inset
+
+.
+ Dessa forma, idealmente, uma RNA é capaz de realizar as operações de aprendizad
+o, associação, generalização e abstração.
+ Essas redes são compostas por uma série de elementos chamados de neurônios
+ artificiais, altamente interligados e que executam operações simples e
+ passando a informação para os elemento seguintes da estrutura.
+ Um neurônio em geral possui várias entradas, mas apenas uma saída, como
+ é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:neuronio-artificial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Cada entrada é representado por 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ e são ponderadas por um peso 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ com 
+\begin_inset Formula $i$
+\end_inset
+
+ variando de 1 a 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ A combinação dessas entrada é feita pela soma 
+\begin_inset Formula $\Phi$
+\end_inset
+
+, a qual ainda é somado um valor de polarização ou 
+\emph on
+bias 
+\emph default
+
+\begin_inset Formula $\theta$
+\end_inset
+
+, como é mostrado na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u=\Phi+\theta=\sum_{1}^{n}u_{n}w_{n}+\theta.\label{eq:soma-ponderada}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/neuronio-artificial.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representação de um neurônio artificial 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:neuronio-artificial"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Funções de Ativação
+\end_layout
+
+\end_inset
+
+Funções de Ativação
+\end_layout
+
+\begin_layout Standard
+O resultado da operação mostrada na Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:soma-ponderada"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é aplicado como insumo para uma função de ativação 
+\begin_inset Formula $\eta$
+\end_inset
+
+, assim a saída 
+\begin_inset Formula $y$
+\end_inset
+
+ do neurônio é mostrado na Equação
+\begin_inset Formula 
+\begin{equation}
+y=\eta(u)=\eta\left(\Phi+\theta\right)=\eta\left(\sum_{1}^{n}u_{n}w_{n}+\theta\right).\label{eq:saida-neuronio}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Essa função de ativação que é responsável por introduzir a não-linearidade
+ ao modelo do neurônio, e pode aparecer na forma de uma função tangente
+ hiperbólica, degrau, sigmoide, entre outras 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chollet2018deep"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A função de ativação degrau é descrita na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(u)=\begin{cases}
+1 & u\geq0\\
+0 & u<0
+\end{cases},\label{eq:funcao-degrau}
+\end{equation}
+
+\end_inset
+
+e mostrada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:funcoes-ativacao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/funcao-degrau.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função degrau 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:funcoes-ativacao"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ela atua de forma a binarizar a saída dos neurônios, como um chave.
+ De forma semelhante existe a função degrau bipolar, que é mostrada na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(u)=\begin{cases}
+1 & u\geq0\\
+-1 & u<0
+\end{cases}.\label{eq:funcao-degrau-bipolar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A função de rampa, descrita na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(u)=\begin{cases}
+1 & u\geq a\\
+u & -a<u<-a\\
+0 & u\leq-a
+\end{cases},\label{eq:funcao-rampa}
+\end{equation}
+
+\end_inset
+
+e mostrada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:funcoes-arampa"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, retorna valores 
+\begin_inset Formula $\eta(u)=u$
+\end_inset
+
+ dentro de um determinado intervalo 
+\begin_inset Formula $\{-a,a\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/funcao-rampa.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função rampa 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:funcoes-arampa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na função sigmoid a saída assume valores reais entre 0 e 1, e sua inclinação
+ é definida por um parâmetro 
+\begin_inset Formula $\beta$
+\end_inset
+
+, conforme é descrito na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(u)=\frac{1}{1+e^{\left(-\beta u\right)}},\label{eq:funcao-sigmoid}
+\end{equation}
+
+\end_inset
+
+e mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:funcoes-sigmoid"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/funcao-sigmoid.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função sigmoid 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:funcoes-sigmoid"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A função tangente hiperbólica produz um gráfico muito semelhante, mas retornando
+ valores entre -1 e 1.
+ Ela é mostrada na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+g(u)=\tanh(u)=\frac{e^{u}-e^{-u}}{e^{u}+e^{-u}},\label{eq:funcao-tanh}
+\end{equation}
+
+\end_inset
+
+e na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:funcoes-tanh"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/funcao-tanh.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função tangente hiperbólico 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:funcoes-tanh"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existem ainda funções de ativação que são extremamente comuns em redes neurais
+ profundas e vêm trazendo excelentes resultados nos últimos anos: 
+\emph on
+ReLU
+\emph default
+ e 
+\emph on
+Softmax
+\emph default
+.
+ A função de ativação 
+\emph on
+ReLU 
+\emph default
+mostrada na Equação 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(u)=\begin{cases}
+u & u\geq0\\
+0 & u<0
+\end{cases},\label{eq:funcao-relu}
+\end{equation}
+
+\end_inset
+
+e na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:funcao-relu"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+tem como principal vantagem o fato de que ela não ativa imediatamente todos
+ os neurônios, pois os valores negativos de 
+\begin_inset Formula $u$
+\end_inset
+
+ acabam, sendo igualados a 0 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/funcao-relu.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função ReLU 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:funcao-relu"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chollet2018deep"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A função 
+\emph on
+softmax 
+\emph default
+é semelhante a uma função 
+\emph on
+sigmoid 
+\emph default
+e é bastante utilizada para a classificação de problemas com mais de duas
+ classes.
+ Ela converte os valores das camadas de saída em uma função de probabilidade.
+ Sua estrutura é mostrada por 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(\vec{u})_{i}=\frac{e^{u_{i}}}{\sum_{j=1}^{k}e^{u_{j}}},\label{eq:funcao-softmax}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $\vec{u}$
+\end_inset
+
+ representa todo um vetor de entrada com 
+\begin_inset Formula $k$
+\end_inset
+
+ elementos
+\begin_inset Formula $u_{i}$
+\end_inset
+
+.
+ Aqui 
+\begin_inset Formula $k$
+\end_inset
+
+ também é o número de classes aplicadas ao algoritmo.
+\end_layout
+
+\begin_layout Subsubsection
+Redes Neurais Diretas (
+\emph on
+FeedForwarding
+\emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+FeedForwarding
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Redes neurais são denominadas de diretas ou 
+\emph on
+feedforwarding 
+\emph default
+quando não possuem ciclos em sua estrutura, ou seja, ela sempre é alimentada
+ em uma única direção 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+.
+ São frequentemente representadas em camadas de neurônios, os quais sempre
+ são alimentados pelas saídas das camadas anteriores.
+ Os dados são introduzidos em uma camada de entrada e o produto final da
+ rede é provido pela camada de saída.
+ Qualquer camada entre essas duas é denominada de profunda ou 
+\emph on
+hidden layers
+\emph default
+.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rna-direta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra uma RNA direta com 2 camadas profundas, 3 entradas e 2 saídas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/rna-direta.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rede neural artificial direta com 2 camadas profundas 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rna-direta"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O comportamento dessa rede neural pode ser expresso na forma da Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y_{j}^{l}=\eta\left(\sum_{k}w_{jk}^{l}y_{k}^{l-1}+\theta_{j}^{l}\right),\label{eq:rna-direta-notacao-index}
+\end{equation}
+
+\end_inset
+
+onde notação 
+\begin_inset Formula $w_{jk}^{l}$
+\end_inset
+
+ denota o peso da conexão entre o k-ésimo neurônio da (l-1)-ésima camada
+ com o j-ésimo neurônio da l-ésima camada.
+ 
+\end_layout
+
+\begin_layout Standard
+O diagrama da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rep-peso"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ajuda a entender melhor essa representação.
+ Além disso 
+\begin_inset Formula $\theta_{j}^{l}$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{j}^{l}$
+\end_inset
+
+ representam, respectivamente, o 
+\emph on
+bias 
+\emph default
+e a ativação do j-ésimo neurônio na l-ésima camada.
+ A ativação do k-ésimo neurônio da camada anterior 
+\begin_inset Formula $(l-1)$
+\end_inset
+
+ é usada como insumo para a ativação do neurônio atual e é representada
+ como 
+\begin_inset Formula $y_{k}^{l-1}$
+\end_inset
+
+.
+ Uma forma vetorizada dessa equação é descrita como
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y^{l}=\eta\left(w^{l}y^{l-1}+\theta^{l}\right).\label{eq:forma-vetorizada}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/notacao-peso.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama sobre a notação matemática de um peso RNA
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rep-peso"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existem diversos métodos utilizados para desenvolver o aprendizagem desse
+ tipo de rede neural, mas o mais utilizada é o da retro-propagação de erros
+ ou 
+\emph on
+backpropagation
+\emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Backpropagation
+\end_layout
+
+\end_inset
+
+.
+ O objetivo desse algoritmo é calcular o quanto é preciso modificar os valores
+ dos pesos e 
+\emph on
+biases
+\emph default
+ da rede após cada saída que a rede neural retorna 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "goodfellow2016deep"
+literal "false"
+
+\end_inset
+
+.
+ Para isso define-se uma função de custo 
+\begin_inset Formula $C$
+\end_inset
+
+ que mede o quão diferente da saída da rede 
+\begin_inset Formula $y^{L}$
+\end_inset
+
+ está relação ao valor verdadeiro atribuído ao dado imputado na camada de
+ entrada 
+\begin_inset Formula $y(x)$
+\end_inset
+
+.
+ O algoritmo da retro-propagação calcula então as derivadas parciais 
+\begin_inset Formula $\partial C/\partial\theta$
+\end_inset
+
+ e 
+\begin_inset Formula $\partial C/\partial w$
+\end_inset
+
+ para essa função em relação ao 
+\emph on
+biases 
+\emph default
+e aos pesos.
+ Um exemplo de função de custo é a função de custo quadrático, que é expressada
+ pela Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\frac{1}{2n}\sum_{x}\parallel y(x)-y^{L}(x)\parallel^{2},\label{eq:custo-quadratico}
+\end{equation}
+
+\end_inset
+
+na qual 
+\begin_inset Formula $n$
+\end_inset
+
+ é o número total de exemplos de treino no 
+\emph on
+dataset
+\end_layout
+
+\begin_layout Standard
+Normalmente quando uma rede é treinada não se utiliza o conjunto de dados
+ por inteiro de uma vez.
+ É comum que antes ele seja dividido em conjuntos menores de pares entrada
+ e 
+\emph on
+label
+\emph default
+, selecionados aleatoriamente, denominados de 
+\emph on
+mini-batches
+\emph default
+.
+ Essa abordagem não apenas é mais viável computacionalmente, pois evita
+ de carregar 
+\emph on
+datasets 
+\emph default
+muito grandes na memória de uma só vez, como também ajuda no processo de
+ aprendizagem da rede 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "james2013introduction"
+literal "false"
+
+\end_inset
+
+.
+ A velocidade que a rede aprende também é ditada pela taxa de aprendizagem
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{nielsen2015neural}
+\end_layout
+
+\end_inset
+
+ o procedimento para se trabalhar com redes neurais diretas pode ser descrito
+ sob o seguinte algoritmo:
+\end_layout
+
+\begin_layout Enumerate
+Entra-se com um conjunto de dados na camada de entrada da rede neural;
+\end_layout
+
+\begin_layout Enumerate
+Para cada exemplo de treino é feito o seguinte procedimento:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+computar as saídas dos neurônios até a última camada utilizando a Equação
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rna-direta-notacao-index"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+calcular o erro 
+\begin_inset Formula $\delta^{x,L}$
+\end_inset
+
+ utilizando a Equação
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\begin_inset Formula 
+\begin{equation}
+\delta^{x,L}=\nabla_{a}C_{x}\odot\eta'(w^{L}y^{L-1}+\theta^{L}),\label{eq:erro-saida}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde o operador 
+\begin_inset Formula $\bigodot$
+\end_inset
+
+ denota o produto de 
+\emph on
+Hadamard 
+\emph default
+ou produto de 
+\emph on
+Schur
+\emph default
+, em se calcula o produto de cada elemento de duas matrizes com as mesmas
+ dimensões.
+ Essa operação é denotada pela Equação
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{cc}
+A & B\\
+C & D
+\end{array}\right]\bigodot\left[\begin{array}{cc}
+E & F\\
+G & H
+\end{array}\right]=\left[\begin{array}{cc}
+A\times E & B\times F\\
+C\times G & D\times H
+\end{array}\right];\label{eq:hadamard}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Retro-propagar o erro pela rede utilizando a Equação
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta^{x,l}=\left(\left(w^{l+1}\right)^{T}\delta^{x,l+1}\right)\odot\eta'(w^{l}y^{l-1}+\theta^{l});\label{eq:erro-camada}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Atualizar os pesos e 
+\emph on
+biases 
+\emph default
+da rede por meio das Equações
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\begin_inset Formula 
+\begin{equation}
+w^{l}\rightarrow w^{l}-\frac{\mu}{m}\sum_{x}\delta^{x,l}\left(a^{x,l-1}\right),^{T}\label{eq:novo-peso}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b^{l}\rightarrow b^{l}-\frac{\mu}{m}\sum_{x}\delta^{x,l},\label{eq:novo-bias}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $\mu$
+\end_inset
+
+ representa a taxa de aprendizagem da rede e 
+\begin_inset Formula $m$
+\end_inset
+
+ o tamanho do 
+\emph on
+mini-batches.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Percebeu-se no entanto que utilizar a função mostrada na Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:custo-quadratico"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ pode tornar o aprendizado muito lento.
+ Por isso uma função de custo substituta que ode ser adotada é 
+\emph on
+Cross-Entropy
+\emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Cross-Entropy
+\end_layout
+
+\end_inset
+
+, que é expressa na forma de 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=-\frac{1}{n}\sum_{x}\left[y\ln a+(1-y)\ln(1-a)\right],\label{eq:cross-entropy}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $a$
+\end_inset
+
+ representa a saída da função de ativação, 
+\begin_inset Formula $n$
+\end_inset
+
+ é o número total de elementos do conjunto de treino, 
+\begin_inset Formula $x$
+\end_inset
+
+ o valor de entrada e 
+\begin_inset Formula $y$
+\end_inset
+
+ é a saída desejada.
+ 
+\end_layout
+
+\begin_layout Standard
+As derivadas da Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cross-entropy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\partial C/\partial\theta$
+\end_inset
+
+ e 
+\begin_inset Formula $\partial C/\partial w$
+\end_inset
+
+, são mostradas nas Equações 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial C}{\partial\theta}=\frac{1}{n}\sum_{x}(a-y),\label{eq:biases-cross-entropy}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial C}{\partial w}=\frac{1}{n}\sum_{x}x(a-y).\label{eq:pesos-cross-entropy}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observa-se que o gradiente da função de ativação não é considerado, o que
+ ajuda a resolver o problema do 
+\emph on
+vanishing gradient.
+\end_layout
+
+\begin_layout Standard
+Nas Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:epochs-x-cost-custo-quadratico"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:epochs-x-cost-cross-entropy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é feita uma comparação usando um função de custo quadrático e um função
+ 
+\emph on
+cross-entropy
+\emph default
+ para um neurônio fictício com os valores de peso e 
+\emph on
+biases 
+\emph default
+configurados inicialmente iguais a 2, o 
+\emph on
+input
+\emph default
+ igual a 1, a saída atual em 0,98 e a saída desejada em 0.
+ O que se observa é que no segundo caso o valor do custo atinge um número
+ mais baixo em uma menor quantidade de épocas do que o primeiro.
+ Isso mostra, portanto, que ele está aprendendo mais rápido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/epochs-x-cost-custo-quadrático.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relação custo x número de épocas para uma função de custo quadrática
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:epochs-x-cost-custo-quadratico"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/epochs-x-cost-cross-entropy.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relação custo x número de épocas para uma função de custo 
+\emph on
+cross-entropy
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:epochs-x-cost-cross-entropy"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

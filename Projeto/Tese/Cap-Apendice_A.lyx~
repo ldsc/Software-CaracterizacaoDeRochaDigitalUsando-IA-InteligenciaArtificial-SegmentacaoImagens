@@ -1,0 +1,10285 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+
+
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\options normaltoc, sumarioincompleto
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 1908091853 "andreduartebueno"
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Manual do Desenvolvedor
+\change_inserted 1908091853 1662039689
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Manual-do-Desenvolvedor"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Apêndice 
+\backslash
+thechapter: Códigos-fontes dos Softwares Desenvolvidos}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+Este apêndice descreve os códigos-fontes desenvolvidos para 
+\change_deleted 1908091853 1662036892
+o 
+\change_unchanged
+a criação da ferramenta de anotação de regiões de interesse e 
+\change_deleted 1908091853 1662036901
+d
+\change_unchanged
+os 
+\emph on
+scripts
+\emph default
+ para treinamento e aplicação do modelo de 
+\emph on
+Machine Learning, 
+\emph default
+além disso são mostrados os diagramas de classe e instruções de como compilar
+ e executar ambos projetos.
+ Cada classe tem uma breve descrição de seu funcionamento para facilitar
+ 
+\change_deleted 1908091853 1662295547
+no processo de
+\change_inserted 1908091853 1662295547
+a
+\change_unchanged
+ compreensão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Apêndice 
+\backslash
+thechapter: Códigos-fontes dos Softwares Desenvolvidos}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ferramenta de 
+\change_deleted 1908091853 1662036879
+Aquisição
+\change_inserted 1908091853 1662037424
+Anotação
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662037447
+mantenha o nome usado no trabalho ou mude em todo ele; evite dois nomes
+ com o mesmo fim
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ de Regiões de Interesse
+\change_inserted 1908091853 1662037155
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ferramenta-de-AnotaçãoDeRegioes"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1662037326
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662037412
+Comece explicando o que este software vai fazer; pode replicar aqui apenas
+ a primeira parte da figura 5.1; destacando que o resultado são grupos de
+ píxeis para treinamento de redes neurais.
+ Fale do formato do arquivo de entrada e do arquivo de saída; mostre exemplo
+ de arquivo de saída.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+Para facilitar o processo de desenvolvimento, todos os códigos fontes do
+ projeto podem ser baixados em 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/hereisjohnny2/rock-image-annotation"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Dependências e Softwares Auxiliares
+\end_layout
+
+\begin_layout Standard
+As seguintes bibliotecas e softwares são necessários para a compilação do
+ código da ferramenta:
+\end_layout
+
+\begin_layout Itemize
+Qt6: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.qt.io/product/qt6"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+CMake: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://cmake.org/download/"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1662295683
+A versão do software de anotação desenvolvido, utilizada nos testes e simulações
+ apresentados nesta dissertação usou QT6 na sua versão X.X.X e CMAKE na sua
+ versão X.X.X.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662295736
+Sempre que temos resultados que são obtidos e analisados é preciso informar
+ as versões exatas dos sotfwares utilizados; pois software pode apresentar
+ bugs e uma nova versão pode mutdar resultados.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Compilando e Executando o Projeto
+\end_layout
+
+\begin_layout Standard
+A compilação do projeto é feita utilizando a ferramenta 
+\emph on
+CMake 
+\emph default
+para gerar o
+\change_inserted 1908091853 1662295788
+s
+\change_unchanged
+ 
+\emph on
+makefiles
+\emph default
+ necessários para a compilação.
+ A Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: cmake-lists-txt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra o código a ser executado para gerar esses arquivos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: cmake-lists-txt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=make,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={CMakeLists.txt}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+cmake_minimum_required(VERSION 3.16)
+\end_layout
+
+\begin_layout Plain Layout
+
+project(rock_image_cpp)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_CXX_STANDARD 17)
+\end_layout
+
+\begin_layout Plain Layout
+
+add_definitions(-D_GLIBCXX_USE_CXX17_ABI=0)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_AUTOMOC ON)
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_AUTORCC ON)
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_AUTOUIC ON)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+find_package(Qt6 COMPONENTS
+\end_layout
+
+\begin_layout Plain Layout
+
+        Core
+\end_layout
+
+\begin_layout Plain Layout
+
+        Gui
+\end_layout
+
+\begin_layout Plain Layout
+
+        Widgets
+\end_layout
+
+\begin_layout Plain Layout
+
+        REQUIRED
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+add_executable(rock_image_cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/main.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/RockImageWindow/rockimageui.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/RockImageWindow/rockimageui.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/PixelDataTable.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/PixelDataTable.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplaySubWindow.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplaySubWindow.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplayWidget.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplayWidget.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/Dialogs/CustomMessageDialogs.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/Dialogs/CustomMessageDialogs.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/Dialogs/ColorDialog.cpp src/windows/Dialogs/ColorDialog.h)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+target_link_libraries(rock_image_cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        Qt::Core
+\end_layout
+
+\begin_layout Plain Layout
+
+        Qt::Gui
+\end_layout
+
+\begin_layout Plain Layout
+
+        Qt::Widgets
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para compilar e executar o projeto o seguinte procedimento deve ser realizado:
+\end_layout
+
+\begin_layout Enumerate
+Entre no diretório do projeto e crie uma nova pasta chamado 
+\emph on
+build.
+\end_layout
+
+\begin_layout Enumerate
+Ainda na raiz do projeto execute o CMake para gerar os arquivos de compilação
+ com o seguinte comando no terminal:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ cmake -B build -S .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em seguida, entre no diretório 
+\emph on
+build
+\emph default
+ e execute o comando no terminal
+\emph on
+ make 
+\emph default
+para compilar o projeto:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ cd build && make
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assim que o projeto for compilado, execute a ferramenta com o seguinte comando
+ no terminal:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ ./rock_image_cpp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Diagrama de Classes
+\change_inserted 1908091853 1662296382
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1662296383
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296586
+pelo diagrama um ColorDialog é herdeiro de QDialog e tem um RockImageUI?
+ (simbolo de agregação!)
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296605
+tem de corrigir o diagrama;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296629
+sugiro deixar, entre ColorDialog e RockImageUI uma associação simples.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296697
+O mesmo pra PixelDataTable, CustomMessageDialog,RGBLayer;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296737
+Talvez vc tenha invertido a posição do símbolo de agregação;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296764
+Se RockImageUI tem um ColorDialog, o losango da agregação fica ligado a
+ classe RockImageUI
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/diagrama-class.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de classes da Ferramenta de Aquisição de Regiões de Interesse
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-classes-anot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1662296860
+Classe 
+\change_unchanged
+RockImageUI
+\end_layout
+
+\begin_layout Standard
+A interface gráfica da janela a ser construída é desenhada no aplicativo
+ 
+\emph on
+QT Designer
+\emph default
+ (veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:qt-designer"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Este, por sua vez, gera arquivos .ui que descrevem a interface da janela
+ criada.
+ Arquivos .ui são arquivos com formato semelhante ao XML/HTML.
+ Estes arquivos são então processados e transformando em arquivos *.
+\emph on
+h
+\emph default
+ e *.
+\emph on
+cpp
+\emph default
+ dependentes de QT.
+ Como os arquivos .h e .cpp gerados contém instruções específicas de QT, eles
+ precisam passar por um pré-processamento.
+ Isto é feito usando o compilador MOC - 
+\emph on
+Meta Object Compiler
+\emph default
+, de QT
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+veja por exemplo 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://doc.qt.io/archives/qt-4.8/moc.html"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ MOC processa estes arquivos e faz as interpretações necessárias para gerar
+ arquivos válidos para o compilador de C++.
+ Em resumo, a interface da janela desenhada no 
+\emph on
+QT Designer 
+\emph default
+gera um arquivo .ui, este é convertido em .h e .cpp que são pré-processados
+ pelo MOC e então finalmente compilados e linkados pelo compilador de C++.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: rockimageui.h"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={rockimageui.h}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#ifndef ROCK_IMAGE_CPP_ROCKIMAGEUI_H
+\end_layout
+
+\begin_layout Plain Layout
+
+#define ROCK_IMAGE_CPP_ROCKIMAGEUI_H
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QMainWindow>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QListWidgetItem>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QTreeWidgetItem>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "../../widgets/PixelDataTable.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "../../widgets/ImageDisplaySubWindow.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+namespace RockImageUI {
+\end_layout
+
+\begin_layout Plain Layout
+
+    QT_BEGIN_NAMESPACE
+\end_layout
+
+\begin_layout Plain Layout
+
+    namespace Ui { class RockImageUI; }
+\end_layout
+
+\begin_layout Plain Layout
+
+    QT_END_NAMESPACE
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    const static int ENTER_KEY_CODE = 16777220;
+\end_layout
+
+\begin_layout Plain Layout
+
+    const static int DELETE_KEY_CODE = 16777223;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    class RockImageUI : public QMainWindow {
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q_OBJECT
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    public:
+\end_layout
+
+\begin_layout Plain Layout
+
+        explicit RockImageUI(QWidget *parent = nullptr);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ~RockImageUI() override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    private:
+\end_layout
+
+\begin_layout Plain Layout
+
+        QAction *showImagesAction, *showDataTablesAction;
+\end_layout
+
+\begin_layout Plain Layout
+
+        Ui::RockImageUI *ui;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    private slots:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void openImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void saveTableData();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void cleanTable();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void collectDataFromImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void showImage(QListWidgetItem *listWidgetItem);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void closeAllWindows();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void zoomIn();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void zoomOut();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void addLayer();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void showLayer(QTreeWidgetItem *treeWidgetItem, int column);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void increaseWidth();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void decreaseWidth();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void chooseColor();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    private:
+\end_layout
+
+\begin_layout Plain Layout
+
+        ImageDisplaySubWindow *getSubWidowByName(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ImageDisplaySubWindow *getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        PixelDataTable *getCurrentDataTable();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        PixelDataTable *getPixelDataTableByName(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        int getPixelDataIndexTableByName(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void deleteCurrentImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void deleteImage(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void loadImage(const QString &filePath);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void createToolBar();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void setActionsIcons();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool removeLayer(QTreeWidgetItem *item);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool eventFilter(QObject *obj, QEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        static QPair<QString, QString> getLayerAndSubWindowName(QTreeWidgetItem
+ *treeWidgetItem, int column);
+\end_layout
+
+\begin_layout Plain Layout
+
+    };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+} // RockImageUI
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#endif //ROCK_IMAGE_CPP_ROCKIMAGEUI_H
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: rockimageui.cpp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={rockimageui.cpp}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#include "rockimageui.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "ui_rockimageui.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QtWidgets>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <map>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QDialog>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "../Dialogs/CustomMessageDialogs.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "../Dialogs/ColorDialog.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+namespace RockImageUI {
+\end_layout
+
+\begin_layout Plain Layout
+
+    RockImageUI::RockImageUI(QWidget *parent) :
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMainWindow(parent), ui(new Ui::RockImageUI) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->setupUi(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        setActionsIcons();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // File Menu Actions
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->openImageAction, SIGNAL(triggered()), this, SLOT(openImage()
+));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->saveDataAction, SIGNAL(triggered()), this, SLOT(saveTableDat
+a()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->cleanTableAction, SIGNAL(triggered()), this, SLOT(cleanTable
+()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->exitAction, &QAction::triggered, [](){QApplication::quit();}
+);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // Images Menu Actions
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->addLayerAction, SIGNAL(triggered()), this, SLOT(addLayer()))
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->increaseWidthAction, SIGNAL(triggered()), this, SLOT(increas
+eWidth()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->decreaseWidthAction, SIGNAL(triggered()), this, SLOT(decreas
+eWidth()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->chooseColorAction, SIGNAL(triggered()), this, SLOT(chooseCol
+or()));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // ImageList Events
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imagesList->installEventFilter(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->imagesList,
+\end_layout
+
+\begin_layout Plain Layout
+
+                SIGNAL(itemDoubleClicked(QListWidgetItem*)),
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                SLOT(showImage(QListWidgetItem*)));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // ImageTree Events
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imageTree->installEventFilter(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imageTree->installEventFilter(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->imageTree,
+\end_layout
+
+\begin_layout Plain Layout
+
+                SIGNAL(itemDoubleClicked(QTreeWidgetItem*,int)),
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                SLOT(showLayer(QTreeWidgetItem*,int)));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // Show Dock Widgets Menu
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->tableTabDockWidget->setVisible(false);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imagesListDockWidget->setVisible(false);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        showImagesAction = ui->imagesListDockWidget->toggleViewAction();
+\end_layout
+
+\begin_layout Plain Layout
+
+        showImagesAction->setText("Lista de Imagens");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        showDataTablesAction = ui->tableTabDockWidget->toggleViewAction();
+\end_layout
+
+\begin_layout Plain Layout
+
+        showDataTablesAction->setText("Tabelas de Dados");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->showDockMenu->addAction(showImagesAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->showDockMenu->addAction(showDataTablesAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // ToolBar Actions
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->collectDataAction, SIGNAL(triggered()), this, SLOT(collectDa
+taFromImage()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->closeAllAction, SIGNAL(triggered()), this, SLOT(closeAllWind
+ows()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->zoomInAction, SIGNAL(triggered()), this, SLOT(zoomIn()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->zoomOutAction, SIGNAL(triggered()), this, SLOT(zoomOut()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        connect(ui->changeLabelAction, SIGNAL(triggered()), this, SLOT(changeTar
+getLabel()));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        createToolBar();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    RockImageUI::~RockImageUI() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        delete ui;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::openImage() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString fileName = QFileDialog::getOpenFileName(this, tr("Abrir
+ Imagem"), QDir::homePath(), tr("Image Files (*.png *.jpg *.bmp)"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        QFile file(fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!file.exists()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this, "Error", "Não foi possível abrir
+ a imagem selecionada.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        loadImage(fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::saveTableData() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto pixelDataTable = getCurrentDataTable();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (pixelDataTable == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Tabela Vazia",
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Não exitem dados a serem coletados.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString filter("Text files (*.txt, *.dat)");
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString fileName = QFileDialog::getSaveFileName(
+\end_layout
+
+\begin_layout Plain Layout
+
+                this, tr("Salvar Dados"), QDir::homePath(), filter, &filter);
+\end_layout
+
+\begin_layout Plain Layout
+
+        QFile file(fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!file.open(QIODevice::WriteOnly | QFile::Text)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this, "Erro", "Não foi possível salvar
+ o arquivo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QTextStream out(&file);
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (int i = 0; i < pixelDataTable->rowCount(); ++i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            out << pixelDataTable->item(i, 2)->text() << "
+\backslash
+t"
+\end_layout
+
+\begin_layout Plain Layout
+
+                << pixelDataTable->item(i, 3)->text() << "
+\backslash
+t"
+\end_layout
+
+\begin_layout Plain Layout
+
+                << pixelDataTable->item(i, 4)->text() << "
+\backslash
+t"
+\end_layout
+
+\begin_layout Plain Layout
+
+                << pixelDataTable->item(i, 5)->text() << "
+\backslash
+n";
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        file.close();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QMessageBox::information(this, "Sucesso", "Arquivo Salvo com Sucesso");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::cleanTable() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto pixelDataTable = getCurrentDataTable();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (pixelDataTable == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Tabela Vazia",
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Não exitem dados a serem coletados.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool result = CustomMessageDialogs::Question(
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Limpar Tabela",
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Tem certeza que deseja limpar os dados coletados na tabela?");
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!result) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        pixelDataTable->clearContents();
+\end_layout
+
+\begin_layout Plain Layout
+
+        pixelDataTable->setRowCount(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::loadImage(const QString& filePath) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QListWidgetItem *listItem;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString fileName = filePath.section("/", -1, -1);
+\end_layout
+
+\begin_layout Plain Layout
+
+        QList<QListWidgetItem*> foundItems = ui->imagesList->findItems(fileName,
+ Qt::MatchExactly);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (foundItems.empty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            listItem = new QListWidgetItem();
+\end_layout
+
+\begin_layout Plain Layout
+
+            listItem->setText(fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+            listItem->setToolTip(filePath);
+\end_layout
+
+\begin_layout Plain Layout
+
+            ui->imagesList->addItem(listItem);
+\end_layout
+
+\begin_layout Plain Layout
+
+        } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+            listItem = foundItems[0];
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto foundTreeItems = ui->imageTree->findItems(fileName, Qt::MatchExactl
+y);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (foundTreeItems.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            auto treeItem = new QTreeWidgetItem();
+\end_layout
+
+\begin_layout Plain Layout
+
+            treeItem->setText(0, fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+            ui->imageTree->addTopLevelItem(treeItem);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imagesListDockWidget->setVisible(true);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->tableTabDockWidget->setVisible(true);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        showImage(listItem);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::showImage(QListWidgetItem *listWidgetItem) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString filePath = listWidgetItem->toolTip();
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString fileName = listWidgetItem->text();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto pixelDataTableIndex = getPixelDataIndexTableByName(fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (pixelDataTableIndex == -1) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            auto *pixelDataTable = new PixelDataTable();
+\end_layout
+
+\begin_layout Plain Layout
+
+            ui->dataTablesTab->addTab(pixelDataTable, fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+            pixelDataTableIndex = ui->dataTablesTab->count();
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->dataTablesTab->setCurrentIndex(pixelDataTableIndex);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto *subWindow = getSubWidowByName(fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (subWindow == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            subWindow = new ImageDisplaySubWindow(filePath, fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+            subWindow->setAttribute(Qt::WA_DeleteOnClose);
+\end_layout
+
+\begin_layout Plain Layout
+
+            ui->openImagesArea->addSubWindow(subWindow);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        subWindow->loadImage(filePath);
+\end_layout
+
+\begin_layout Plain Layout
+
+        subWindow->show();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::collectDataFromImage() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto window = getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (window == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto *imageDisplayWidget = window->getImageDisplayWidget();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (imageDisplayWidget == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto pixelDataTable = getPixelDataTableByName(window->windowTitle());
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (pixelDataTable == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Tabela Vazia",
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Não exite tabela com dados a serem coletados.")
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->dataTablesTab->setCurrentWidget(pixelDataTable);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QHash<QPoint, ImageDisplayWidget::RGBLayerName> pixelDataMap = imageDisp
+layWidget->getPixelDataMap();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ImageDisplayWidget::RGBLayerName rgbLayerName;
+\end_layout
+
+\begin_layout Plain Layout
+
+        for(auto it = pixelDataMap.constBegin(); it != pixelDataMap.constEnd();
+ ++it) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            rgbLayerName = it.value();
+\end_layout
+
+\begin_layout Plain Layout
+
+            pixelDataTable->addData(it.key(), rgbLayerName.rgb, rgbLayerName.layerN
+ame);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        imageDisplayWidget->clearPixelDataMap();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    PixelDataTable* RockImageUI::getPixelDataTableByName(const QString&
+ name) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (int i = 0; i < ui->dataTablesTab->count(); ++i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (ui->dataTablesTab->tabText(i) == name) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                return dynamic_cast<PixelDataTable *>(ui->dataTablesTab->widget(
+i));
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        return nullptr;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    ImageDisplaySubWindow *RockImageUI::getSubWidowByName(const QString&
+ name) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (auto &subWindow : ui->openImagesArea->subWindowList()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (subWindow->windowTitle() == name) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                return dynamic_cast<ImageDisplaySubWindow *>(subWindow);
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        return nullptr;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::closeAllWindows() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->openImagesArea->closeAllSubWindows();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::zoomIn() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto *activeSubWindow = (ImageDisplaySubWindow*) ui->openImagesArea->cur
+rentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (activeSubWindow == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Área de Trabalho Vazia",
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Não existe nenhuma janela ativa no momento.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        activeSubWindow->scaleImage(1.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::zoomOut() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto currentSubWindow = getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (currentSubWindow == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Área de Trabalho Vazia",
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 "Não existe nenhuma janela ativa no momento.");
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        currentSubWindow->scaleImage(0.75);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    ImageDisplaySubWindow *RockImageUI::getCurrentSubWindow() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto *activeSubWindow = dynamic_cast<ImageDisplaySubWindow*>(ui->openIma
+gesArea->currentSubWindow());
+\end_layout
+
+\begin_layout Plain Layout
+
+        return activeSubWindow;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    PixelDataTable *RockImageUI::getCurrentDataTable() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto *pixelDataTable = dynamic_cast<PixelDataTable*>(ui->dataTablesTab->
+currentWidget());
+\end_layout
+
+\begin_layout Plain Layout
+
+        return pixelDataTable;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::createToolBar() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->clear();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addAction(ui->openImageAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addSeparator();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addAction(ui->collectDataAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addAction(ui->addLayerAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addAction(ui->cleanTableAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addSeparator();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addAction(ui->zoomInAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addAction(ui->zoomOutAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addSeparator();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->toolBar->addAction(ui->closeAllAction);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::setActionsIcons() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->openImageAction->setIcon(QIcon("../assets/icons/add.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->saveDataAction->setIcon(QIcon("../assets/icons/save.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->cleanTableAction->setIcon(QIcon("../assets/icons/clean-table.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->exitAction->setIcon(QIcon("../assets/icons/exit.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->collectDataAction->setIcon(QIcon("../assets/icons/collect.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->changeLabelAction->setIcon(QIcon("../assets/icons/layer.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->zoomInAction->setIcon(QIcon("../assets/icons/zoom-in.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->zoomOutAction->setIcon(QIcon("../assets/icons/zoom-out.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->closeAllAction->setIcon(QIcon("../assets/icons/close-all.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->addLayerAction->setIcon(QIcon("../assets/icons/layer.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->removeLayerAction->setIcon(QIcon("../assets/icons/remove.svg"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool RockImageUI::eventFilter(QObject *obj, QEvent *event) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (event->type() == QEvent::KeyPress) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            auto *keyEvent = dynamic_cast<QKeyEvent *>(event);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            if(keyEvent->key() == ENTER_KEY_CODE) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (dynamic_cast<QListWidget*>(obj) != nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    showImage(ui->imagesList->currentItem());
+\end_layout
+
+\begin_layout Plain Layout
+
+                    return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (dynamic_cast<QTreeWidget*>(obj) != nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    showLayer(ui->imageTree->currentItem(), 0);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            if(keyEvent->key() == DELETE_KEY_CODE) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (dynamic_cast<QListWidget*>(obj) != nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    deleteCurrentImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+                    return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (dynamic_cast<QTreeWidget*>(obj) != nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    auto item = ui->imageTree->currentItem();
+\end_layout
+
+\begin_layout Plain Layout
+
+                    if (item->parent() == nullptr) return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                    return removeLayer(item);
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+        } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+            return QObject::eventFilter(obj, event);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::deleteImage(const QString& name) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto subWindow = getSubWidowByName(name);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (subWindow != nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            subWindow->close();
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto dataTableIndex = getPixelDataIndexTableByName(name);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (dataTableIndex > -1) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            ui->dataTablesTab->removeTab(dataTableIndex);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::deleteCurrentImage() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool  result = CustomMessageDialogs::Question(
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Remover Imagem",
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Tem certeza que deseja remover essa imagem da área da trabalho?
+");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!result) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        int index = ui->imagesList->currentRow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString name = ui->imagesList->currentItem()->text();
+\end_layout
+
+\begin_layout Plain Layout
+
+        deleteImage(name);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imagesList->takeItem(index);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imageTree->takeTopLevelItem(index);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (ui->imagesList->currentRow() == -1) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            ui->tableTabDockWidget->setVisible(false);
+\end_layout
+
+\begin_layout Plain Layout
+
+            ui->imagesListDockWidget->setVisible(false);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::addLayer() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto window = getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (window == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool isOk;
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString label = QInputDialog::getText(this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                              tr("Adicionar Camada"),
+\end_layout
+
+\begin_layout Plain Layout
+
+                                              tr("Label:"), QLineEdit::Normal,
+ "layer", &isOk);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!isOk or label.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this, tr("Adicionar Camada"), tr("Toda
+ camada deve possuir uma currentLayer."));
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!window->addNewLayer(label)) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto layerTreeItem = new QTreeWidgetItem();
+\end_layout
+
+\begin_layout Plain Layout
+
+        layerTreeItem->setText(0, label);
+\end_layout
+
+\begin_layout Plain Layout
+
+        layerTreeItem->setBackground(1, window->getImageDisplayWidget()->getPenB
+rush());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto node = ui->imageTree->findItems(window->windowTitle(), Qt::MatchExa
+ctly)[0];
+\end_layout
+
+\begin_layout Plain Layout
+
+        node->addChild(layerTreeItem);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ui->imageTree->setCurrentItem(layerTreeItem);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    int RockImageUI::getPixelDataIndexTableByName(const QString &name) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto table = getPixelDataTableByName(name);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (table == nullptr) return -1;
+\end_layout
+
+\begin_layout Plain Layout
+
+        return ui->dataTablesTab->indexOf(table);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::showLayer(QTreeWidgetItem *treeWidgetItem, int column)
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPair<QString, QString> layerAndSubWindowName = getLayerAndSubWindowName
+(treeWidgetItem, column);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto subWindow = getSubWidowByName(layerAndSubWindowName.first);
+\end_layout
+
+\begin_layout Plain Layout
+
+        subWindow->setCurrentLayer(layerAndSubWindowName.second);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool RockImageUI::removeLayer(QTreeWidgetItem* item) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool  result = CustomMessageDialogs::Question(
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Remover Camada",
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Tem certeza que deseja remover essa camada?");
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!result) return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto window = getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (window == nullptr) return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto parent = item->parent();
+\end_layout
+
+\begin_layout Plain Layout
+
+        window->removeLayerByName(item->text(0));
+\end_layout
+
+\begin_layout Plain Layout
+
+        parent->removeChild(item);
+\end_layout
+
+\begin_layout Plain Layout
+
+        return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::increaseWidth() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto window = getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (window == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        window->updatePenWidth(1);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::decreaseWidth() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto window = getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (window == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        window->updatePenWidth(-1);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void RockImageUI::chooseColor() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto window = getCurrentSubWindow();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (window == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool isOk;
+\end_layout
+
+\begin_layout Plain Layout
+
+        QList<int> colors = ColorDialog::getStrings(this, &isOk);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!isOk or colors.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QMessageBox::warning(this, tr("Mudar Color"), tr("Selecionar
+ ao menos um valor"));
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QColor color(colors[0], colors[1], colors[2]);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        auto node = ui->imageTree->currentItem();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (node == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        node->setBackground(1, color);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        window->updatePenBrush(color);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    QPair<QString, QString> RockImageUI::getLayerAndSubWindowName(QTreeWidgetIte
+m* treeWidgetItem, int column) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString name, subWindowName;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (treeWidgetItem->parent() == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            subWindowName = treeWidgetItem->text(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+            name = "baseImage";
+\end_layout
+
+\begin_layout Plain Layout
+
+        } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+            subWindowName = treeWidgetItem->parent()->text(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+            name = treeWidgetItem->text(column);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        return {subWindowName, name};
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+} // RockImageUI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: rockimageui.ui"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=XML,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={rockimageui.ui}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+<?xml version="1.0" encoding="UTF-8"?>
+\end_layout
+
+\begin_layout Plain Layout
+
+<ui version="4.0">
+\end_layout
+
+\begin_layout Plain Layout
+
+ <class>RockImageUI::RockImageUI</class>
+\end_layout
+
+\begin_layout Plain Layout
+
+ <widget class="QMainWindow" name="RockImageUI::RockImageUI">
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="geometry">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <x>0</x>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <y>0</y>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <width>1300</width>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <height>773</height>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <string>RockImage</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="dockNestingEnabled">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="dockOptions">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QWidget" name="centralwidget">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <layout class="QGridLayout" name="gridLayout_2">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <item row="0" column="1">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <widget class="QMdiArea" name="openImagesArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <property name="sizePolicy">
+\end_layout
+
+\begin_layout Plain Layout
+
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+\end_layout
+
+\begin_layout Plain Layout
+
+        <horstretch>3</horstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+        <verstretch>2</verstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </sizepolicy>
+\end_layout
+
+\begin_layout Plain Layout
+
+      </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </layout>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QMenuBar" name="menubar">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="geometry">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <x>0</x>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <y>0</y>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <width>1300</width>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <height>28</height>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QMenu" name="fileMenu">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <string>Arquivos</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="openImageAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="saveDataAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="cleanTableAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="exitAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QMenu" name="imageMenu">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <string>Imagem</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <widget class="QMenu" name="menuPincel">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <string>Pincel</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <addaction name="increaseWidthAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <addaction name="decreaseWidthAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <addaction name="chooseColorAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="addLayerAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="removeLayerAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="menuPincel"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QMenu" name="showDockMenu">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <string>Exibir</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="fileMenu"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="imageMenu"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="showDockMenu"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QToolBar" name="toolBar">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>toolBar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="movable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="floatable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="toolBarArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <enum>TopToolBarArea</enum>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="toolBarBreak">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="separator"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QDockWidget" name="imagesListDockWidget">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="floating">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="allowedAreas">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <set>Qt::AllDockWidgetAreas</set>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Lista de Imagens</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="dockWidgetArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <number>1</number>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QWidget" name="imagesListDockWidgetContent">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <layout class="QGridLayout" name="gridLayout_4">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <item row="0" column="0">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <widget class="QListWidget" name="imagesList"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <item row="2" column="0">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <widget class="QTreeWidget" name="imageTree">
+\end_layout
+
+\begin_layout Plain Layout
+
+       <column>
+\end_layout
+
+\begin_layout Plain Layout
+
+        <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+         <string>Nome</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+        </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </column>
+\end_layout
+
+\begin_layout Plain Layout
+
+       <column>
+\end_layout
+
+\begin_layout Plain Layout
+
+        <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+         <string>Cor</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+        </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </column>
+\end_layout
+
+\begin_layout Plain Layout
+
+      </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </layout>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QDockWidget" name="tableTabDockWidget">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Tabelas de Dados</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="dockWidgetArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <number>2</number>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QWidget" name="tableTabDockWidgetContent">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <layout class="QGridLayout" name="gridLayout_5">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <item row="0" column="0">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <widget class="QTabWidget" name="dataTablesTab">
+\end_layout
+
+\begin_layout Plain Layout
+
+       <property name="sizePolicy">
+\end_layout
+
+\begin_layout Plain Layout
+
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+\end_layout
+
+\begin_layout Plain Layout
+
+         <horstretch>0</horstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+         <verstretch>1</verstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+        </sizepolicy>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+       <property name="tabsClosable">
+\end_layout
+
+\begin_layout Plain Layout
+
+        <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+      </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </layout>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="openImageAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Abrir Imagem</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+O</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="saveDataAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Salvar Dados da Tabela</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+S</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="cleanTableAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Limpar Tabela</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+L</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="exitAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Sair</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+Q</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="applyBinarizationAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aplicar Binarização</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+B</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="collectDataAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="icon">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <iconset>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Coletar Dados</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Envia dados coletados para a tabela</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+J</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="changeLabelAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checkable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Alterar Label</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Altera a currentLayer atribuida ao dado coletado</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+;</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="zoomInAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aproximar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aproximar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+=</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="zoomOutAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Afastar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Afastar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+-</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="closeAllAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Fechar Todas Janelas</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Fecha todas as janelas na área de trabalho</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+X</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="showDataTableAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checkable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checked">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Tabela de Dados</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="showImageListAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checkable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checked">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Lista de Imagens</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="addLayerAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Adicionar Camada</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="removeLayerAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Remover Camanda</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="increaseWidthAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aumentar Largura</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+[</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="decreaseWidthAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Diminuir Largura</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+]</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="chooseColorAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Escolher Color</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <zorder>tableTabDockWidget</zorder>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <zorder>imagesListDockWidget</zorder>
+\end_layout
+
+\begin_layout Plain Layout
+
+ </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+ <resources/>
+\end_layout
+
+\begin_layout Plain Layout
+
+ <connections/>
+\end_layout
+
+\begin_layout Plain Layout
+
+</ui>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1662296865
+Classe 
+\change_unchanged
+CustomMessageDialogs
+\end_layout
+
+\begin_layout Standard
+Classe que representa uma janela de diálogo para exibir mensagens personalizadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: customdialog.h"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,tabsize=4,caption={CustomMessageDialogs.h}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#ifndef ROCK_IMAGE_CPP_CUSTOMMESSAGEDIALOGS_H
+\end_layout
+
+\begin_layout Plain Layout
+
+#define ROCK_IMAGE_CPP_CUSTOMMESSAGEDIALOGS_H
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QString>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class CustomMessageDialogs {
+\end_layout
+
+\begin_layout Plain Layout
+
+public:
+\end_layout
+
+\begin_layout Plain Layout
+
+    static bool Question(QWidget *parent, const QString& title, const QString&
+ text);
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#endif //ROCK_IMAGE_CPP_CUSTOMMESSAGEDIALOGS_H
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: customdialog.cpp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={CustomMessageDialogs.cpp}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#include <QMessageBox>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "CustomMessageDialogs.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+bool CustomMessageDialogs::Question(QWidget *parent, const QString &title,
+ const QString &text) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    QMessageBox::StandardButton result = QMessageBox::question(parent, title,
+ text);
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (result == QMessageBox::Yes) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1662296868
+Classe 
+\change_unchanged
+ColorDialog
+\end_layout
+
+\begin_layout Standard
+Classe que representa a janela de diálogo para alteração da cor da caneta
+ de anotação.
+ Essa classe foi criada inteiramente em código sem a ultilização do 
+\emph on
+QT Desginer 
+\emph default
+devido a sua simplicidade.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: colordialog.h"
+
+\end_inset
+
+
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={ColorDialog.h}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#ifndef ROCK_IMAGE_CPP_COLORDIALOG_H
+\end_layout
+
+\begin_layout Plain Layout
+
+#define ROCK_IMAGE_CPP_COLORDIALOG_H
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QDialog>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QSpinBox>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QFormLayout>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class ColorDialog : public QDialog {
+\end_layout
+
+\begin_layout Plain Layout
+
+Q_OBJECT
+\end_layout
+
+\begin_layout Plain Layout
+
+public:
+\end_layout
+
+\begin_layout Plain Layout
+
+    explicit ColorDialog(QWidget *parent = nullptr);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    static QList<int> getStrings(QWidget *parent, bool *ok = nullptr);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+private:
+\end_layout
+
+\begin_layout Plain Layout
+
+    QFormLayout *formLayout;
+\end_layout
+
+\begin_layout Plain Layout
+
+    QList<QSpinBox *> fields;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void createColorInput(const QString &label);
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#endif //ROCK_IMAGE_CPP_COLORDIALOG_H
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: colordialog.cpp"
+
+\end_inset
+
+
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={ColorDialog.cpp}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#include <QLabel>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QDialogButtonBox>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "ColorDialog.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ColorDialog::ColorDialog(QWidget *parent) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    formLayout = new QFormLayout(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    createColorInput("Vermelho");
+\end_layout
+
+\begin_layout Plain Layout
+
+    createColorInput("Verde");
+\end_layout
+
+\begin_layout Plain Layout
+
+    createColorInput("Azul");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    auto colorBox = new QWidget();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    auto *buttonBox = new QDialogButtonBox
+\end_layout
+
+\begin_layout Plain Layout
+
+            ( QDialogButtonBox::Ok | QDialogButtonBox::Cancel,
+\end_layout
+
+\begin_layout Plain Layout
+
+              Qt::Horizontal, this );
+\end_layout
+
+\begin_layout Plain Layout
+
+    formLayout->addWidget(buttonBox);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool conn = connect(buttonBox, &QDialogButtonBox::accepted,
+\end_layout
+
+\begin_layout Plain Layout
+
+                        this, &ColorDialog::accept);
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q_ASSERT(conn);
+\end_layout
+
+\begin_layout Plain Layout
+
+    conn = connect(buttonBox, &QDialogButtonBox::rejected,
+\end_layout
+
+\begin_layout Plain Layout
+
+                   this, &ColorDialog::reject);
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q_ASSERT(conn);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    setLayout(formLayout);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+QList<int> ColorDialog::getStrings(QWidget *parent, bool *ok)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    auto *dialog = new ColorDialog(parent);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    QList<int> list;
+\end_layout
+
+\begin_layout Plain Layout
+
+    const int ret = dialog->exec();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (ok)
+\end_layout
+
+\begin_layout Plain Layout
+
+        *ok = !!ret;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (ret) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        foreach (auto field, dialog->fields) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            list << field->value();
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    dialog->deleteLater();
+\end_layout
+
+\begin_layout Plain Layout
+
+    return list;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ColorDialog::createColorInput(const QString &label) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    auto *tLabel = new QLabel(label, this);
+\end_layout
+
+\begin_layout Plain Layout
+
+    auto *value = new QSpinBox(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+    value->setMinimum(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+    value->setMaximum(255);
+\end_layout
+
+\begin_layout Plain Layout
+
+    value->setValue(125);
+\end_layout
+
+\begin_layout Plain Layout
+
+    formLayout->addRow(tLabel, value);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    fields << value;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1662296869
+Classe 
+\change_unchanged
+PixelDataTable
+\end_layout
+
+\begin_layout Standard
+Representa a Tabela na qual os dados de uma determinada imagem em uma sub-janela
+ são armazenados, conforme mostra a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tabela-dados-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: pixeldatatable.h"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={PixelDataTable.h}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#ifndef ROCK_IMAGE_CPP_PIXELDATATABLE_H
+\end_layout
+
+\begin_layout Plain Layout
+
+#define ROCK_IMAGE_CPP_PIXELDATATABLE_H
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QTableWidget>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class PixelDataTable : public QTableWidget {
+\end_layout
+
+\begin_layout Plain Layout
+
+public:
+\end_layout
+
+\begin_layout Plain Layout
+
+    PixelDataTable();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void addData(const QPoint& point, const QRgb& rgb, const QString& label);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+private:
+\end_layout
+
+\begin_layout Plain Layout
+
+    void setTableHeaders();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void addCell(int column, const QString& value);
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#endif //ROCK_IMAGE_CPP_PIXELDATATABLE_H
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: pixeldatatable.cpp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={PixelDataTable.cpp}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#include "PixelDataTable.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QHeaderView>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QTableWidgetItem>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PixelDataTable::PixelDataTable() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    setTableHeaders();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    QSizePolicy updatedSizePolicy;
+\end_layout
+
+\begin_layout Plain Layout
+
+    updatedSizePolicy.setHorizontalStretch(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+    updatedSizePolicy.setVerticalStretch(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+    updatedSizePolicy.setHeightForWidth(sizePolicy().hasHeightForWidth());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    setSizePolicy(updatedSizePolicy);
+\end_layout
+
+\begin_layout Plain Layout
+
+    horizontalHeader()->setStretchLastSection(true);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void PixelDataTable::setTableHeaders() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    setColumnCount(6);
+\end_layout
+
+\begin_layout Plain Layout
+
+    setHorizontalHeaderItem(0, new QTableWidgetItem("PosX"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    setHorizontalHeaderItem(1, new QTableWidgetItem("PosY"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    setHorizontalHeaderItem(2, new QTableWidgetItem("Vermelho"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    setHorizontalHeaderItem(3, new QTableWidgetItem("Verde"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    setHorizontalHeaderItem(4, new QTableWidgetItem("Azul"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    setHorizontalHeaderItem(5, new QTableWidgetItem("Label"));
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void PixelDataTable::addData(const QPoint &point, const QRgb& rgb, const
+ QString& label) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    setRowCount(rowCount() + 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    addCell(0, QString::number(point.x()));
+\end_layout
+
+\begin_layout Plain Layout
+
+    addCell(1, QString::number(point.y()));
+\end_layout
+
+\begin_layout Plain Layout
+
+    addCell(2, QString::number(qRed(rgb)));
+\end_layout
+
+\begin_layout Plain Layout
+
+    addCell(3, QString::number(qGreen(rgb)));
+\end_layout
+
+\begin_layout Plain Layout
+
+    addCell(4, QString::number(qBlue(rgb)));
+\end_layout
+
+\begin_layout Plain Layout
+
+    addCell(5, label);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void PixelDataTable::addCell(int column, const QString& value) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    setItem(rowCount() - 1, column, new QTableWidgetItem(value));
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1662296870
+Classe 
+\change_unchanged
+ImageDisplayWidget
+\end_layout
+
+\begin_layout Standard
+Representa cada uma das imagens ou camadas mostradas na ferramenta.
+ Essa classe também armazena os dados das regiões marcadas em uma estrutura
+ de 
+\emph on
+HashMap
+\emph default
+ até serem enviadas para a Tabela de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: imagedisplaywidget.h"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={ImageDisplayWidget.h}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#ifndef ROCK_IMAGE_CPP_IMAGEDISPLAYWIDGET_H
+\end_layout
+
+\begin_layout Plain Layout
+
+#define ROCK_IMAGE_CPP_IMAGEDISPLAYWIDGET_H
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QLabel>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <map>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <utility>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "PixelDataTable.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+namespace ImageDisplayWidget {
+\end_layout
+
+\begin_layout Plain Layout
+
+    const QString BASE_IMAGE = "baseImage";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    struct RGBLayerName {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QRgb rgb{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString layerName;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        RGBLayerName() = default;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        RGBLayerName(QRgb pRgb, QString pLayerName) : rgb(pRgb), layerName(std::
+move(pLayerName)) {}
+\end_layout
+
+\begin_layout Plain Layout
+
+    };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    class ImageDisplayWidget : public QLabel {
+\end_layout
+
+\begin_layout Plain Layout
+
+    public:
+\end_layout
+
+\begin_layout Plain Layout
+
+        ImageDisplayWidget();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        [[nodiscard]] const QHash<QPoint, RGBLayerName> &getPixelDataMap()
+ const;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        [[nodiscard]] int getPenWidth() const;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        [[nodiscard]] const QBrush &getPenBrush() const;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void setImage(const QImage &newImage);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void setPenWidth(int newPenWidth);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void setPenBrush(const QBrush &newPenBrush);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void setCurrentLayer(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void clearPixelDataMap();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void resizeImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void removeLayer(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    private:
+\end_layout
+
+\begin_layout Plain Layout
+
+        QImage image{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QImage compositeImage{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QHash<QPoint, RGBLayerName> pixelDataMap{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPoint lastPoint{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString currentLayer{BASE_IMAGE};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QBrush penBrush{Qt::blue};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        int penWidth{10};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void drawLineTo(const QPoint &endPoint);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QImage createImageWithOverlay();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    protected:
+\end_layout
+
+\begin_layout Plain Layout
+
+        void mousePressEvent(QMouseEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void mouseMoveEvent(QMouseEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void mouseReleaseEvent(QMouseEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void paintEvent(QPaintEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void resizeEvent(QResizeEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+    };
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#endif //ROCK_IMAGE_CPP_IMAGEDISPLAYWIDGET_H
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: imagedisplaywidget.cpp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={ImageDisplayWidget.cpp}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#include <QMouseEvent>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QPainter>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "ImageDisplayWidget.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+namespace ImageDisplayWidget {
+\end_layout
+
+\begin_layout Plain Layout
+
+    ImageDisplayWidget::ImageDisplayWidget() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        setBackgroundRole(QPalette::Dark);
+\end_layout
+
+\begin_layout Plain Layout
+
+        setSizePolicy(QSizePolicy::Policy::Ignored, QSizePolicy::Policy::Ignored
+);
+\end_layout
+
+\begin_layout Plain Layout
+
+        setScaledContents(true);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::mousePressEvent(QMouseEvent *event) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (event->button() == Qt::LeftButton) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            lastPoint = event->pos();
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::mouseMoveEvent(QMouseEvent *event) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPoint currentPoint = event->pos();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (currentLayer == BASE_IMAGE) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (pixelDataMap.contains(currentPoint)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QRgb rgb = QColor(image.pixel(currentPoint)).rgb();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            int rad = penWidth / 2;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            for (int i = currentPoint.x() - rad; i < currentPoint.x() + rad;
+ ++i)
+\end_layout
+
+\begin_layout Plain Layout
+
+                for (int j = currentPoint.y() - rad; j < currentPoint.y()
+ + rad; ++j)
+\end_layout
+
+\begin_layout Plain Layout
+
+                    pixelDataMap.insert(QPoint(i, j), {rgb, currentLayer});
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        drawLineTo(event->pos());
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::mouseReleaseEvent(QMouseEvent *event) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (event->button() == Qt::LeftButton and currentLayer != BASE_IMAGE)
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+            drawLineTo(event->pos());
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::setImage(const QImage &newImage) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        image = newImage;
+\end_layout
+
+\begin_layout Plain Layout
+
+        compositeImage = createImageWithOverlay();
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPixmap p = QPixmap::fromImage(compositeImage);
+\end_layout
+
+\begin_layout Plain Layout
+
+        setPixmap(p);
+\end_layout
+
+\begin_layout Plain Layout
+
+        adjustSize();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    const QHash<QPoint, RGBLayerName> &ImageDisplayWidget::getPixelDataMap()
+ const {
+\end_layout
+
+\begin_layout Plain Layout
+
+        return pixelDataMap;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::clearPixelDataMap() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        pixelDataMap.clear();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::drawLineTo(const QPoint &endPoint) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPen pen(penBrush, penWidth,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 Qt::SolidLine,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 Qt::RoundCap,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 Qt::RoundJoin);
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPainter painter(&compositeImage);
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.setPen(pen);
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.drawLine(lastPoint, endPoint);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        int rad = (penWidth / 2) + 2;
+\end_layout
+
+\begin_layout Plain Layout
+
+        update(QRect(lastPoint, endPoint).normalized()
+\end_layout
+
+\begin_layout Plain Layout
+
+                       .adjusted(-rad, -rad, +rad, +rad));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        lastPoint = endPoint;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::paintEvent(QPaintEvent *event) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPainter painter(this);
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.setRenderHint(QPainter::Antialiasing, false);
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.drawImage(QPoint(0, 0), compositeImage);
+\end_layout
+
+\begin_layout Plain Layout
+
+        update();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::setCurrentLayer(const QString &layerName) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        currentLayer = layerName;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    QImage ImageDisplayWidget::createImageWithOverlay() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QImage imageWithOverlay = QImage(image.size(), image.format());
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPainter painter(&imageWithOverlay);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.setCompositionMode(QPainter::CompositionMode_Source);
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.fillRect(imageWithOverlay.rect(), Qt::transparent);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.drawImage(0, 0, image);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.drawImage(0, 0, image.createAlphaMask());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        painter.end();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        return imageWithOverlay;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    int ImageDisplayWidget::getPenWidth() const {
+\end_layout
+
+\begin_layout Plain Layout
+
+        return penWidth;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::setPenWidth(int newPenWidth) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        penWidth = newPenWidth;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::setPenBrush(const QBrush &newPenBrush) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        penBrush = newPenBrush;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::resizeEvent(QResizeEvent *event) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QWidget::resizeEvent(event);
+\end_layout
+
+\begin_layout Plain Layout
+
+        resizeImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::resizeImage() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        image = image.scaled(this->size(), Qt::KeepAspectRatio, Qt::SmoothTransfo
+rmation);
+\end_layout
+
+\begin_layout Plain Layout
+
+        compositeImage = compositeImage.scaled(this->size(), Qt::KeepAspectRatio,
+ Qt::SmoothTransformation);
+\end_layout
+
+\begin_layout Plain Layout
+
+        update();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    const QBrush &ImageDisplayWidget::getPenBrush() const {
+\end_layout
+
+\begin_layout Plain Layout
+
+        return penBrush;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::removeLayer(const QString &layerName) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        setCurrentLayer(BASE_IMAGE);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (int i = 0; i < compositeImage.width(); ++i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            for (int j = 0; j < compositeImage.height(); ++j) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (compositeImage.pixel(i, j) == penBrush.color().rgb()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    auto imagePixel = image.pixel(i, j);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    compositeImage.setPixel(i, j, imagePixel);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    pixelDataMap.remove(QPoint(i, j));
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        pixelDataMap.removeIf([&](const QHash<QPoint, RGBLayerName>::iterator
+ &it){
+\end_layout
+
+\begin_layout Plain Layout
+
+            return it.value().layerName == layerName;
+\end_layout
+
+\begin_layout Plain Layout
+
+        });
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1662296872
+Classe 
+\change_unchanged
+ImageDisplaySubWindow
+\end_layout
+
+\begin_layout Standard
+Essa classe representa uma sub-janela e é utilizada para exibir uma nova
+ imagem.
+ Assim que ela é criada, o nome da imagem é inserido em uma barra lateral
+ que lista as imagens e também as camadas, conforme ilustrado na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sub-listas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Quando uma janela é fechada, ela pode ser reaberta quando se clica duas
+ vezes no nome da imagem.
+ Quando eliminada da lista, a janela é fechada e todos os dados e camadas
+ são perdidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: imagedisplaysubwindow.h"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={ImageDisplaySubWindow.h}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#ifndef ROCK_IMAGE_CPP_IMAGEDISPLAYSUBWINDOW_H
+\end_layout
+
+\begin_layout Plain Layout
+
+#define ROCK_IMAGE_CPP_IMAGEDISPLAYSUBWINDOW_H
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QMdiSubWindow>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QLabel>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QScrollArea>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "ImageDisplayWidget.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class ImageDisplaySubWindow : public QMdiSubWindow {
+\end_layout
+
+\begin_layout Plain Layout
+
+public:
+\end_layout
+
+\begin_layout Plain Layout
+
+    ImageDisplaySubWindow(const QString &filePath, const QString &fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    [[nodiscard]] ImageDisplayWidget::ImageDisplayWidget *getImageDisplayWidget(
+) const;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool loadImage(const QString &filePath);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void scaleImage(double factor);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool addNewLayer(const QString &label);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void setCurrentLayer(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void removeLayerByName(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void updatePenWidth(const int &value);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void updatePenBrush(const QColor &value);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+private:
+\end_layout
+
+\begin_layout Plain Layout
+
+    QHash<QString, QBrush> layersColors{};
+\end_layout
+
+\begin_layout Plain Layout
+
+    ImageDisplayWidget::ImageDisplayWidget *imageDisplayWidget{};
+\end_layout
+
+\begin_layout Plain Layout
+
+    QScrollArea *scrollArea;
+\end_layout
+
+\begin_layout Plain Layout
+
+    double scaleFactor{1.0};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    static QColor generateRandomColor();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    static void adjustScrollBar(QScrollBar *bar, double factor);
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#endif //ROCK_IMAGE_CPP_IMAGEDISPLAYSUBWINDOW_H
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: imagedisplaysubwindow.cpp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={ImageDisplaySubWindow.cpp}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+#include <QImageReader>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QMessageBox>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QGuiApplication>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QDir>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QScreen>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QMouseEvent>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QScrollBar>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <QPainter>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <random>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "ImageDisplaySubWindow.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "ImageDisplayWidget.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ImageDisplaySubWindow::ImageDisplaySubWindow(const QString& filePath, const
+ QString& fileName)
+\end_layout
+
+\begin_layout Plain Layout
+
+    : scrollArea(new QScrollArea())
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    this->setWindowTitle(fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    scrollArea->setBackgroundRole(QPalette::Dark);
+\end_layout
+
+\begin_layout Plain Layout
+
+    scrollArea->setVisible(false);
+\end_layout
+
+\begin_layout Plain Layout
+
+    this->setWidget(scrollArea);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    resize(QGuiApplication::primaryScreen()->availableSize() * 2 / 5);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+bool ImageDisplaySubWindow::loadImage(const QString &filePath) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    QImageReader imageReader(filePath);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageReader.setAutoTransform(true);
+\end_layout
+
+\begin_layout Plain Layout
+
+    const QImage newImage = imageReader.read();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (newImage.isNull()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QMessageBox::information(
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                QGuiApplication::applicationDisplayName(),
+\end_layout
+
+\begin_layout Plain Layout
+
+                tr("Cannot load %1: %2")
+\end_layout
+
+\begin_layout Plain Layout
+
+                    .arg(QDir::toNativeSeparators(filePath), imageReader.errorStri
+ng()));
+\end_layout
+
+\begin_layout Plain Layout
+
+        return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget = new ImageDisplayWidget::ImageDisplayWidget();
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setImage(newImage);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setCurrentLayer("baseImage");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    scrollArea->setWidget(imageDisplayWidget);
+\end_layout
+
+\begin_layout Plain Layout
+
+    scrollArea->setVisible(true);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    scaleFactor = 1.0;
+\end_layout
+
+\begin_layout Plain Layout
+
+    return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ImageDisplaySubWindow::scaleImage(double factor) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    scaleFactor *= factor;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->resize(scaleFactor * imageDisplayWidget->pixmap(Qt::Retu
+rnByValue).size());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    adjustScrollBar(scrollArea->horizontalScrollBar(), factor);
+\end_layout
+
+\begin_layout Plain Layout
+
+    adjustScrollBar(scrollArea->verticalScrollBar(), factor);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ImageDisplaySubWindow::adjustScrollBar(QScrollBar *bar, double factor)
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+    bar->setValue(int(factor * bar->value()
+\end_layout
+
+\begin_layout Plain Layout
+
+                      + ((factor - 1) * bar->pageStep() / 2)));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+bool ImageDisplaySubWindow::addNewLayer(const QString& label) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (imageDisplayWidget == nullptr) return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (layersColors.contains(label)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QMessageBox::warning(
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                QGuiApplication::applicationDisplayName(),
+\end_layout
+
+\begin_layout Plain Layout
+
+                tr("Layer with name %1 already exists!").arg(label));
+\end_layout
+
+\begin_layout Plain Layout
+
+        return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    QBrush brush(generateRandomColor());
+\end_layout
+
+\begin_layout Plain Layout
+
+    layersColors.emplace(label, brush);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setCurrentLayer(label);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setPenBrush(brush);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ImageDisplaySubWindow::setCurrentLayer(const QString &layerName) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setCurrentLayer(layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setPenBrush(layersColors.value(layerName));
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ImageDisplaySubWindow::removeLayerByName(const QString& layerName)
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    layersColors.remove(layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->removeLayer(layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+QColor ImageDisplaySubWindow::generateRandomColor() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    std::random_device dev;
+\end_layout
+
+\begin_layout Plain Layout
+
+    std::mt19937 rng(dev());
+\end_layout
+
+\begin_layout Plain Layout
+
+    std::uniform_int_distribution<std::mt19937::result_type> randomInt(0,255);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return {
+\end_layout
+
+\begin_layout Plain Layout
+
+        static_cast<int>(randomInt(rng)),
+\end_layout
+
+\begin_layout Plain Layout
+
+        static_cast<int>(randomInt(rng)),
+\end_layout
+
+\begin_layout Plain Layout
+
+        static_cast<int>(randomInt(rng))
+\end_layout
+
+\begin_layout Plain Layout
+
+    };
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ImageDisplaySubWindow::updatePenWidth(const int &value) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    int currentWidth = imageDisplayWidget->getPenWidth();
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setPenWidth(currentWidth + value);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ImageDisplaySubWindow::updatePenBrush(const QColor &value) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setPenBrush(value);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ImageDisplayWidget::ImageDisplayWidget *ImageDisplaySubWindow::getImageDisplayWi
+dget() const {
+\end_layout
+
+\begin_layout Plain Layout
+
+    return imageDisplayWidget;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Scripts
+\emph default
+ 
+\emph on
+Python 
+\emph default
+para Treinamento e Aplicação dos Modelos
+\end_layout
+
+\begin_layout Standard
+De forma semelhante, é possível obter os códigos fontes do projeto a partir
+ do repositório em 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/hereisjohnny2/project-mestrado"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Criando Ambiente Virtual
+\end_layout
+
+\begin_layout Standard
+Projetos em python normalmente utilizam um ambiente virtual, ou 
+\emph on
+venv,
+\emph default
+ para poder isolar as dependências.
+\end_layout
+
+\begin_layout Enumerate
+Crie um novo ambiente virtual, na raiz do projeto baixado do repositório,
+ com o seguinte comando no terminal:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python -m venv venv
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em seguida com o comando 
+\emph on
+source 
+\emph default
+no terminal ative o ambiente criado:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ source venv/bin/activate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por fim, com o gerenciador de pacotes do python, 
+\emph on
+pip
+\emph default
+, instale as dependências do projeto a partir do arquivo 
+\emph on
+requirements.txt
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ pip install -r requirements.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assim, já é possível executar o arquivo 
+\emph on
+rock-nn/main.py 
+\emph default
+para treinar e aplicar os modelos de rede neural:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python rock-nn/main.py <comandos>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+main.py
+\end_layout
+
+\begin_layout Standard
+Define o ponto de entrada da aplicação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: main.py"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={main.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+import trainer
+\end_layout
+
+\begin_layout Plain Layout
+
+import tester
+\end_layout
+
+\begin_layout Plain Layout
+
+from utils.parser import create_parser
+\end_layout
+
+\begin_layout Plain Layout
+
+from utils.image import convert_image_to_rgb_format
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def main(): 
+\end_layout
+
+\begin_layout Plain Layout
+
+    args = create_parser()
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    try:
+\end_layout
+
+\begin_layout Plain Layout
+
+        if args.train:  
+\end_layout
+
+\begin_layout Plain Layout
+
+            epochs = int(args.epochs[0]) if args.epochs else 5
+\end_layout
+
+\begin_layout Plain Layout
+
+            trainer.train_from_dataset(args.train[0], epochs)
+\end_layout
+
+\begin_layout Plain Layout
+
+            return
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+        if args.image:
+\end_layout
+
+\begin_layout Plain Layout
+
+            convert_image_to_rgb_format(args.image[0])
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+        if args.image and args.model and args.output:
+\end_layout
+
+\begin_layout Plain Layout
+
+            tester.apply_model(args.model[0], args.image[0], args.output[0],
+ args.save)
+\end_layout
+
+\begin_layout Plain Layout
+
+            return
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\end_layout
+
+\begin_layout Plain Layout
+
+    except TypeError as e:
+\end_layout
+
+\begin_layout Plain Layout
+
+         print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of
+ {__file__}: {e}")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if __name__ == "__main__":
+\end_layout
+
+\begin_layout Plain Layout
+
+    main()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+rockdataset.py
+\end_layout
+
+\begin_layout Standard
+Representa o 
+\emph on
+Dataset
+\emph default
+ que descreve os dados a serem passados pela rede neural durante o treinamento.
+ No construtor da classe é passado a propriedade que irá representar o dados,
+ que nessa implementação se chama 
+\emph on
+content_data
+\emph default
+.
+ O principal método que deve ser sobrecarregado nesse classe é o 
+\emph on
+__getitem__
+\emph default
+, que descreve a maneira como dos dados são acessados durante a execução
+ do treino.
+ Aqui os valores de 
+\emph on
+content_data
+\emph default
+ são separados em um 
+\emph on
+Tensor 
+\emph default
+que representa os valores de RGB e o inteiro que representa a 
+\emph on
+label
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: rockdataset.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={rockdataset.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+import torch
+\end_layout
+
+\begin_layout Plain Layout
+
+from torch.utils.data import Dataset, DataLoader
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class RockDataset(Dataset):
+\end_layout
+
+\begin_layout Plain Layout
+
+    def __init__(self, content_data):
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.content_data = content_data
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    def __len__(self):
+\end_layout
+
+\begin_layout Plain Layout
+
+        return len(self.content_data)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    def __getitem__(self, index):
+\end_layout
+
+\begin_layout Plain Layout
+
+        data = self.content_data[index]
+\end_layout
+
+\begin_layout Plain Layout
+
+        rgb = torch.Tensor(data[0:3])
+\end_layout
+
+\begin_layout Plain Layout
+
+        label = data[3]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+        return rgb, label
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+rockmodel.py
+\end_layout
+
+\begin_layout Standard
+Representa o modelo de rede neural e herda da classe 
+\emph on
+Module 
+\emph default
+de 
+\emph on
+PyTorch
+\emph default
+.
+ No construtor
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Em orientação a objeto um construtor é uma função executada quando um objeto
+ é instanciado (construído).
+ É normalmente utilizado para iniciar o objeto, definindo os valores de
+ seus atributos e realizando alguma tarefa necessária para que o objeto
+ fique pronto para uso.
+\end_layout
+
+\end_inset
+
+ da classe são instanciadas as camadas da rede como propriedades da própria
+ classe.
+ É possível criar quantas camadas foram necessárias, desde que sejam instancias
+ da classe 
+\emph on
+Linear
+\emph default
+ do 
+\emph on
+Pytorch
+\emph default
+, e recebam no construtor a quantidade de neurônios da camada anterior e
+ a quantidade de neurônios que irá possuir.
+ Além disso, é necessário sobrecarregar o método 
+\emph on
+forward
+\emph default
+.
+ Esse é o método responsável por fazer com que os dados de entrada atravessem
+ a rede neural.
+ O resultado de cada uma das camadas pode ser utilizado como entrada de
+ uma função de ativação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: rockmodel.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={rockmodel.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+import torch.nn as nn
+\end_layout
+
+\begin_layout Plain Layout
+
+import torch.nn.functional as F
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class RockNetModel(nn.Module):
+\end_layout
+
+\begin_layout Plain Layout
+
+    def __init__(self):
+\end_layout
+
+\begin_layout Plain Layout
+
+        super().__init__()
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.fc1 = nn.Linear(3, 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.fc2 = nn.Linear(4, 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.fc3 = nn.Linear(4, 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.fc4 = nn.Linear(4, 2)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    def forward(self, x):
+\end_layout
+
+\begin_layout Plain Layout
+
+        x = F.relu(self.fc1(x))
+\end_layout
+
+\begin_layout Plain Layout
+
+        x = F.relu(self.fc2(x))
+\end_layout
+
+\begin_layout Plain Layout
+
+        x = F.relu(self.fc3(x))
+\end_layout
+
+\begin_layout Plain Layout
+
+        x = self.fc4(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+        return F.log_softmax(x, dim=1)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+tester.py
+\end_layout
+
+\begin_layout Standard
+Contém a função que executa o teste para verificar a acurácia do modelo
+ em cada iteração.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: tester.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={tester.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+import torch
+\end_layout
+
+\begin_layout Plain Layout
+
+from os import path
+\end_layout
+
+\begin_layout Plain Layout
+
+from utils.image import apply_binarization, calculate_porosity, save_image,
+ save_porosity
+\end_layout
+
+\begin_layout Plain Layout
+
+from rock_model import RockNetModel
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def apply_model(model_file, image, output=None, save=False):
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"Running model in {model_file} on {image} image...")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    model = RockNetModel()
+\end_layout
+
+\begin_layout Plain Layout
+
+    model.load_state_dict(torch.load(model_file))
+\end_layout
+
+\begin_layout Plain Layout
+
+    model.eval()
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    if torch.cuda.is_available():
+\end_layout
+
+\begin_layout Plain Layout
+
+        model.to("cuda:0")
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+    dirname, file = path.split(image)
+\end_layout
+
+\begin_layout Plain Layout
+
+    filename, _ = path.splitext(file)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    if output:
+\end_layout
+
+\begin_layout Plain Layout
+
+        dirname = output
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Applying Binarization...")
+\end_layout
+
+\begin_layout Plain Layout
+
+    arr, time = apply_binarization(image, model)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    save_porosity(calculate_porosity(arr), filename, f"{dirname}/porosity.txt",
+ time)   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    if save:
+\end_layout
+
+\begin_layout Plain Layout
+
+        save_image(arr, f"{dirname}/{filename}")
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Done!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+trainer.py
+\end_layout
+
+\begin_layout Standard
+Contém a função que executa o treinamento do modelo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: trainer.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={trainer.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+from copy import deepcopy
+\end_layout
+
+\begin_layout Plain Layout
+
+import torch
+\end_layout
+
+\begin_layout Plain Layout
+
+import torch.optim as optim
+\end_layout
+
+\begin_layout Plain Layout
+
+from os import path
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+from rock_model import RockNetModel
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+from utils.dataset import create_dataloaders
+\end_layout
+
+\begin_layout Plain Layout
+
+from utils.network import run_test, run_training
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def train_from_dataset(data, epochs=5):
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"Training for dataset {data}")
+\end_layout
+
+\begin_layout Plain Layout
+
+    train_dataloader, test_dataloader = create_dataloaders(data)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    net = RockNetModel()
+\end_layout
+
+\begin_layout Plain Layout
+
+    optimizer = optim.Adam(net.parameters(), lr=0.0025)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    run_training(epochs, train_dataloader, net, optimizer)
+\end_layout
+
+\begin_layout Plain Layout
+
+    acc = run_test(test_dataloader, net)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f'Accuracy: {acc}')
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    data_file_name, _ = path.splitext(data)
+\end_layout
+
+\begin_layout Plain Layout
+
+    model_file_name = f"{data_file_name}-nn-model.pt"
+\end_layout
+
+\begin_layout Plain Layout
+
+    torch.save(deepcopy(net.state_dict()), model_file_name)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Done!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+dataset.py
+\end_layout
+
+\begin_layout Standard
+Pacote com funções relacionadas ao carregamento dos dados e a criação de
+ 
+\emph on
+Dataloaders:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+load_data_from_file
+\emph default
+: Função responsável por carregar os dados coletados a partir de um arquivo
+ de texto.
+ Os dados são lidos e colocados dentro de uma lista do python.
+ Os valores de cada 
+\emph on
+label 
+\emph default
+são convertidos para valores numéricos em ordem crescente, a partir de zero,
+ a medida que vão aparecendo.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+split_dataset
+\emph default
+: A fim de se criar 
+\emph on
+datasets
+\emph default
+ diferentes para treinamento e teste, essa função realiza essa ação a partir
+ de um 
+\emph on
+dataset
+\emph default
+.
+ Ela recebe como parâmetro, além do conjunto de dados, a relação entre dados
+ para treinamento e dados para teste, que por padrão é de 80%.
+ A saída dessa função é uma tupla com o dataset de treino e de teste.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+create_dataloaders: 
+\emph default
+Cria os 
+\emph on
+dataloaders
+\emph default
+ para serem utilizados nas rotinas de treinamento e de teste das redes neurais
+ a partir da lista de dados coletados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: dataset.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={dataset.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+import torch
+\end_layout
+
+\begin_layout Plain Layout
+
+from torch.utils.data import DataLoader
+\end_layout
+
+\begin_layout Plain Layout
+
+from custom_dataset import CustomDataset
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def load_data_from_file(file_name, pore_label="Poro"):
+\end_layout
+
+\begin_layout Plain Layout
+
+    content = []
+\end_layout
+
+\begin_layout Plain Layout
+
+    with open(file_name, "r") as f:
+\end_layout
+
+\begin_layout Plain Layout
+
+        for line in f.readlines():
+\end_layout
+
+\begin_layout Plain Layout
+
+            mod_line = line.strip("
+\backslash
+n").split("
+\backslash
+t")
+\end_layout
+
+\begin_layout Plain Layout
+
+            rgb = [int(i) for i in mod_line[0:3]]
+\end_layout
+
+\begin_layout Plain Layout
+
+            label = 1 if mod_line[3] == pore_label else 0
+\end_layout
+
+\begin_layout Plain Layout
+
+            rgb.append(label)
+\end_layout
+
+\begin_layout Plain Layout
+
+            content.append(rgb)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return content
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def split_dataset(dataset, ratio=0.8):
+\end_layout
+
+\begin_layout Plain Layout
+
+    train_size = int(ratio * len(dataset))
+\end_layout
+
+\begin_layout Plain Layout
+
+    test_size = len(dataset) - train_size
+\end_layout
+
+\begin_layout Plain Layout
+
+    return torch.utils.data.random_split(dataset, [train_size, test_size])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def create_dataloaders(data):
+\end_layout
+
+\begin_layout Plain Layout
+
+    dataset = CustomDataset(load_data_from_file(data))
+\end_layout
+
+\begin_layout Plain Layout
+
+    train_dataset, test_dataset = split_dataset(dataset)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    train_dataloader = DataLoader(train_dataset, batch_size=16, shuffle=True)
+\end_layout
+
+\begin_layout Plain Layout
+
+    test_dataloader = DataLoader(test_dataset, batch_size=16, shuffle=False)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    return train_dataloader, test_dataloader
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+image.py
+\end_layout
+
+\begin_layout Standard
+Pacote que concentra funções para a manipulação de imagens:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+binarize
+\emph default
+: Recebe o 
+\emph on
+array 
+\emph default
+que representa a imagem a ser binarizada, uma tupla que representa os valores
+ de altura e largura de imagens e o modelo da rede neural que será aplicado
+ sobre cada pixel da imagem.
+ A saída é um novo 
+\emph on
+array
+\emph default
+ que representa a imagem binarizada.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+apply_binarization
+\emph default
+: Recebe o caminho para a imagem a ser binarizada e o modelo de rede neural
+ a ser aplicado sobre a imagem.
+ Utilizando a biblioteca 
+\emph on
+pillow
+\emph default
+ a imagem é carregada em memória, tem seus canais de cores convertidos para
+ RGB, afim de garantir que os valores de cor sempre teriam esse formato,
+ e então utilizada para criar um 
+\emph on
+array 
+\emph default
+do 
+\emph on
+NumPy.
+ 
+\emph default
+Em seguida o 
+\emph on
+array
+\emph default
+ resultante é utilizado como parâmetro na função 
+\emph on
+binaraize
+\emph default
+.
+ A saída desta função é o 
+\emph on
+array 
+\emph default
+que representa a imagem binarizada gerada por 
+\emph on
+binarize
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+calculate_porosity
+\emph default
+: Recebe um 
+\emph on
+array
+\emph default
+ que representa uma imagem binarizada e calcula o valor da porosidade somando
+ o resultado de todos os pixeis com valor igual a 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O valor da porosidade será utilizada futuramente para poder comparar o
+ resultados do processo com o de outros trabalhos no capítulo de resultados.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+save_porosity
+\emph default
+: Recebe a porosidade calculada, o caminho do arquivo onde o valor de porosidade
+ será salvo, o nome da imagem, e o tempo total de execução do processo de
+ binarização.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+show_image
+\emph default
+: Recebe um 
+\emph on
+array 
+\emph default
+que representa a imagem a ser exibida utilizando a biblioteca 
+\emph on
+MatPlotLib
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+save_image
+\emph default
+: Recebe um 
+\emph on
+array 
+\emph default
+que representa uma imagem binarizada e o nome da imagem e salva localmente
+ utilizando a biblioteca 
+\emph on
+pillow 
+\emph default
+no formato 
+\emph on
+png.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+convert_image_to_rgb_format
+\emph default
+: Recebe o caminho para uma imagem e converte a mesma para o formato 
+\emph on
+RGB
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: image.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={image.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+from os import path
+\end_layout
+
+\begin_layout Plain Layout
+
+import torch
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+from PIL import Image
+\end_layout
+
+\begin_layout Plain Layout
+
+from utils.time_messure import timing_decorator
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def binarize(arr, img_size, net):
+\end_layout
+
+\begin_layout Plain Layout
+
+    width, height = img_size
+\end_layout
+
+\begin_layout Plain Layout
+
+    tensor_data = torch.from_numpy(arr).view(-1, 3).float()
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    if torch.cuda.is_available():
+\end_layout
+
+\begin_layout Plain Layout
+
+        tensor_data = tensor_data.to(device="cuda:0")
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+    tensor_data = torch.argmax(net(tensor_data), dim=1)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return tensor_data.view(height, width).cpu().detach().numpy()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@timing_decorator
+\end_layout
+
+\begin_layout Plain Layout
+
+def apply_binarization(image, net):
+\end_layout
+
+\begin_layout Plain Layout
+
+    try:
+\end_layout
+
+\begin_layout Plain Layout
+
+        img = Image.open(image)
+\end_layout
+
+\begin_layout Plain Layout
+
+        if img.mode != "RGB":
+\end_layout
+
+\begin_layout Plain Layout
+
+            img = img.convert("RGB") 
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+        arr = np.asarray(img)
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+        return binarize(arr, img.size, net)
+\end_layout
+
+\begin_layout Plain Layout
+
+    except IndexError as e:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(f"{type(e).__name__} at line {e.__traceback__.tb_lineno} of {__file__
+}: {e}")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def calculate_porosity(arr):
+\end_layout
+
+\begin_layout Plain Layout
+
+    total = arr.shape[0] * arr.shape[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    pores = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+    for i in arr:
+\end_layout
+
+\begin_layout Plain Layout
+
+        for j in i:
+\end_layout
+
+\begin_layout Plain Layout
+
+            pores += int(j)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return pores / total
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def save_porosity(porosity, name, file, time):
+\end_layout
+
+\begin_layout Plain Layout
+
+    with open(file, "a") as f:
+\end_layout
+
+\begin_layout Plain Layout
+
+        f.write(f"{name} 
+\backslash
+t {porosity} 
+\backslash
+t {time}
+\backslash
+n")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def show_image(arr):
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.imshow(arr, cmap="gray", interpolation="nearest")
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+def save_image(arr, name):
+\end_layout
+
+\begin_layout Plain Layout
+
+    Image.fromarray((arr * 255).astype(np.uint8)).save(f"{name}-bin.png")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+def convert_image_to_rgb_format(image_name):
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"Converting image {image_name}...")
+\end_layout
+
+\begin_layout Plain Layout
+
+    img = Image.open(image_name).convert("RGB")   
+\end_layout
+
+\begin_layout Plain Layout
+
+    name, _ = path.splitext(image_name) 
+\end_layout
+
+\begin_layout Plain Layout
+
+    img.save(f"{name}-converted.png")
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Done!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+network.py
+\end_layout
+
+\begin_layout Standard
+Pacote de funções para execução do treinamento e do teste da rede neural:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+run_training
+\emph default
+: Recebe o número de épocas, o 
+\emph on
+dataloader 
+\emph default
+de treinamento, o modelo de rede neural e um otimizador.
+ Para cada época, cada 
+\emph on
+batch
+\emph default
+ de dados dentro do 
+\emph on
+dataloader
+\emph default
+ é carregado e para cada um desses 
+\emph on
+batchs
+\emph default
+ é realizada uma sequencia de treinamento, onde o 
+\emph on
+batch 
+\emph default
+é utilizado para alimentar a rede neural e o resultado da saída é comparado
+ com cada uma das 
+\emph on
+labels 
+\emph default
+de cada um dos valores de RGB do 
+\emph on
+batch 
+\emph default
+por meio de uma função de perda do PyTorch denominada de 
+\emph on
+nll_loss
+\emph default
+.
+ Essa função representa a perda de probabilidade logarítmica negativa e
+ é útil treinar problemas de classificação parecido com aqueles que são
+ tratados neste trabalho.
+ Em seguida é calculado o gradiente da perda e o erro é propagado pelo rede
+ neural a fim de se atualizar os pesos e vieses de cada neurônio.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+run_test
+\emph default
+: Recebe o 
+\emph on
+dataloader 
+\emph default
+de teste e o modelo de rede neural.
+ Novamente, para cada 
+\emph on
+batch 
+\emph default
+encontrado no 
+\emph on
+dataloader
+\emph default
+, é calculado a saída da rede neural.
+ Contudo, dessa vez, o maior valor do 
+\emph on
+tensor 
+\emph default
+que representa a saída da rede, ou seja, a classe que melhor representa
+ os valores de entrada, é comparada com os valores de cada um das 
+\emph on
+labels.
+ 
+\emph default
+A saída da função é a acurácia do modelo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: network.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={network.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+import torch
+\end_layout
+
+\begin_layout Plain Layout
+
+import torch.nn.functional as F
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def run_training(num_epochs, train_dataloader, net, optimizer):
+\end_layout
+
+\begin_layout Plain Layout
+
+    for epoch in range(num_epochs):
+\end_layout
+
+\begin_layout Plain Layout
+
+        for data in train_dataloader: 
+\end_layout
+
+\begin_layout Plain Layout
+
+            X, y = data 
+\end_layout
+
+\begin_layout Plain Layout
+
+            net.zero_grad() 
+\end_layout
+
+\begin_layout Plain Layout
+
+            output = net(X.view(-1, 3)) 
+\end_layout
+
+\begin_layout Plain Layout
+
+            loss = F.nll_loss(output, y) 
+\end_layout
+
+\begin_layout Plain Layout
+
+            loss.backward() 
+\end_layout
+
+\begin_layout Plain Layout
+
+            optimizer.step() 
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(f"{epoch + 1} of {num_epochs} epochs - Loss: {loss}")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def run_test(test_dataloader, net):
+\end_layout
+
+\begin_layout Plain Layout
+
+    correct = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+    total = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+    with torch.no_grad():
+\end_layout
+
+\begin_layout Plain Layout
+
+        for data in test_dataloader:
+\end_layout
+
+\begin_layout Plain Layout
+
+            X, y = data
+\end_layout
+
+\begin_layout Plain Layout
+
+            output = net(X.view(-1,3))
+\end_layout
+
+\begin_layout Plain Layout
+
+            for idx, i in enumerate(output):
+\end_layout
+
+\begin_layout Plain Layout
+
+                if torch.argmax(i) == y[idx]:
+\end_layout
+
+\begin_layout Plain Layout
+
+                    correct += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+                total += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+    return round(correct/total, 3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+parser.py
+\end_layout
+
+\begin_layout Standard
+Possui apenas uma função que tem como objetivo criar 
+\emph on
+flags 
+\emph default
+para a utilização da 
+\emph on
+CLI 
+\emph default
+em python.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: parser.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={paser.py}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+import argparse
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def create_parser():
+\end_layout
+
+\begin_layout Plain Layout
+
+    parser = argparse.ArgumentParser(description = "Rock NN CLI")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    parser.add_argument("-t", "--train", type = str, nargs = 1,
+\end_layout
+
+\begin_layout Plain Layout
+
+                        default = None,help = "Train a new model from dataset")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    parser.add_argument("-i", "--image", type = str, nargs = 1,
+\end_layout
+
+\begin_layout Plain Layout
+
+                        default = None, help = "Image to test")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    parser.add_argument("-m", "--model", type = str, nargs = 1,
+\end_layout
+
+\begin_layout Plain Layout
+
+                        default = None, help = "Model file location")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    parser.add_argument("-o", "--output", type = str, nargs = 1,
+\end_layout
+
+\begin_layout Plain Layout
+
+                        default = None, help = "Select the output folder")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    parser.add_argument("-e", "--epochs", type = int, nargs = 1,
+\end_layout
+
+\begin_layout Plain Layout
+
+                         default = None, help = "Number of epochs in training")
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+    parser.add_argument("-s", "--save", action='store_true',
+\end_layout
+
+\begin_layout Plain Layout
+
+                         default = False, help = "Save the result of binarizatio
+n process")
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    return parser.parse_args()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+time_measure.py
+\end_layout
+
+\begin_layout Standard
+Possui apenas uma função que é utilizada para marcar o tempo decorrido durante
+ a execução das funções.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: time_measure.py"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={time\_measure.py}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import time
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def timing_decorator(func):
+\end_layout
+
+\begin_layout Plain Layout
+
+    def wrapper(*args, **kwargs):
+\end_layout
+
+\begin_layout Plain Layout
+
+        start = time.time()
+\end_layout
+
+\begin_layout Plain Layout
+
+        original_return_val = func(*args, **kwargs)
+\end_layout
+
+\begin_layout Plain Layout
+
+        end = time.time()
+\end_layout
+
+\begin_layout Plain Layout
+
+        time_elapsed = (end - start) * 1000
+\end_layout
+
+\begin_layout Plain Layout
+
+        print("time elapsed in ", func.__name__, ": ", time_elapsed, "ms",
+ sep='')
+\end_layout
+
+\begin_layout Plain Layout
+
+        return original_return_val, time_elapsed
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return wrapper
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
